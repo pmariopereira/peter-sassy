@@ -1,0 +1,114 @@
+===========
+Version 2.2
+===========
+- Styling the product category widget
+- Srtling the product categories lists
+
+
+****files affected:
+- style.css
+- css/woocommerce_custom.css ---- start from line 2435
+- functions.php ---- change the theme version in line 12
+- functions/woocommerce_hack.php ---- start from line 813
+
+
+
+
+===========
+Version 2.1.1
+===========
+- Fix some css bugs
+- Fix the google font url when using ssl
+
+****files affected:
+- style.css
+- css/woocommerce_custom.css
+- functions.php
+- functions/theme_setup.php
+
+
+
+
+===========
+Version 2.1
+===========
+- Fix uploading issue in some hosting
+- Add new option for top shopping cart
+- Fix some minor issue
+
+****files affected:
+- All FILES under framework folder
+- style.css
+- css/base.css
+- functions.php
+- header.php
+- functions/theme_setup.php
+- js/global.js
+- language file under langs folder
+  - builder.pot
+  - builder.po
+  - builder.mo
+
+
+
+===========
+Version 2.0
+===========
+- Adding fullwidth layout option for single blog post
+- Adding prev and next button for checkoout page
+- Fix some coding issue
+
+****new files:
+- blog-fullwidth-related.php
+- loop-fullwidth-single.php
+- framework/images/content.png
+
+****files affected:
+- style.css
+- css/base.css
+- functions.php
+- framework/php/panel.functions.php
+- framework/php/metabox.class.php
+- function/woocommerce_hack.php
+- single.php
+- js/global.js
+- language file under langs folder
+  - builder.pot
+  - builder.po
+  - builder.mo
+
+
+
+
+
+**************************************************
+==================================================
+**************************************************
+
+
+
+
+=============
+Version 1.0.2
+=============
+- Fixed some layout in homepage manager & page content manager
+- Fixed some elements position
+- Ability to show blog posts by category in homepage manager & page content manager
+- Fixed twitter widget
+- Fixed flickr widget
+files affected:
+- style.css
+- functions.php
+- header.php
+- functions/theme_functions.php
+- functions/_wip.layout.helper.php
+- framework/php/panel.functions.php
+- framework/php/home.manager.class.php
+- framework/php/page.manager.class.php
+- framework/php/layout.manager.functions.php
+
+
+
+
+
+

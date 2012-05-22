@@ -1,0 +1,2695 @@
+# Copyright (C) 2012 The Builder
+# This file is distributed under the same license as the The Builder package.
+msgid ""
+msgstr ""
+"Project-Id-Version: The Builder Version 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-04 23:51+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-04-04 23:51+0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:5
+msgid "404 - Page couldn't be found"
+msgstr ""
+
+#: 404.php:14
+msgid "Sorry, the page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Please try the following:"
+msgstr ""
+
+#: 404.php:16
+msgid "Make sure that the Web site address displayed in the address bar of your browser is spelled and formatted correctly"
+msgstr ""
+
+#: 404.php:17
+msgid "Go to our website's home page, and navigate to the content in question"
+msgstr ""
+
+#: 404.php:18
+msgid "Please use the menus or the search box to find what you are looking for"
+msgstr ""
+
+#: archive.php:6
+#, php-format
+msgid "Daily Archives &#8212; %1$s"
+msgstr ""
+
+#: archive.php:8
+#, php-format
+msgid "Monthly Archives &#8212; %1$s"
+msgstr ""
+
+#: archive.php:10
+#, php-format
+msgid "Yearly Archives &#8212; %1$s"
+msgstr ""
+
+#: archive.php:12
+#, php-format
+msgid "Blog posts tagged with &#8220;%1$s&#8221;"
+msgstr ""
+
+#: archive.php:14
+#, php-format
+msgid "Posts by %1$s"
+msgstr ""
+
+#: archive.php:16
+msgid "Blog Archives"
+msgstr ""
+
+#: archive.php:38
+#: archive.php:46
+#: archive.php:58
+#: blog-fullwidth-related.php:64
+#: blog-fullwidth-related.php:70
+#: blog-related.php:64
+#: blog-related.php:70
+#: portfolio-related.php:75
+#: portfolio-related.php:82
+#: search.php:26
+#: search.php:34
+#: search.php:46
+#, php-format
+msgid "Permanent Link to %s"
+msgstr ""
+
+#: archive.php:48
+#: blog-fullwidth-related.php:76
+#: blog-related.php:76
+#: loop-fullwidth-single.php:20
+#: loop-single.php:23
+#: search.php:36
+msgid "By"
+msgstr ""
+
+#: archive.php:50
+#: blog-fullwidth-related.php:76
+#: blog-related.php:76
+#: loop-fullwidth-single.php:22
+#: loop-single.php:25
+#: search.php:38
+#, php-format
+msgid "On %1$s"
+msgstr ""
+
+#: archive.php:52
+#: loop-fullwidth-single.php:24
+#: loop-single.php:27
+#: search.php:40
+msgid "In"
+msgstr ""
+
+#: archive.php:53
+#: loop-fullwidth-single.php:25
+#: loop-single.php:28
+#: search.php:41
+msgid "With"
+msgstr ""
+
+#: archive.php:53
+#: loop-fullwidth-single.php:25
+#: loop-single.php:28
+#: search.php:41
+msgid "No comment"
+msgstr ""
+
+#: archive.php:53
+#: loop-fullwidth-single.php:25
+#: loop-single.php:28
+#: search.php:41
+msgid "1 Comment"
+msgstr ""
+
+#: archive.php:53
+#: loop-fullwidth-single.php:25
+#: loop-single.php:28
+#: search.php:41
+msgid "% Comments"
+msgstr ""
+
+#: archive.php:58
+#: search.php:46
+msgid "Continue Reading"
+msgstr ""
+
+#: archive.php:70
+#: search.php:58
+msgid "Sorry, but nothing matched with your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: blog-fullwidth-related.php:39
+#: blog-related.php:39
+msgid "Related Posts"
+msgstr ""
+
+#: comments.php:3
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:29
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: comments.php:30
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: comments.php:41
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:62
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:63
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: header.php:23
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: header.php:97
+msgid "Build menu"
+msgstr ""
+
+#: header.php:98
+msgid "Learn custom menu"
+msgstr ""
+
+#: portfolio-related.php:44
+msgid "Related Projects"
+msgstr ""
+
+#: search.php:5
+#, php-format
+msgid "Search results for: %1$s"
+msgstr ""
+
+#: framework/wip.framework.php:160
+msgid "Theme Options"
+msgstr ""
+
+#: framework/wip.framework.php:161
+#: framework/php/panel.class.php:37
+msgid "Theme Settings"
+msgstr ""
+
+#: framework/wip.framework.php:162
+#: framework/php/home.manager.class.php:38
+msgid "Homepage Manager"
+msgstr ""
+
+#: framework/wip.framework.php:249
+#: framework/wip.framework.php:290
+msgid "Allowed Files"
+msgstr ""
+
+#: framework/wip.framework.php:454
+msgid "Page Content Manager"
+msgstr ""
+
+#: framework/wip.framework.php:455
+msgid "Portfolio Options"
+msgstr ""
+
+#: framework/wip.framework.php:456
+msgid "Options"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:46
+#: framework/php/custom-category-fields.php:135
+#: framework/php/custom-portfolio-category-fields.php:35
+#: framework/php/custom-portfolio-category-fields.php:109
+#: framework/php/panel.options.php:121
+msgid "Layout"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:49
+#: framework/php/custom-category-fields.php:138
+#: framework/php/custom-portfolio-category-fields.php:38
+#: framework/php/custom-portfolio-category-fields.php:112
+msgid "Content Sidebar"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:50
+#: framework/php/custom-category-fields.php:139
+#: framework/php/custom-portfolio-category-fields.php:39
+#: framework/php/custom-portfolio-category-fields.php:113
+msgid "Sidebar Content"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:51
+#: framework/php/custom-category-fields.php:140
+#: framework/php/custom-portfolio-category-fields.php:40
+#: framework/php/custom-portfolio-category-fields.php:114
+msgid "FullWidth"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:54
+#: framework/php/custom-category-fields.php:143
+#: framework/php/custom-portfolio-category-fields.php:43
+#: framework/php/custom-portfolio-category-fields.php:117
+msgid "Select the layout for this category"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:60
+#: framework/php/custom-category-fields.php:151
+msgid "Lists view"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:63
+#: framework/php/custom-category-fields.php:155
+#: framework/php/layout.manager.functions.php:531
+msgid "Default"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:64
+#: framework/php/custom-category-fields.php:156
+msgid "Column view"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:67
+#: framework/php/custom-category-fields.php:159
+msgid "Select a list type, use default listing or show the lists on column view"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:73
+#: framework/php/custom-category-fields.php:167
+#: framework/php/custom-portfolio-category-fields.php:124
+msgid "Columns type"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:76
+#: framework/php/custom-category-fields.php:171
+#: framework/php/custom-portfolio-category-fields.php:52
+#: framework/php/custom-portfolio-category-fields.php:128
+#: framework/php/layout.manager.functions.php:195
+#: framework/php/layout.manager.functions.php:252
+#: framework/php/layout.manager.functions.php:341
+#: framework/php/layout.manager.functions.php:431
+#: framework/php/layout.manager.functions.php:558
+msgid "2 Columns"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:77
+#: framework/php/custom-category-fields.php:172
+#: framework/php/custom-portfolio-category-fields.php:53
+#: framework/php/custom-portfolio-category-fields.php:129
+#: framework/php/layout.manager.functions.php:196
+#: framework/php/layout.manager.functions.php:253
+#: framework/php/layout.manager.functions.php:342
+#: framework/php/layout.manager.functions.php:432
+#: framework/php/layout.manager.functions.php:559
+msgid "3 Columns"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:78
+#: framework/php/custom-category-fields.php:173
+#: framework/php/custom-portfolio-category-fields.php:54
+#: framework/php/custom-portfolio-category-fields.php:130
+#: framework/php/layout.manager.functions.php:199
+#: framework/php/layout.manager.functions.php:256
+#: framework/php/layout.manager.functions.php:343
+#: framework/php/layout.manager.functions.php:433
+#: framework/php/layout.manager.functions.php:560
+msgid "4 Columns"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:81
+#: framework/php/custom-category-fields.php:176
+#: framework/php/custom-portfolio-category-fields.php:57
+#: framework/php/custom-portfolio-category-fields.php:133
+msgid "Select a column style"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:87
+#: framework/php/custom-category-fields.php:183
+#: framework/php/custom-portfolio-category-fields.php:63
+#: framework/php/custom-portfolio-category-fields.php:140
+#: framework/php/metabox.option.php:49
+#: framework/php/panel.options.php:1308
+msgid "Select a sidebar"
+msgstr ""
+
+#: framework/php/custom-category-fields.php:108
+#: framework/php/custom-category-fields.php:207
+#: framework/php/custom-portfolio-category-fields.php:84
+#: framework/php/custom-portfolio-category-fields.php:164
+msgid "Select a sidebar for this category"
+msgstr ""
+
+#: framework/php/custom-portfolio-category-fields.php:49
+msgid "Columns style"
+msgstr ""
+
+#: framework/php/home.manager.class.php:41
+msgid "Your content structure is saved!"
+msgstr ""
+
+#: framework/php/home.manager.class.php:54
+msgid "Layouts"
+msgstr ""
+
+#: framework/php/home.manager.class.php:64
+#: framework/php/page.manager.class.php:56
+msgid "Insert"
+msgstr ""
+
+#: framework/php/home.manager.class.php:78
+msgid "Current Homepage Content"
+msgstr ""
+
+#: framework/php/home.manager.class.php:80
+#: framework/php/home.manager.class.php:121
+msgid "Save Changes"
+msgstr ""
+
+#: framework/php/home.manager.class.php:89
+msgid "Homepage Slider"
+msgstr ""
+
+#: framework/php/home.manager.class.php:90
+#: framework/php/layout.manager.functions.php:326
+#: framework/php/layout.manager.functions.php:416
+#: framework/php/layout.manager.functions.php:505
+#: framework/php/layout.manager.functions.php:647
+#: framework/php/layout.manager.functions.php:684
+#: framework/php/layout.manager.functions.php:712
+#: framework/php/layout.manager.functions.php:770
+#: framework/php/layout.manager.functions.php:863
+#: framework/php/layout.manager.functions.php:904
+#: framework/php/layout.manager.functions.php:987
+#: framework/php/layout.manager.functions.php:1037
+#: framework/php/layout.manager.functions.php:1099
+#: framework/php/layout.manager.functions.php:1116
+#: framework/php/layout.manager.functions.php:1177
+msgid "Edit"
+msgstr ""
+
+#: framework/php/home.manager.class.php:97
+msgid "Turn off the homepage slider?"
+msgstr ""
+
+#: framework/php/home.manager.class.php:99
+#, php-format
+msgid "You can manage the homepage slider settings and image on the <a href=\"%s\">theme settings</a> page"
+msgstr ""
+
+#: framework/php/home.manager.class.php:105
+msgid "Homepage Content"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:7
+#: framework/php/layout.manager.functions.php:1036
+msgid "Full Width"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:11
+#: framework/php/panel.options.php:1292
+msgid "Sidebar - Content"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:15
+#: framework/php/panel.options.php:1292
+msgid "Content - Sidebar"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:192
+#: framework/php/layout.manager.functions.php:249
+#: framework/php/layout.manager.functions.php:542
+msgid "Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:194
+#: framework/php/layout.manager.functions.php:251
+msgid "Select a column"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:197
+#: framework/php/layout.manager.functions.php:254
+msgid "1/3 - 2/3 Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:198
+#: framework/php/layout.manager.functions.php:255
+msgid "2/3 - 1/3 Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:200
+#: framework/php/layout.manager.functions.php:257
+msgid "1/4 - 1/4 - 2/4 Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:201
+#: framework/php/layout.manager.functions.php:258
+msgid "1/4 - 2/4 - 1/4 Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:202
+#: framework/php/layout.manager.functions.php:259
+msgid "2/4 - 1/4 - 1/4 Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:203
+#: framework/php/layout.manager.functions.php:260
+msgid "1/4 - 3/4 Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:204
+#: framework/php/layout.manager.functions.php:261
+msgid "3/4 - 1/4 Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:209
+#: framework/php/layout.manager.functions.php:266
+msgid "Dividers"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:211
+#: framework/php/layout.manager.functions.php:268
+msgid "Select a divider"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:212
+#: framework/php/layout.manager.functions.php:269
+msgid "Divider style 1"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:213
+#: framework/php/layout.manager.functions.php:270
+msgid "Divider style 2"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:218
+#: framework/php/layout.manager.functions.php:275
+msgid "Post"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:220
+#: framework/php/layout.manager.functions.php:277
+msgid "Select a post type"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:221
+msgid "Single Page"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:222
+#: framework/php/layout.manager.functions.php:279
+#: framework/php/layout.manager.functions.php:504
+msgid "Blog Lists"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:223
+#: framework/php/layout.manager.functions.php:280
+#: framework/php/layout.manager.functions.php:325
+msgid "Portfolio Lists"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:224
+#: framework/php/layout.manager.functions.php:281
+#: framework/php/layout.manager.functions.php:415
+msgid "Product Lists"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:229
+#: framework/php/layout.manager.functions.php:286
+msgid "Tagline/Textarea"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:231
+#: framework/php/layout.manager.functions.php:288
+msgid "Select a style"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:232
+#: framework/php/layout.manager.functions.php:289
+#: framework/php/layout.manager.functions.php:862
+#: framework/php/layout.manager.functions.php:995
+#: framework/php/layout.manager.functions.php:1185
+msgid "Paragraph Text"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:233
+#: framework/php/layout.manager.functions.php:290
+#: framework/php/layout.manager.functions.php:711
+msgid "Tagline"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:234
+#: framework/php/layout.manager.functions.php:291
+#: framework/php/layout.manager.functions.php:769
+msgid "Tagline with button"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:278
+#: framework/php/layout.manager.functions.php:683
+#: framework/php/page.manager.class.php:70
+msgid "Page Content"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:322
+#: framework/php/layout.manager.functions.php:412
+#: framework/php/layout.manager.functions.php:501
+#: framework/php/layout.manager.functions.php:643
+#: framework/php/layout.manager.functions.php:680
+#: framework/php/layout.manager.functions.php:708
+#: framework/php/layout.manager.functions.php:766
+#: framework/php/layout.manager.functions.php:859
+#: framework/php/layout.manager.functions.php:900
+#: framework/php/layout.manager.functions.php:939
+#: framework/php/layout.manager.functions.php:1033
+#: framework/php/layout.manager.functions.php:1093
+#: framework/php/layout.manager.functions.php:1161
+msgid "Remove"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:334
+#: framework/php/layout.manager.functions.php:424
+#: framework/php/layout.manager.functions.php:519
+msgid "Title (optional)"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:339
+#: framework/php/layout.manager.functions.php:429
+#: framework/php/layout.manager.functions.php:556
+msgid "How many columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:348
+msgid "portfolio Category"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:350
+#: framework/php/layout.manager.functions.php:441
+#: framework/php/layout.manager.functions.php:567
+#: framework/php/layout.manager.functions.php:1342
+#: framework/php/layout.manager.functions.php:1385
+#: framework/php/layout.manager.functions.php:1419
+#: framework/php/layout.manager.functions.php:1453
+#: framework/php/layout.manager.functions.php:1487
+#: framework/php/layout.manager.functions.php:1527
+msgid "All"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:356
+#: framework/php/layout.manager.functions.php:447
+#: framework/php/layout.manager.functions.php:573
+msgid "How many post"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:361
+msgid "Featured portfolio"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:363
+msgid "Show Featured portfolio"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:364
+msgid "if this is checked, the portfolio category value will ignored!"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:368
+#: framework/php/layout.manager.functions.php:459
+#: framework/php/layout.manager.functions.php:578
+msgid "Pagination"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:370
+#: framework/php/layout.manager.functions.php:461
+#: framework/php/layout.manager.functions.php:580
+msgid "Show the pagination?"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:434
+msgid "5 Columns"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:439
+#: framework/php/layout.manager.functions.php:1485
+#: framework/php/layout.manager.functions.php:1525
+msgid "Product Category"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:452
+msgid "Featured products"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:454
+#: framework/php/layout.manager.functions.php:1494
+#: framework/php/layout.manager.functions.php:1534
+msgid "Show Featured products"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:455
+#: framework/php/layout.manager.functions.php:1495
+#: framework/php/layout.manager.functions.php:1535
+msgid "if this is checked, the product category value will ignored!"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:523
+msgid "Select a layout"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:549
+#: framework/php/layout.manager.functions.php:1115
+msgid "Content"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:550
+msgid "Show Excerpt"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:551
+msgid "Show Full Content"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:565
+msgid "Blog Category"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:646
+msgid "Page"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:654
+msgid "Select a page:"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:662
+msgid "Show Page Title?"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:691
+msgid "No options for this section. This is will display your page content!"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:718
+#: framework/php/layout.manager.functions.php:776
+msgid "Tagline Text"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:723
+#: framework/php/layout.manager.functions.php:816
+msgid "Font Color"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:728
+#: framework/php/layout.manager.functions.php:821
+#: framework/php/panel.options.php:375
+msgid "Font Style"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:736
+#: framework/php/layout.manager.functions.php:829
+#: framework/php/panel.options.php:385
+msgid "Font Weight"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:744
+#: framework/php/layout.manager.functions.php:837
+#: framework/php/panel.options.php:395
+msgid "Text Transform"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:781
+msgid "Button URL"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:786
+msgid "Button Text"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:791
+msgid "Button settings"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:793
+msgid "Button Background Color"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:798
+msgid "Button Border Color"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:800
+msgid "Tip: Use darker color than button background color and the tagline background color"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:804
+msgid "Button Font Color"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:809
+msgid "Tagline settings"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:811
+msgid "Tagline Background Color"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:869
+#: framework/php/layout.manager.functions.php:1298
+#: framework/php/layout.manager.functions.php:1330
+#: framework/php/layout.manager.functions.php:1373
+#: framework/php/layout.manager.functions.php:1407
+#: framework/php/layout.manager.functions.php:1441
+#: framework/php/layout.manager.functions.php:1475
+#: framework/php/layout.manager.functions.php:1515
+#: framework/php/layout.manager.functions.php:1554
+#: framework/php/layout.manager.functions.php:1585
+#: framework/php/layout.manager.functions.php:1616
+msgid "Title"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:877
+#: framework/php/layout.manager.functions.php:1307
+msgid "Automatically add paragraphs"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:880
+#: framework/php/layout.manager.functions.php:1310
+msgid "You can put any shortcode here, however shortcode only works if automatically add paragraphs is checked!"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:897
+msgid "Divider 1"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:897
+msgid "Divider 2"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:910
+msgid "Custom Title"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:914
+msgid "Title Color"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:918
+msgid "Title Background Color"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:923
+msgid "Show top link?"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:972
+#: framework/php/layout.manager.functions.php:1186
+msgid "Latest Blog Post Lists"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:973
+#: framework/php/layout.manager.functions.php:1187
+msgid "Latest Portfolio Lists(thumbnail only)"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:974
+#: framework/php/layout.manager.functions.php:1188
+msgid "Latest Product Lists"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:977
+msgid "Latest Blog Post (3 column view)"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:978
+msgid "Latest Portfolio (3 column view)"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:979
+msgid "Latest Product (3 column view)"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:994
+#: framework/php/layout.manager.functions.php:1184
+msgid "Select a content"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:997
+#: framework/php/layout.manager.functions.php:1189
+msgid "Latest Twitter"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:998
+#: framework/php/layout.manager.functions.php:1190
+#: framework/php/layout.manager.functions.php:1582
+msgid "Flickr Photo"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:999
+#: framework/php/layout.manager.functions.php:1191
+msgid "a Testimonial"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1098
+#: framework/php/panel.options.php:255
+msgid "Sidebar"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1295
+msgid "Paragraph"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1313
+#: framework/php/layout.manager.functions.php:1356
+#: framework/php/layout.manager.functions.php:1391
+#: framework/php/layout.manager.functions.php:1425
+#: framework/php/layout.manager.functions.php:1459
+#: framework/php/layout.manager.functions.php:1498
+#: framework/php/layout.manager.functions.php:1538
+#: framework/php/layout.manager.functions.php:1569
+#: framework/php/layout.manager.functions.php:1600
+#: framework/php/layout.manager.functions.php:1631
+msgid "remove"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1327
+msgid "Latest Post"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1335
+#: framework/php/layout.manager.functions.php:1378
+#: framework/php/layout.manager.functions.php:1412
+#: framework/php/layout.manager.functions.php:1446
+#: framework/php/layout.manager.functions.php:1480
+#: framework/php/layout.manager.functions.php:1520
+msgid "How many posts to show"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1340
+#: framework/php/layout.manager.functions.php:1383
+#: framework/php/layout.manager.functions.php:1417
+#: framework/php/layout.manager.functions.php:1451
+msgid "Pull from specific category?"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1349
+msgid "Show thumbnail?"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1353
+msgid "Show the Excerpt?"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1370
+msgid "Latest Post (3 Column View)"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1404
+msgid "Latest Portfolio"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1438
+msgid "Latest Portfolio (3 Column View)"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1472
+msgid "Latest Product"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1512
+msgid "Latest Product (3 Column View)"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1551
+msgid "Latest Tweet"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1559
+msgid "Twitter Username"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1564
+msgid "How many tweet to show"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1590
+msgid "Flickr ID"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1595
+msgid "How many photo to show"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1613
+msgid "Testimonial"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1621
+msgid "Testimonial Text"
+msgstr ""
+
+#: framework/php/layout.manager.functions.php:1626
+msgid "Testimonial Source/Author"
+msgstr ""
+
+#: framework/php/metabox.class.php:323
+#: framework/php/panel.class.php:696
+msgid "Upload"
+msgstr ""
+
+#: framework/php/metabox.function.php:44
+msgid "Image file cannot be read!"
+msgstr ""
+
+#: framework/php/metabox.function.php:126
+#: framework/php/panel.functions.php:113
+#: framework/php/panel.functions.php:189
+#: framework/php/panel.functions.php:283
+#: framework/php/panel.functions.php:475
+#: framework/php/panel.functions.php:670
+msgid "Unsupported file type!"
+msgstr ""
+
+#: framework/php/metabox.function.php:130
+#: framework/php/panel.functions.php:481
+#: framework/php/panel.functions.php:676
+#, php-format
+msgid "Upload Error: %1$s"
+msgstr ""
+
+#: framework/php/metabox.function.php:158
+msgid "Please enter the video URL before click the button!"
+msgstr ""
+
+#: framework/php/metabox.option.php:14
+msgid "Featured Project?"
+msgstr ""
+
+#: framework/php/metabox.option.php:15
+msgid "Turn on/off this post as featured project!"
+msgstr ""
+
+#: framework/php/metabox.option.php:21
+msgid "Portfolio Object"
+msgstr ""
+
+#: framework/php/metabox.option.php:22
+msgid "Choose between image or video - upload your image by press the \"UPLOAD\" button or enter the video URL"
+msgstr ""
+
+#: framework/php/metabox.option.php:50
+msgid "Select a sidebar for this post"
+msgstr ""
+
+#: framework/php/metabox.option.php:58
+msgid "Select the layout"
+msgstr ""
+
+#: framework/php/panel.class.php:611
+#: framework/php/panel.class.php:713
+msgid "Save changes"
+msgstr ""
+
+#: framework/php/panel.class.php:673
+msgid "Delete image"
+msgstr ""
+
+#: framework/php/panel.class.php:700
+msgid "You can change the default cufon font by uploading your cufon font script here"
+msgstr ""
+
+#: framework/php/panel.class.php:721
+msgid "Reset"
+msgstr ""
+
+#: framework/php/panel.class.php:754
+msgid "Please use the same icon size.<br/> Recomended icon size is 20 pixels (width and height)"
+msgstr ""
+
+#: framework/php/panel.class.php:759
+msgid "Link URL"
+msgstr ""
+
+#: framework/php/panel.class.php:767
+msgid "Link title (optional)"
+msgstr ""
+
+#: framework/php/panel.class.php:775
+msgid "+ Add Icon"
+msgstr ""
+
+#: framework/php/panel.class.php:785
+msgid "Below are icons you have submited"
+msgstr ""
+
+#: framework/php/panel.class.php:810
+#: framework/php/panel.class.php:881
+msgid "Delete"
+msgstr ""
+
+#: framework/php/panel.class.php:822
+msgid "No icons Found!"
+msgstr ""
+
+#: framework/php/panel.class.php:844
+msgid "Sidebar name"
+msgstr ""
+
+#: framework/php/panel.class.php:852
+msgid "+ Add New Sidebar"
+msgstr ""
+
+#: framework/php/panel.class.php:862
+msgid "Below are custom sidebar(s) you have submited"
+msgstr ""
+
+#: framework/php/panel.class.php:893
+msgid "No custom sidebars found!"
+msgstr ""
+
+#: framework/php/panel.class.php:921
+#: framework/php/panel.class.php:1119
+msgid "Select Image"
+msgstr ""
+
+#: framework/php/panel.class.php:930
+msgid "fix size, 940px by the height of slider container (see Slider Settings tab)"
+msgstr ""
+
+#: framework/php/panel.class.php:936
+#: framework/php/panel.class.php:1129
+msgid "Piecemaker 2 Options"
+msgstr ""
+
+#: framework/php/panel.class.php:942
+#: framework/php/panel.class.php:1135
+msgid ".SWF OR video file URL (optional)"
+msgstr ""
+
+#: framework/php/panel.class.php:947
+#: framework/php/panel.class.php:1140
+msgid "Please enter full URL, include the \"http://\""
+msgstr ""
+
+#: framework/php/panel.class.php:951
+#: framework/php/panel.class.php:1144
+msgid "Title (required)"
+msgstr ""
+
+#: framework/php/panel.class.php:959
+#: framework/php/panel.class.php:1152
+msgid "Pieces"
+msgstr ""
+
+#: framework/php/panel.class.php:963
+#: framework/php/panel.class.php:1156
+msgid "Number of pieces to which the image is sliced"
+msgstr ""
+
+#: framework/php/panel.class.php:968
+#: framework/php/panel.class.php:1161
+msgid "Time"
+msgstr ""
+
+#: framework/php/panel.class.php:972
+#: framework/php/panel.class.php:1165
+msgid "Time for one cube to turn, in second"
+msgstr ""
+
+#: framework/php/panel.class.php:977
+#: framework/php/panel.class.php:1170
+msgid "Transition"
+msgstr ""
+
+#: framework/php/panel.class.php:985
+#: framework/php/panel.class.php:1178
+msgid "Transition type"
+msgstr ""
+
+#: framework/php/panel.class.php:990
+#: framework/php/panel.class.php:1183
+#: framework/php/panel.options.php:1418
+msgid "Delay"
+msgstr ""
+
+#: framework/php/panel.class.php:994
+#: framework/php/panel.class.php:1187
+msgid "Delay between the start of one cube to the start of the next cube"
+msgstr ""
+
+#: framework/php/panel.class.php:999
+#: framework/php/panel.class.php:1192
+msgid "Depth Offset"
+msgstr ""
+
+#: framework/php/panel.class.php:1003
+#: framework/php/panel.class.php:1196
+msgid "The offset during transition on the z-axis. Value between 100 and 1000"
+msgstr ""
+
+#: framework/php/panel.class.php:1008
+#: framework/php/panel.class.php:1201
+msgid "Cube Distance"
+msgstr ""
+
+#: framework/php/panel.class.php:1012
+#: framework/php/panel.class.php:1205
+msgid "The distance between the cubes during transition. Values between 5 and 50"
+msgstr ""
+
+#: framework/php/panel.class.php:1023
+#: framework/php/panel.class.php:1215
+msgid "Link URL (optional)"
+msgstr ""
+
+#: framework/php/panel.class.php:1032
+#: framework/php/panel.class.php:1220
+msgid "Description (optional)"
+msgstr ""
+
+#: framework/php/panel.class.php:1040
+msgid "+ Add Slider Object"
+msgstr ""
+
+#: framework/php/panel.class.php:1047
+msgid "Below are slider images you have submited<br/>You can drag and drop the list below to re-order the slider object"
+msgstr ""
+
+#: framework/php/panel.class.php:1100
+msgid "No slider image"
+msgstr ""
+
+#: framework/php/panel.class.php:1123
+msgid "fix size, 940px by the height of slider container (see Slider Settings tab)<br/>note: once you have upload another image the current image will be deleted"
+msgstr ""
+
+#: framework/php/panel.functions.php:251
+msgid "No image detected!"
+msgstr ""
+
+#: framework/php/panel.functions.php:355
+msgid "Please upload the icon!"
+msgstr ""
+
+#: framework/php/panel.functions.php:360
+msgid "Please enter the URL!"
+msgstr ""
+
+#: framework/php/panel.functions.php:502
+msgid "Error : Please enter the sidebar name!"
+msgstr ""
+
+#: framework/php/panel.functions.php:749
+msgid "Error : Please upload the image!"
+msgstr ""
+
+#: framework/php/panel.functions.php:992
+msgid "Image or edit id cannot be found!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1097
+msgid "cannot read the required ID!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1189
+msgid "Seems the \"body-css.css\" is unwriteable! Please change the file permission of \"css/custom/body-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1227
+msgid "Seems the \"font-family.css\" is unwriteable! Please change the file permission of \"css/custom/font-family.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1238
+msgid "Seems the \"general-css.css\" is unwriteable! Please change the file permission of \"css/custom/general-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1249
+msgid "Seems the \"header-css.css\" is unwriteable! Please change the file permission of \"css/custom/header-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1260
+msgid "Seems the \"menu-css.css\" is unwriteable! Please change the file permission of \"css/custom/menu-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1271
+msgid "Seems the \"topcart-css.css\" is unwriteable! Please change the file permission of \"css/custom/topcart-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1282
+msgid "Seems the \"slider-css.css\" is unwriteable! Please change the file permission of \"css/custom/slider-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1294
+msgid "Seems the \"footer-widget-css.css\" is unwriteable! Please change the file permission of \"css/custom/footer-widget-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1305
+msgid "Seems the \"copyright-css.css\" is unwriteable! Please change the file permission of \"css/custom/copyright-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.functions.php:1316
+msgid "Seems the \"product-css.css\" is unwriteable! Please change the file permission of \"css/custom/product-css.css\"!"
+msgstr ""
+
+#: framework/php/panel.options.php:29
+msgid "Google Web Font"
+msgstr ""
+
+#: framework/php/panel.options.php:37
+msgid "Standard Font"
+msgstr ""
+
+#: framework/php/panel.options.php:58
+msgid "Site logo"
+msgstr ""
+
+#: framework/php/panel.options.php:65
+msgid "Upload your favicon"
+msgstr ""
+
+#: framework/php/panel.options.php:73
+msgid "PrettyPhoto theme"
+msgstr ""
+
+#: framework/php/panel.options.php:78
+msgid "Select the prettyPhoto(lightbox) style. If you want to use prettyPhoto in single product page, you need to turn off the default lightbox in WooCommerce settings page"
+msgstr ""
+
+#: framework/php/panel.options.php:83
+msgid "Copyright text"
+msgstr ""
+
+#: framework/php/panel.options.php:85
+msgid "Enter the copyright text."
+msgstr ""
+
+#: framework/php/panel.options.php:92
+msgid "Header script"
+msgstr ""
+
+#: framework/php/panel.options.php:94
+msgid "If you need to add scripts to your header (like Mint tracking code), enter your code here.<br> Note: do not enter any advertisement script here"
+msgstr ""
+
+#: framework/php/panel.options.php:100
+msgid "Footer Script"
+msgstr ""
+
+#: framework/php/panel.options.php:102
+msgid "If you need to add scripts to your footer (like Google tracking code), enter your code here.<br> Note: do not enter any advertisement script here"
+msgstr ""
+
+#: framework/php/panel.options.php:131
+msgid "Heading Font (H1 - H6)"
+msgstr ""
+
+#: framework/php/panel.options.php:135
+msgid "Select font for heading, H1 - H6"
+msgstr ""
+
+#: framework/php/panel.options.php:140
+msgid "Body Font"
+msgstr ""
+
+#: framework/php/panel.options.php:144
+msgid "Select font for body (text)"
+msgstr ""
+
+#: framework/php/panel.options.php:149
+msgid "Main Menu Font"
+msgstr ""
+
+#: framework/php/panel.options.php:153
+msgid "Select font for main menu"
+msgstr ""
+
+#: framework/php/panel.options.php:159
+msgid "Note: for best performance, if you decide to use Google Api's fonts - you may choose the same font for body text font and main menu font"
+msgstr ""
+
+#: framework/php/panel.options.php:176
+msgid "Content background color"
+msgstr ""
+
+#: framework/php/panel.options.php:182
+#: framework/php/panel.options.php:312
+#: framework/php/panel.options.php:423
+#: framework/php/panel.options.php:702
+#: framework/php/panel.options.php:791
+#: framework/php/panel.options.php:911
+msgid "Background Color"
+msgstr ""
+
+#: framework/php/panel.options.php:198
+msgid "Heading Font Color (H1 - H6)"
+msgstr ""
+
+#: framework/php/panel.options.php:206
+msgid "Body Font Color"
+msgstr ""
+
+#: framework/php/panel.options.php:214
+#: framework/php/panel.options.php:636
+msgid "Link font color"
+msgstr ""
+
+#: framework/php/panel.options.php:222
+msgid "Link font color on mouseover"
+msgstr ""
+
+#: framework/php/panel.options.php:230
+msgid "Blockquote font color"
+msgstr ""
+
+#: framework/php/panel.options.php:238
+msgid "Default submit button background color"
+msgstr ""
+
+#: framework/php/panel.options.php:246
+msgid "Default submit button font color"
+msgstr ""
+
+#: framework/php/panel.options.php:262
+msgid "Sidebar title background color"
+msgstr ""
+
+#: framework/php/panel.options.php:279
+msgid "Sidebar title color"
+msgstr ""
+
+#: framework/php/panel.options.php:287
+msgid "Sidebar link color"
+msgstr ""
+
+#: framework/php/panel.options.php:295
+msgid "Sidebar link color on mouseover"
+msgstr ""
+
+#: framework/php/panel.options.php:306
+msgid "Inner page title area"
+msgstr ""
+
+#: framework/php/panel.options.php:320
+#: framework/php/panel.options.php:431
+#: framework/php/panel.options.php:710
+#: framework/php/panel.options.php:799
+#: framework/php/panel.options.php:919
+#: framework/php/panel.options.php:1126
+msgid "background image"
+msgstr ""
+
+#: framework/php/panel.options.php:331
+#: framework/php/panel.options.php:450
+#: framework/php/panel.options.php:721
+#: framework/php/panel.options.php:810
+#: framework/php/panel.options.php:930
+#: framework/php/panel.options.php:1133
+msgid "Background Position"
+msgstr ""
+
+#: framework/php/panel.options.php:340
+#: framework/php/panel.options.php:459
+#: framework/php/panel.options.php:730
+#: framework/php/panel.options.php:819
+#: framework/php/panel.options.php:939
+#: framework/php/panel.options.php:1142
+msgid "Background Attachment"
+msgstr ""
+
+#: framework/php/panel.options.php:349
+#: framework/php/panel.options.php:468
+#: framework/php/panel.options.php:739
+#: framework/php/panel.options.php:828
+#: framework/php/panel.options.php:948
+#: framework/php/panel.options.php:1151
+msgid "Background Repeat"
+msgstr ""
+
+#: framework/php/panel.options.php:366
+msgid "Title font Color"
+msgstr ""
+
+#: framework/php/panel.options.php:417
+msgid "Header background color and image"
+msgstr ""
+
+#: framework/php/panel.options.php:442
+msgid "Top Line Color"
+msgstr ""
+
+#: framework/php/panel.options.php:485
+msgid "Top links font color"
+msgstr ""
+
+#: framework/php/panel.options.php:493
+msgid "Top links font color on hover"
+msgstr ""
+
+#: framework/php/panel.options.php:501
+msgid "Search form font color"
+msgstr ""
+
+#: framework/php/panel.options.php:521
+msgid "Menu background color"
+msgstr ""
+
+#: framework/php/panel.options.php:529
+msgid "Menu link color"
+msgstr ""
+
+#: framework/php/panel.options.php:537
+msgid "Menu link color on hover"
+msgstr ""
+
+#: framework/php/panel.options.php:545
+msgid "Menu dropdown background color"
+msgstr ""
+
+#: framework/php/panel.options.php:553
+msgid "Menu dropdown background color on hover"
+msgstr ""
+
+#: framework/php/panel.options.php:561
+msgid "Menu dropdown link color"
+msgstr ""
+
+#: framework/php/panel.options.php:569
+msgid "Menu dropdown link color on hover"
+msgstr ""
+
+#: framework/php/panel.options.php:590
+msgid "Top shopping cart background color"
+msgstr ""
+
+#: framework/php/panel.options.php:598
+msgid "Cart value font color"
+msgstr ""
+
+#: framework/php/panel.options.php:607
+msgid "Below are settings for top cart dropdown"
+msgstr ""
+
+#: framework/php/panel.options.php:612
+msgid "Top shopping cart dropdown background color"
+msgstr ""
+
+#: framework/php/panel.options.php:620
+msgid "Item list background color"
+msgstr ""
+
+#: framework/php/panel.options.php:628
+msgid "Color for Price and text inside the item list"
+msgstr ""
+
+#: framework/php/panel.options.php:644
+msgid "Link font color on hover"
+msgstr ""
+
+#: framework/php/panel.options.php:653
+msgid "color for Subtotal text and amount"
+msgstr ""
+
+#: framework/php/panel.options.php:662
+msgid "Below are settings button on top shopping cart dropdown"
+msgstr ""
+
+#: framework/php/panel.options.php:667
+msgid "\"View Cart\" and \"Checkout\" button background color"
+msgstr ""
+
+#: framework/php/panel.options.php:675
+msgid "\"View Cart\" and \"Checkout\" button font color"
+msgstr ""
+
+#: framework/php/panel.options.php:696
+msgid "Slider area background color and image"
+msgstr ""
+
+#: framework/php/panel.options.php:757
+msgid "Nivo slider navigation background color (on normal)"
+msgstr ""
+
+#: framework/php/panel.options.php:765
+msgid "Nivo slider navigation background color (on active)"
+msgstr ""
+
+#: framework/php/panel.options.php:785
+msgid "Footer widgets area background color and image"
+msgstr ""
+
+#: framework/php/panel.options.php:845
+msgid "Widget title font color"
+msgstr ""
+
+#: framework/php/panel.options.php:853
+msgid "Widget title border color"
+msgstr ""
+
+#: framework/php/panel.options.php:861
+msgid "Heading Font Color (H1 - H6) for this area"
+msgstr ""
+
+#: framework/php/panel.options.php:869
+msgid "Content/Text Font Color for this area"
+msgstr ""
+
+#: framework/php/panel.options.php:877
+#: framework/php/panel.options.php:973
+msgid "Link font color for this area"
+msgstr ""
+
+#: framework/php/panel.options.php:885
+#: framework/php/panel.options.php:981
+msgid "Link font color on hover for this area"
+msgstr ""
+
+#: framework/php/panel.options.php:905
+msgid "Copyright area background color and image"
+msgstr ""
+
+#: framework/php/panel.options.php:965
+msgid "Text Font Color for this area"
+msgstr ""
+
+#: framework/php/panel.options.php:1002
+msgid "Settings for product listing"
+msgstr ""
+
+#: framework/php/panel.options.php:1007
+msgid "\"Sale\" ribbon background color"
+msgstr ""
+
+#: framework/php/panel.options.php:1015
+msgid "\"Sale\" ribbon font color"
+msgstr ""
+
+#: framework/php/panel.options.php:1023
+msgid "Price area background color"
+msgstr ""
+
+#: framework/php/panel.options.php:1031
+msgid "Price font color"
+msgstr ""
+
+#: framework/php/panel.options.php:1041
+msgid "Settings for single product page"
+msgstr ""
+
+#: framework/php/panel.options.php:1047
+msgid "Product Price Ribbon Color"
+msgstr ""
+
+#: framework/php/panel.options.php:1049
+msgid "Select the ribbon color that match with your site style."
+msgstr ""
+
+#: framework/php/panel.options.php:1051
+msgid "Dark"
+msgstr ""
+
+#: framework/php/panel.options.php:1051
+msgid "Red"
+msgstr ""
+
+#: framework/php/panel.options.php:1051
+msgid "Orange"
+msgstr ""
+
+#: framework/php/panel.options.php:1051
+msgid "Green"
+msgstr ""
+
+#: framework/php/panel.options.php:1051
+msgid "Blue"
+msgstr ""
+
+#: framework/php/panel.options.php:1051
+msgid "Yellow"
+msgstr ""
+
+#: framework/php/panel.options.php:1057
+msgid "\"Variable product\" price background color"
+msgstr ""
+
+#: framework/php/panel.options.php:1060
+msgid "Background color of variable product price"
+msgstr ""
+
+#: framework/php/panel.options.php:1065
+msgid "\"Variable product\" price font color"
+msgstr ""
+
+#: framework/php/panel.options.php:1068
+msgid "Font color of variable product price"
+msgstr ""
+
+#: framework/php/panel.options.php:1073
+msgid "\"Add to cart\" button background color on single product page"
+msgstr ""
+
+#: framework/php/panel.options.php:1081
+msgid "\"Add to cart\" button font color on single product page"
+msgstr ""
+
+#: framework/php/panel.options.php:1103
+msgid "Layout Style"
+msgstr ""
+
+#: framework/php/panel.options.php:1105
+msgid "Select a layout style, stretched or boxed layout"
+msgstr ""
+
+#: framework/php/panel.options.php:1107
+msgid "Stretched Layout"
+msgstr ""
+
+#: framework/php/panel.options.php:1107
+msgid "Boxed Layout"
+msgstr ""
+
+#: framework/php/panel.options.php:1113
+msgid "Outer area skin settings for boxed layout"
+msgstr ""
+
+#: framework/php/panel.options.php:1119
+msgid "background color"
+msgstr ""
+
+#: framework/php/panel.options.php:1187
+msgid "Logo position"
+msgstr ""
+
+#: framework/php/panel.options.php:1191
+msgid "Left"
+msgstr ""
+
+#: framework/php/panel.options.php:1191
+msgid "Right"
+msgstr ""
+
+#: framework/php/panel.options.php:1191
+msgid "Center"
+msgstr ""
+
+#: framework/php/panel.options.php:1198
+msgid "Top Shopping Cart Position"
+msgstr ""
+
+#: framework/php/panel.options.php:1203
+msgid "Stay at the header, scroll the window evertime user add item to cart"
+msgstr ""
+
+#: framework/php/panel.options.php:1203
+msgid "Always visible, sticky style"
+msgstr ""
+
+#: framework/php/panel.options.php:1208
+msgid "Turn off the top search bar?"
+msgstr ""
+
+#: framework/php/panel.options.php:1216
+msgid "Turn off the links before top search form"
+msgstr ""
+
+#: framework/php/panel.options.php:1218
+msgid "Turn off the links before search form? However, these links only shown when woocommerce active"
+msgstr ""
+
+#: framework/php/panel.options.php:1224
+msgid "Turn off the top shopping cart"
+msgstr ""
+
+#: framework/php/panel.options.php:1226
+msgid "Turn off the top shopping cart? However, this shopping cart only shown when woocommerce active"
+msgstr ""
+
+#: framework/php/panel.options.php:1232
+msgid "Turn off the \"product search\" form"
+msgstr ""
+
+#: framework/php/panel.options.php:1234
+msgid "Turn off the \"product search\" form after page title in shop sections? However, this form only shown when woocommerce active"
+msgstr ""
+
+#: framework/php/panel.options.php:1240
+msgid "Turn off the footer widgets area"
+msgstr ""
+
+#: framework/php/panel.options.php:1249
+msgid "Turn off the related posts in blog"
+msgstr ""
+
+#: framework/php/panel.options.php:1257
+msgid "Turn off the related projects in portfolio"
+msgstr ""
+
+#: framework/php/panel.options.php:1288
+msgid "Shop page layout"
+msgstr ""
+
+#: framework/php/panel.options.php:1290
+msgid "Select a layout style, for main shop page. Page content manager will not works for this page, since woocommerce handle the content from plugin's function!"
+msgstr ""
+
+#: framework/php/panel.options.php:1292
+msgid "Fullwidth (no sidebar)"
+msgstr ""
+
+#: framework/php/panel.options.php:1298
+msgid "Number of columns"
+msgstr ""
+
+#: framework/php/panel.options.php:1339
+msgid "Posts per page for shop sections."
+msgstr ""
+
+#: framework/php/panel.options.php:1341
+msgid "This setting will also take affect into product tag archive, product category archive, search results for product and any other product related archive pages"
+msgstr ""
+
+#: framework/php/panel.options.php:1348
+msgid "Posts per page for blog category."
+msgstr ""
+
+#: framework/php/panel.options.php:1350
+msgid "This setting will also take affect into blog tag archive, date archive and any other blog related archive pages"
+msgstr ""
+
+#: framework/php/panel.options.php:1356
+msgid "Posts per page for portfolio category."
+msgstr ""
+
+#: framework/php/panel.options.php:1365
+msgid "Posts per page for search results page."
+msgstr ""
+
+#: framework/php/panel.options.php:1389
+msgid "General Config"
+msgstr ""
+
+#: framework/php/panel.options.php:1400
+msgid "Select an effect for nivoslider"
+msgstr ""
+
+#: framework/php/panel.options.php:1405
+msgid "Define the effect, default is \"random\""
+msgstr ""
+
+#: framework/php/panel.options.php:1410
+msgid "Animation time"
+msgstr ""
+
+#: framework/php/panel.options.php:1412
+msgid "Animated time for each object &raquo; 1000 = 1 second"
+msgstr ""
+
+#: framework/php/panel.options.php:1420
+msgid "Delay/Pause time between slider object &raquo; 1000 = 1 second"
+msgstr ""
+
+#: framework/php/panel.options.php:1426
+msgid "Slice"
+msgstr ""
+
+#: framework/php/panel.options.php:1428
+msgid "Define the slices for each image, default is 15"
+msgstr ""
+
+#: framework/php/panel.options.php:1434
+msgid "Box Cols"
+msgstr ""
+
+#: framework/php/panel.options.php:1436
+msgid "Use for box animations. Define number of box cols"
+msgstr ""
+
+#: framework/php/panel.options.php:1442
+msgid "Box Rows"
+msgstr ""
+
+#: framework/php/panel.options.php:1444
+msgid "Use for box animations. Define number of box rows"
+msgstr ""
+
+#: framework/php/panel.options.php:1450
+msgid "Caption opacity"
+msgstr ""
+
+#: framework/php/panel.options.php:1454
+msgid "Define the opacity of the caption."
+msgstr ""
+
+#: framework/php/panel.options.php:1459
+msgid "Hover Pause"
+msgstr ""
+
+#: framework/php/panel.options.php:1461
+msgid "Pause the animation on Hover"
+msgstr ""
+
+#: framework/php/panel.options.php:1480
+msgid "Loader Color"
+msgstr ""
+
+#: framework/php/panel.options.php:1483
+msgid "Color of the cubes before the first image appears, also the color of the back sides of the cube, which become visible at some transition types"
+msgstr ""
+
+#: framework/php/panel.options.php:1488
+msgid "Inner Side Color"
+msgstr ""
+
+#: framework/php/panel.options.php:1491
+msgid "Color of the inner sides of the cube when sliced"
+msgstr ""
+
+#: framework/php/panel.options.php:1496
+msgid "Side Shadow Alpha"
+msgstr ""
+
+#: framework/php/panel.options.php:1499
+#, php-format
+msgid "Sides get darker when moved away from the front. This is the degree of darkness. 0 == no change, 1 == 100% black"
+msgstr ""
+
+#: framework/php/panel.options.php:1504
+msgid "Drop Shadow Alpha"
+msgstr ""
+
+#: framework/php/panel.options.php:1507
+msgid "Alpha of the drop shadow. 0 == no shadow, 1 == opaque"
+msgstr ""
+
+#: framework/php/panel.options.php:1512
+msgid "Drop Shadow Distance"
+msgstr ""
+
+#: framework/php/panel.options.php:1515
+msgid "Distance of the shadow from the bottom of the image"
+msgstr ""
+
+#: framework/php/panel.options.php:1520
+msgid "Drop Shadow Scale"
+msgstr ""
+
+#: framework/php/panel.options.php:1523
+msgid "The value should between 0 and 1. 1 would be no resizing at all"
+msgstr ""
+
+#: framework/php/panel.options.php:1528
+msgid "Drop Shadow Blur X"
+msgstr ""
+
+#: framework/php/panel.options.php:1531
+msgid "Blur of the drop shadow on the x-axis"
+msgstr ""
+
+#: framework/php/panel.options.php:1536
+msgid "Drop Shadow Blur Y"
+msgstr ""
+
+#: framework/php/panel.options.php:1539
+msgid "Blur of the drop shadow on the y-axis"
+msgstr ""
+
+#: framework/php/panel.options.php:1544
+msgid "Menu Distance X"
+msgstr ""
+
+#: framework/php/panel.options.php:1547
+msgid "Distance between two menu items (from center to center)"
+msgstr ""
+
+#: framework/php/panel.options.php:1552
+msgid "Menu Distance Y"
+msgstr ""
+
+#: framework/php/panel.options.php:1555
+msgid "Distance of the menu from the bottom of the image"
+msgstr ""
+
+#: framework/php/panel.options.php:1560
+msgid "Menu Color 1"
+msgstr ""
+
+#: framework/php/panel.options.php:1563
+msgid "Color of an inactive menu item"
+msgstr ""
+
+#: framework/php/panel.options.php:1568
+msgid "Menu Color 2"
+msgstr ""
+
+#: framework/php/panel.options.php:1571
+msgid "Color of an active menu item"
+msgstr ""
+
+#: framework/php/panel.options.php:1576
+msgid "Menu Color 3"
+msgstr ""
+
+#: framework/php/panel.options.php:1579
+msgid "Color of the inner circle of an active menu item. Should equal the background color of the whole thing."
+msgstr ""
+
+#: framework/php/panel.options.php:1584
+msgid "Control Size"
+msgstr ""
+
+#: framework/php/panel.options.php:1587
+msgid "Size of the controls, which appear on rollover (play, stop, info, link)"
+msgstr ""
+
+#: framework/php/panel.options.php:1592
+msgid "Control Distance"
+msgstr ""
+
+#: framework/php/panel.options.php:1595
+msgid "Distance between the controls (from the borders)"
+msgstr ""
+
+#: framework/php/panel.options.php:1600
+msgid "Control Color 1"
+msgstr ""
+
+#: framework/php/panel.options.php:1603
+msgid "Background color of the controls"
+msgstr ""
+
+#: framework/php/panel.options.php:1608
+msgid "Control Color 2"
+msgstr ""
+
+#: framework/php/panel.options.php:1611
+msgid "Font color of the controls"
+msgstr ""
+
+#: framework/php/panel.options.php:1616
+msgid "Control Alpha"
+msgstr ""
+
+#: framework/php/panel.options.php:1619
+msgid "Alpha of a control, when mouse is not over"
+msgstr ""
+
+#: framework/php/panel.options.php:1624
+msgid "Control Alpha Over"
+msgstr ""
+
+#: framework/php/panel.options.php:1627
+msgid "Alpha of a control, when mouse is over"
+msgstr ""
+
+#: framework/php/panel.options.php:1632
+msgid "Tooltip Height"
+msgstr ""
+
+#: framework/php/panel.options.php:1635
+msgid "Height of the tooltip surface in the menu"
+msgstr ""
+
+#: framework/php/panel.options.php:1640
+msgid "Tooltip Color"
+msgstr ""
+
+#: framework/php/panel.options.php:1643
+msgid "Color of the tooltip surface in the menu"
+msgstr ""
+
+#: framework/php/panel.options.php:1648
+msgid "Tooltip Text Color"
+msgstr ""
+
+#: framework/php/panel.options.php:1651
+msgid "Color of the tooltip text"
+msgstr ""
+
+#: framework/php/panel.options.php:1656
+msgid "Tooltip Text Sharpness"
+msgstr ""
+
+#: framework/php/panel.options.php:1659
+msgid "Sharpness of the tooltip text (-400 to 400)"
+msgstr ""
+
+#: framework/php/panel.options.php:1664
+msgid "Tooltip Text Thickness"
+msgstr ""
+
+#: framework/php/panel.options.php:1667
+msgid "Thickness of the tooltip text (-400 to 400)"
+msgstr ""
+
+#: framework/php/panel.options.php:1672
+msgid "Info Width"
+msgstr ""
+
+#: framework/php/panel.options.php:1675
+msgid "The width of the info text field"
+msgstr ""
+
+#: framework/php/panel.options.php:1680
+msgid "Info Background"
+msgstr ""
+
+#: framework/php/panel.options.php:1683
+msgid "The background color of the info text field"
+msgstr ""
+
+#: framework/php/panel.options.php:1688
+msgid "Info Background Alpha"
+msgstr ""
+
+#: framework/php/panel.options.php:1691
+msgid "The alpha of the background of the info text. The image shines through, when smaller than 1"
+msgstr ""
+
+#: framework/php/panel.options.php:1696
+msgid "Autoplay"
+msgstr ""
+
+#: framework/php/panel.options.php:1699
+msgid "Number of seconds from one transition to another, if not stopped. Set to 0 to disable autoplay"
+msgstr ""
+
+#: framework/php/panel.options.php:1720
+msgid "Select a slider"
+msgstr ""
+
+#: framework/php/panel.options.php:1724
+msgid "Piecemaker 2"
+msgstr ""
+
+#: framework/php/panel.options.php:1724
+msgid "Nivo Slider"
+msgstr ""
+
+#: framework/php/panel.options.php:1731
+msgid "Slider Height"
+msgstr ""
+
+#: framework/php/panel.options.php:1733
+msgid "The Container Height of Slider, in pixels!"
+msgstr ""
+
+#: framework/php/panel.options.php:1772
+msgid "To use contact form, please enter the shortcode <strong>[contactform]</strong> in any page"
+msgstr ""
+
+#: framework/php/panel.options.php:1777
+msgid "Email address"
+msgstr ""
+
+#: framework/php/panel.options.php:1779
+msgid "Enter the email address that will integrated with Contact form"
+msgstr ""
+
+#: framework/php/panel.options.php:1785
+msgid "Success message"
+msgstr ""
+
+#: framework/php/panel.options.php:1787
+msgid "Enter the success message."
+msgstr ""
+
+#: framework/php/panel.options.php:1793
+msgid "Use Auto Responder?"
+msgstr ""
+
+#: framework/php/panel.options.php:1801
+msgid "Auto responder email subject"
+msgstr ""
+
+#: framework/php/panel.options.php:1803
+msgid "Enter the auto responder email subject"
+msgstr ""
+
+#: framework/php/panel.options.php:1809
+msgid "Auto Responder message"
+msgstr ""
+
+#: framework/php/panel.options.php:1811
+msgid "Enter the auto responder message,<br/>use {name} &raquo; automatically change with the sender's name<br/>and {email} &raquo; automatically change with the sender's email address"
+msgstr ""
+
+#: functions/custom_post.php:10
+msgid "Add New portfolio"
+msgstr ""
+
+#: functions/custom_post.php:11
+msgid "Edit Portfolio"
+msgstr ""
+
+#: functions/custom_post.php:13
+msgid "New Portfolio"
+msgstr ""
+
+#: functions/custom_post.php:14
+#: functions/custom_post.php:18
+msgid "View Portfolio"
+msgstr ""
+
+#: functions/custom_post.php:15
+msgid "Search Portfolios"
+msgstr ""
+
+#: functions/custom_post.php:16
+msgid "No portfolios found"
+msgstr ""
+
+#: functions/custom_post.php:17
+msgid "No portfolios found in Trash"
+msgstr ""
+
+#: functions/custom_post.php:50
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: functions/custom_post.php:51
+msgid "Popular Portfolio Categories"
+msgstr ""
+
+#: functions/custom_post.php:52
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: functions/custom_post.php:53
+msgid "Parent Portfolio Category"
+msgstr ""
+
+#: functions/custom_post.php:54
+msgid "Parent Portfolio Category:"
+msgstr ""
+
+#: functions/custom_post.php:55
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: functions/custom_post.php:56
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: functions/custom_post.php:57
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: functions/custom_post.php:58
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: functions/shortcode.helper.php:26
+msgid "Shortcode ERROR! You MUST enter the youtube URL"
+msgstr ""
+
+#: functions/shortcode.helper.php:66
+msgid "Shortcode ERROR! You MUST enter the vimeo URL"
+msgstr ""
+
+#: functions/shortcode.helper.php:106
+#: functions/shortcode.helper.php:144
+msgid "Shortcode ERROR! You MUST enter the video URL"
+msgstr ""
+
+#: functions/shortcode.helper.php:179
+msgid "Name"
+msgstr ""
+
+#: functions/shortcode.helper.php:180
+msgid "E-mail"
+msgstr ""
+
+#: functions/shortcode.helper.php:181
+msgid "Subject"
+msgstr ""
+
+#: functions/shortcode.helper.php:182
+msgid "Message"
+msgstr ""
+
+#: functions/shortcode.helper.php:183
+msgid "Send Message"
+msgstr ""
+
+#: functions/theme_functions.php:232
+msgid "Search site"
+msgstr ""
+
+#: functions/theme_functions.php:284
+#: functions/theme_functions.php:336
+#, php-format
+msgid "permanent link to %s"
+msgstr ""
+
+#: functions/theme_functions.php:350
+msgid "No Posts that match your criteria!"
+msgstr ""
+
+#: functions/theme_functions.php:448
+#: functions/theme_functions.php:569
+msgid "You are not using latest WordPress version! Please update your WordPress!"
+msgstr ""
+
+#: functions/theme_functions.php:491
+msgid "Twitter seems too busy, cannot connect to twitter right now! Please try again later!"
+msgstr ""
+
+#: functions/theme_functions.php:513
+msgid "No date provided"
+msgstr ""
+
+#: functions/theme_functions.php:524
+msgid "Bad date"
+msgstr ""
+
+#: functions/theme_functions.php:613
+msgid "Cannot connect to Flickr or seems no internet connection detected!"
+msgstr ""
+
+#: functions/theme_functions.php:729
+#: functions/woocommerce_hack.php:355
+#: functions/woocommerce_hack.php:359
+msgid "Log In"
+msgstr ""
+
+#: functions/theme_functions.php:732
+msgid "Sign Out"
+msgstr ""
+
+#: functions/theme_functions.php:860
+msgid "Please set your portfolio object, by uploading an image or enter a video URL in custom metabox under the text editor!"
+msgstr ""
+
+#: functions/theme_setup.php:509
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions/theme_setup.php:516
+#, php-format
+msgid "&#8212; %1$s at %2$s"
+msgstr ""
+
+#: functions/theme_setup.php:519
+#: functions/theme_setup.php:535
+msgid "(Edit)"
+msgstr ""
+
+#: functions/theme_setup.php:535
+msgid "Pingback:"
+msgstr ""
+
+#: functions/theme_setup.php:653
+msgid "Select a category:"
+msgstr ""
+
+#: functions/theme_setup.php:972
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr ""
+
+#: functions/theme_setup.php:973
+msgid "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form."
+msgstr ""
+
+#: functions/theme_setup.php:974
+msgid "The uploaded file was only partially uploaded."
+msgstr ""
+
+#: functions/theme_setup.php:975
+msgid "No file was uploaded."
+msgstr ""
+
+#: functions/theme_setup.php:977
+msgid "Missing a temporary folder."
+msgstr ""
+
+#: functions/theme_setup.php:978
+msgid "Failed to write file to disk."
+msgstr ""
+
+#: functions/theme_setup.php:979
+msgid "File upload stopped by extension."
+msgstr ""
+
+#: functions/theme_setup.php:996
+msgid "Invalid form submission."
+msgstr ""
+
+#: functions/theme_setup.php:1005
+msgid "File is empty. Please upload something more substantial."
+msgstr ""
+
+#: functions/theme_setup.php:1007
+msgid "File is empty. Please upload something more substantial. This error could also be caused by uploads being disabled in your php.ini or by post_max_size being defined as smaller than upload_max_filesize in php.ini."
+msgstr ""
+
+#: functions/theme_setup.php:1013
+msgid "Specified file failed upload test."
+msgstr ""
+
+#: functions/theme_setup.php:1026
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr ""
+
+#: functions/theme_setup.php:1047
+#, php-format
+msgid "The uploaded file could not be moved to %s."
+msgstr ""
+
+#: functions/theme_setup.php:1074
+#, php-format
+msgid "Cannnot find the path: %s!"
+msgstr ""
+
+#: functions/theme_setup.php:1086
+#, php-format
+msgid "Wrong path: %s or this path is protected by your server!"
+msgstr ""
+
+#: functions/woocommerce_hack.php:131
+msgid "Search for products"
+msgstr ""
+
+#: functions/woocommerce_hack.php:217
+msgid "Add to cart"
+msgstr ""
+
+#: functions/woocommerce_hack.php:265
+msgid "Gallery"
+msgstr ""
+
+#: functions/woocommerce_hack.php:275
+msgid "Product Gallery"
+msgstr ""
+
+#: functions/woocommerce_hack.php:329
+msgid "No Galleries"
+msgstr ""
+
+#: functions/woocommerce_hack.php:364
+msgid "Billing Address"
+msgstr ""
+
+#: functions/woocommerce_hack.php:365
+msgid "Shipping Address"
+msgstr ""
+
+#: functions/woocommerce_hack.php:366
+msgid "Payment Method"
+msgstr ""
+
+#: functions/woocommerce_hack.php:367
+msgid "Order Review"
+msgstr ""
+
+#: functions/woocommerce_hack.php:573
+msgid "Sale!"
+msgstr ""
+
+#: functions/woocommerce_hack.php:665
+#: functions/woocommerce_hack.php:677
+msgid "Shopping Cart"
+msgstr ""
+
+#: functions/woocommerce_hack.php:764
+msgid "All Products"
+msgstr ""
+
+#: functions/woocommerce_hack.php:801
+msgid "Account Link"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:71
+#, php-format
+msgid "Please create the homepage layout at <a href=\"%s\">Homepage manager</a> page!"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:410
+msgid "back to top"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:410
+msgid "top"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:593
+#: functions/_wip.layout.helper.php:669
+#: functions/_wip.layout.helper.php:741
+msgid "Please activate WooCommerce Plugin!"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:696
+msgid "Cannot process request! Twitter username is blank!"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:711
+msgid "Cannot process request! Please enter your Flickr ID!"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:1090
+#: functions/_wip.layout.helper.php:1270
+#: functions/_wip.layout.helper.php:1403
+#: functions/_wip.layout.helper.php:1549
+#: functions/_wip.layout.helper.php:1659
+#: functions/_wip.layout.helper.php:1823
+#: functions/_wip.layout.helper.php:1946
+#: functions/_wip.layout.helper.php:2059
+#: functions/_wip.layout.helper.php:2183
+#: functions/_wip.layout.helper.php:2270
+#: functions/_wip.layout.helper.php:2413
+#: functions/_wip.layout.helper.php:2522
+msgid "No Posts Found!"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:1338
+#: functions/_wip.layout.helper.php:1486
+#: functions/_wip.layout.helper.php:1608
+#: functions/_wip.layout.helper.php:1743
+#: functions/_wip.layout.helper.php:1994
+#: functions/_wip.layout.helper.php:2120
+#: functions/_wip.layout.helper.php:2221
+#: functions/_wip.layout.helper.php:2333
+msgid "0 Comments"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:1341
+#: functions/_wip.layout.helper.php:1489
+#: functions/_wip.layout.helper.php:1611
+#: functions/_wip.layout.helper.php:1746
+#: functions/_wip.layout.helper.php:1997
+#: functions/_wip.layout.helper.php:2123
+#: functions/_wip.layout.helper.php:2224
+#: functions/_wip.layout.helper.php:2336
+msgid " Comments"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:1349
+#: functions/_wip.layout.helper.php:1497
+#: functions/_wip.layout.helper.php:1619
+#: functions/_wip.layout.helper.php:1754
+#: functions/_wip.layout.helper.php:2005
+#: functions/_wip.layout.helper.php:2131
+#: functions/_wip.layout.helper.php:2232
+#: functions/_wip.layout.helper.php:2344
+msgid "Comment Off"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:1361
+#: functions/_wip.layout.helper.php:1384
+#: functions/_wip.layout.helper.php:1515
+#: functions/_wip.layout.helper.php:1520
+#: functions/_wip.layout.helper.php:1641
+#: functions/_wip.layout.helper.php:1785
+#: functions/_wip.layout.helper.php:1790
+#: functions/_wip.layout.helper.php:1927
+#: functions/_wip.layout.helper.php:2017
+#: functions/_wip.layout.helper.php:2040
+#: functions/_wip.layout.helper.php:2149
+#: functions/_wip.layout.helper.php:2154
+#: functions/_wip.layout.helper.php:2252
+#: functions/_wip.layout.helper.php:2375
+#: functions/_wip.layout.helper.php:2380
+msgid "On"
+msgstr ""
+
+#: functions/_wip.layout.helper.php:1361
+#: functions/_wip.layout.helper.php:1384
+#: functions/_wip.layout.helper.php:1515
+#: functions/_wip.layout.helper.php:1520
+#: functions/_wip.layout.helper.php:1641
+#: functions/_wip.layout.helper.php:1785
+#: functions/_wip.layout.helper.php:1790
+#: functions/_wip.layout.helper.php:1927
+#: functions/_wip.layout.helper.php:2017
+#: functions/_wip.layout.helper.php:2040
+#: functions/_wip.layout.helper.php:2149
+#: functions/_wip.layout.helper.php:2154
+#: functions/_wip.layout.helper.php:2252
+#: functions/_wip.layout.helper.php:2375
+#: functions/_wip.layout.helper.php:2380
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: functions/custom-widgets/favorite-posts-widget.php:9
+msgid "Most Commented Blog Posts"
+msgstr ""
+
+#: functions/custom-widgets/favorite-posts-widget.php:51
+#: functions/custom-widgets/flickr-widget.php:55
+#: functions/custom-widgets/latest-portfolio-widget.php:61
+#: functions/custom-widgets/recentposts-widget.php:51
+#: functions/custom-widgets/testimonial-widget.php:61
+msgid "Title:"
+msgstr ""
+
+#: functions/custom-widgets/favorite-posts-widget.php:52
+#: functions/custom-widgets/latest-portfolio-widget.php:62
+#: functions/custom-widgets/recentposts-widget.php:52
+msgid "How many posts you want to show:"
+msgstr ""
+
+#: functions/custom-widgets/favorite-posts-widget.php:53
+#: functions/custom-widgets/recentposts-widget.php:53
+msgid "Show Thumbnail:"
+msgstr ""
+
+#: functions/custom-widgets/favorite-posts-widget.php:53
+#: functions/custom-widgets/recentposts-widget.php:53
+msgid "Check this box to display the thumbnail"
+msgstr ""
+
+#: functions/custom-widgets/favorite-posts-widget.php:54
+#: functions/custom-widgets/recentposts-widget.php:54
+msgid "Show Excerpt:"
+msgstr ""
+
+#: functions/custom-widgets/favorite-posts-widget.php:54
+#: functions/custom-widgets/recentposts-widget.php:54
+msgid "Check this box to display the excerpt"
+msgstr ""
+
+#: functions/custom-widgets/flickr-widget.php:10
+msgid "Flickr images."
+msgstr ""
+
+#: functions/custom-widgets/flickr-widget.php:56
+#, php-format
+msgid "Flickr id <a href=\"%s\" target=\"_blank\">idgettr</a>"
+msgstr ""
+
+#: functions/custom-widgets/flickr-widget.php:57
+msgid "Number of photos you want to show:"
+msgstr ""
+
+#: functions/custom-widgets/latest-portfolio-widget.php:10
+msgid "Latest Portfolio Posts"
+msgstr ""
+
+#: functions/custom-widgets/latest-portfolio-widget.php:63
+msgid "Pull From Category?:"
+msgstr ""
+
+#: functions/custom-widgets/latest-portfolio-widget.php:65
+msgid "Select a category"
+msgstr ""
+
+#: functions/custom-widgets/recentposts-widget.php:9
+msgid "Latest Blog Posts"
+msgstr ""
+
+#: functions/custom-widgets/testimonial-widget.php:10
+msgid "Display a testimonial."
+msgstr ""
+
+#: functions/custom-widgets/testimonial-widget.php:62
+msgid "Testimonial text:"
+msgstr ""
+
+#: functions/custom-widgets/testimonial-widget.php:65
+msgid "Testimonial Source/Author:"
+msgstr ""
+
+#: functions/custom-widgets/twitter-widget.php:10
+msgid "Twitter Updates."
+msgstr ""
+
+#: functions/custom-widgets/twitter-widget.php:59
+msgid "Twitter username:"
+msgstr ""
+
+#: functions/custom-widgets/twitter-widget.php:60
+msgid "How many updates want to show:"
+msgstr ""
+
+#: functions/custom-widgets/video-widget.php:10
+msgid "Display a video."
+msgstr ""
+
+#: functions/custom-widgets/video-widget.php:46
+msgid "Unsuported video format"
+msgstr ""
+
+#: functions/custom-widgets/video-widget.php:74
+msgid "Video URL:"
+msgstr ""
+
+#: functions/custom-widgets/video-widget.php:75
+msgid "Enter the URL of the video, include the http://. Supported video : youtube, vimeo, mp4, .flv, .3gp, .mov"
+msgstr ""
+
+#: modules/breadcrumbs/yoast-breadcrumbs.php:26
+msgid "Home"
+msgstr ""
+
+#: modules/breadcrumbs/yoast-breadcrumbs.php:27
+msgid "Blog"
+msgstr ""
+
+#: modules/breadcrumbs/yoast-breadcrumbs.php:29
+msgid "You are here:"
+msgstr ""
+
+#: modules/breadcrumbs/yoast-breadcrumbs.php:34
+msgid "Archives for"
+msgstr ""
+
+#: modules/breadcrumbs/yoast-breadcrumbs.php:35
+msgid "Search results for"
+msgstr ""
+
+#: modules/breadcrumbs/yoast-breadcrumbs.php:112
+msgid "Homepage"
+msgstr ""
+
+#: modules/breadcrumbs/yoast-breadcrumbs.php:196
+#, php-format
+msgid "Search results for &ldquo;%s&ldquo;"
+msgstr ""
+
+#: modules/wp-pagenavi/pagination.php:73
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: modules/wp-pagenavi/pagination.php:83
+msgid "First"
+msgstr ""
+
+#: modules/wp-pagenavi/pagination.php:112
+msgid "Last"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:13
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/single-product/related.php:14
+msgid "Related Products"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:14
+msgid "You may also like&hellip;"
+msgstr ""
+
