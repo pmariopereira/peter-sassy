@@ -1,0 +1,22 @@
+/** ===== slider area skin ===== */ 
+#slider_wraper{
+	background-color : #fafafa;
+	background-image: url(http://themes.webinpixels.com/builder/wp-content/uploads/2012/04/line-div.gif);
+	background-position: left bottom;
+	background-attachment: scroll;
+	background-repeat: repeat-x;
+}
+.nivo-controlNav a{
+	background: #c7c7c7  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAIAAAGEXDPxAAAAQUlEQVQImZ2IIRLAMAzDlF7//8KUluTOhqEDKxgpmYhkY3tkJsex1gKwPSQNSbH3BoAp6a2wDczuvimqig/n/r0f5Hk4HRenp0sAAAAASUVORK5CYII=") scroll left bottom repeat-x;
+	border: 1px solid #8a8a8a;
+	-box-shadow: inset 0px 1px 0px #f5f5f5, 0 1px 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0px 1px 0px #f5f5f5, 0 1px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 1px 0px #f5f5f5, 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.nivo-controlNav a.active{
+	background: #4ea4cc  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAIAAAGEXDPxAAAAXUlEQVQImX2KsQ2AMBAD70OWYhP2Yg8mYACSAeiQkPJIFBQPDZQUiQQ0uLHPNlGtOuuG4tIOM0BUc0HNhWTSjSsA+JAsJ4lqgNfjAvySTfcXST9tvFTqh/P7Z//yDUWwMy5mV/x5AAAAAElFTkSuQmCC") scroll left bottom repeat-x;
+	border: 1px solid #8a8a8a;
+	-box-shadow: inset 0px 1px 0px #dfeff6, 0 1px 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0px 1px 0px #dfeff6, 0 1px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 1px 0px #dfeff6, 0 1px 3px rgba(0, 0, 0, 0.2);
+}

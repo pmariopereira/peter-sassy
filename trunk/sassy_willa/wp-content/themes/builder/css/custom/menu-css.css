@@ -1,0 +1,37 @@
+/** ===== menu skin ===== */ 
+#site-nav{
+	background-color: #ffffff;
+}
+#main-nav li a{
+	color: #555454;
+	background-color: #ffffff;
+}
+#main-nav li a:hover,
+#main-nav li a.pageactive,
+#main-nav li.onhove a.onhov{
+	color: #c9c9c9;
+}
+#main-nav li ul a, #main-nav li.onhove ul a, 
+#main-nav li.onhove li.onhove ul a, 
+#main-nav li.onhove li.onhove li.onhove ul a{
+	color: #c9c9c9;
+	background-color: #6b6b6b;
+}
+#main-nav li ul a:hover, #main-nav li.onhove ul a:hover, 
+#main-nav li.onhove li.onhove ul a:hover, 
+#main-nav li.onhove li.onhove li.onhove ul a:hover,
+#main-nav ul li.onhove a.onhov,
+#main-nav ul ul li.onhove a.onhov,
+#main-nav ul ul ul li.onhove a.onhov{
+	background-color: #737373;
+	color: #f2f2f2;
+}
+#main-nav li ul a.pageactive, #main-nav li.onhove ul a.pageactive,
+#main-nav li.onhove li.onhove ul a.pageactive, 
+#main-nav li.onhove li.onhove li.onhove ul a.pageactive,
+#main-nav ul li.onhove a.onhov.pageactive,
+#main-nav ul ul li.onhove a.onhov.pageactive,
+#main-nav ul ul ul li.onhove a.onhov.pageactive{
+	background-color: #737373;
+	color: #f2f2f2;
+}

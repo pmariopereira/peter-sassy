@@ -1,0 +1,15 @@
+/** ===== copyright skin ===== */ 
+#site_bottom{
+	color: #777676;
+	background-color : #2e2e2e;
+	background-image: url(http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/bg_footer_img1.png);
+	background-position: left top;
+	background-attachment: scroll;
+	background-repeat: repeat;
+}
+#site_bottom a{
+	color: #2999e9;
+}
+#site_bottom a:hover{
+	color: #AAAAAA;
+}

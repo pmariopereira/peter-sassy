@@ -1,0 +1,25 @@
+*** eWAY Changelog ***
+
+2012.05.10 - version 1.2.1
+ * Fixing a bug that stops the plugin from working when getting user IP
+
+2012.04.26 - version 1.2
+ * Add Beagle Anti-Fraud
+
+2012.02.25 - version 1.1
+ * 1.4 Clasnames
+ * Image https fix
+ * Added updater
+
+2011.11.04 - version 1.0.3
+ * Remove country check
+ * Fixed cardholder name
+
+2011.11.03 - version 1.0.2
+ * Fix a bug where always sets eway account to test account
+
+2011.11.02 - version 1.0.1
+ * Cents sent instead of dollars
+
+2011.10.13 - version 1.0
+ * First Release
