@@ -265,9 +265,11 @@ table.cart td.actions a.checkout-button, #product_gallery_and_summary .woo_produ
 	font-size:16px;
 	color:#de1e7d;
 	}
-.guarantee .question{
+.guarantee .question, .wip_woo_inner_cart .top_cart_text, .wip_woo_cart_drop ul.cart_list li a{
 	color:#de1e7d;
-	font-weight:bold;
+	}
+.guarantee .question{
+	font-weight:bold;	
 	}
 /*.meta-blog-lists a[href*="author"]{
 	font-size:12px;
