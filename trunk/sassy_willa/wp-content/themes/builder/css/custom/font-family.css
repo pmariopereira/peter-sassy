@@ -1,15 +1,15 @@
 /** ===== font style ===== */ 
+
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 body,
 input,textarea,select,button,
 ul.news_widget_style li h3{
-	font-family: 'Open Sans', sans-serif;
+	font-family : Arial, tahoma, sans-serif;
 }
 h1,h2,h3,h4,h5,h6, .amount{
-	font-family: 'Droid Serif', serif;
+	font-family : Arial, tahoma, sans-serif;
 }
 ul#main-nav{
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
