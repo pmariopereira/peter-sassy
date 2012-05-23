@@ -73,7 +73,7 @@ global $post;
 	</h3>
 
 	<span class="meta-blog-lists">
-		<?php print __('By', 'wip'); ?> <?php the_author_posts_link(); ?> &ndash; <?php printf( __('On %1$s', 'wip'), get_the_time('F d, Y', $post->ID) ); ?>
+											<?php print __('Posted In', 'wip'); ?> <?php the_category(', '); ?>, <?php printf( __('On %1$s', 'wip'), get_the_time('F d, Y', $post->ID) ); ?>
 	</span>
 
 </div>
