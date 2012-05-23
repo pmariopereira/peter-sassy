@@ -6,7 +6,7 @@ if( get_option('bd_footer_widget_off') !== '0' ){
 	$GLOBALS['footer_area'] = true;
 ?>		
 	<div id="footer-widget">
-		<div class="wrap_940">
+		<div class="wrap_980">
 		
 		<div class="col_wraper">
 		
@@ -82,7 +82,7 @@ $GLOBALS['footer_area'] = false;
 ?>
 
 		
-	<div id="site_bottom" class="wrap_940">
+	<div id="site_bottom" class="wrap_980">
 
 		<div class="col_wraper">
 		

@@ -1,7 +1,14 @@
 /* CSS Document */
-.wrap_940 {
-	width:980px;
+.wrap_900 {
+	width:900px;
+    margin: 0 auto;
+    padding: 0;
 }
+.wrap_980{
+	width:980px;
+    margin: 0 auto;
+    padding: 0;
+	}
 .checkout-side {
 	float:right;
 	width:345px;
@@ -202,6 +209,9 @@ form#wip-search-form {
 	border-top: 1px solid #B2B2B2;
 	margin: 0 auto;
 }
+#site_bottom .float_left{
+	margin-left:0;
+	}
 #site_bottom div.float_right a{
 	float:right;
 	color:#777676;
@@ -212,6 +222,56 @@ form#wip-search-form {
 	}
 
 /*Content*/
-#slider_wraper, #main-inner-site{
+.home #slider_wraper,.home #main-inner-site{
 	background:none;
 	}
+#slider{
+	width:980px;
+	}
+#slider_wraper{
+	padding:0;
+	}
+#footer-widget{
+	background-image: url(../images/bottom_shadow.png);
+	background-repeat: repeat-x;
+	background-position: left top;	
+	}
+#single-page-title{
+	display:none;
+	}
+#main-inner-site{
+	width:980px;
+	margin:0 auto;
+	background:#fff;
+	}
+ul.products li h3.product-title-on-lists{
+	min-height:50px;
+	}
+table.cart td.actions a.checkout-button, #product_gallery_and_summary .woo_product_content .summary button.button.alt{
+	border-radius:0;
+	}
+.blog-list-title a{
+	color:#de1e7d;
+	font-size:20px;	
+	font-family:Arial, Helvetica, sans-serif;
+	}
+.guarantee {
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#5b5a5a;
+	}
+.guarantee .our-guarantee{
+	font-weight:bold;
+	font-size:16px;
+	color:#de1e7d;
+	}
+.guarantee .question{
+	color:#de1e7d;
+	font-weight:bold;
+	}
+/*.meta-blog-lists a[href*="author"]{
+	font-size:12px;
+	font-weight:bold;
+	color:#de1e7d;
+	font-family:Arial, Helvetica, sans-serif;
+	}*/
