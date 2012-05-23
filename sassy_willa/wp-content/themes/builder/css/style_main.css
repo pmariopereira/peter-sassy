@@ -259,9 +259,12 @@ table.cart td.actions a.checkout-button, #product_gallery_and_summary .woo_produ
 	color:#5b5a5a;
 	}
 .guarantee .our-guarantee{
-	font-weight:bold;
-	font-size:16px;
-	color:#de1e7d;
+	border-top: 1px solid #BFBFBF;
+	color: #DE1E7D;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 46px;
+	margin: 5px 0 0;
 	}
 .guarantee .question, .wip_woo_inner_cart .top_cart_text, .wip_woo_cart_drop ul.cart_list li a, .single-blog-entry h1.single-blog-title, .category ul.news_widget_style li a, .category .widget_archive a, .single ul.news_widget_style li a, .single .widget_archive a{
 	color:#de1e7d;
