@@ -75,7 +75,7 @@
 
 			<div class="sidebar_block area_right">
 			<?php
-				wip_generated_dynamic_sidebar('Default Sidebar');
+				wip_generated_dynamic_sidebar('BlogSlidebar');
 				wp_reset_postdata();
 			?>
 			</div>

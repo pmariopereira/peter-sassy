@@ -253,11 +253,9 @@ table.cart td.actions a.checkout-button, #product_gallery_and_summary .woo_produ
 .blog-list-title a{
 	color:#de1e7d;
 	font-size:20px;	
-	font-family:Arial, Helvetica, sans-serif;
 	}
 .guarantee {
 	font-size:12px;
-	font-family:Arial, Helvetica, sans-serif;
 	color:#5b5a5a;
 	}
 .guarantee .our-guarantee{
@@ -265,11 +263,38 @@ table.cart td.actions a.checkout-button, #product_gallery_and_summary .woo_produ
 	font-size:16px;
 	color:#de1e7d;
 	}
-.guarantee .question, .wip_woo_inner_cart .top_cart_text, .wip_woo_cart_drop ul.cart_list li a{
+.guarantee .question, .wip_woo_inner_cart .top_cart_text, .wip_woo_cart_drop ul.cart_list li a, .single-blog-entry h1.single-blog-title, .category ul.news_widget_style li a, .category .widget_archive a, .single ul.news_widget_style li a, .single .widget_archive a{
 	color:#de1e7d;
 	}
 .guarantee .question{
 	font-weight:bold;	
+	}
+/*Blog Style*/
+.category .sidebarbox, .single .sidebarbox{
+	background:none;
+	border:none;
+	padding:0;
+	}
+.category .sidebar_block, .single .sidebar_block{
+	width:202px;
+	}
+.category ul.news_widget_style li, .single ul.news_widget_style li{
+    background: none repeat scroll 0 0 transparent;
+}
+.category ul.news_widget_style li,.category ul.news_widget_style li h3,.category .sidebarbox h3.sidebar-title, .single ul.news_widget_style li,.single ul.news_widget_style li h3,.single .sidebarbox h3.sidebar-title{
+	margin: 0;
+    padding: 0;
+	}
+.category .sidebarbox h3.sidebar-title, .single .sidebarbox h3.sidebar-title{
+	background:none;
+	color:#6e6d6d;
+	font-size:16px;
+	margin-bottom:6px;
+	}
+.category ul.news_widget_style li a, .category .widget_archive a, .single ul.news_widget_style li a, .single .widget_archive a{
+	font-size:11px;
+	line-height:26px;
+	font-weight:bold;
 	}
 /*.meta-blog-lists a[href*="author"]{
 	font-size:12px;
