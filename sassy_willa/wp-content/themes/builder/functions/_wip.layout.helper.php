@@ -1356,15 +1356,12 @@ Class wip_layout_helper{
 									$content .= '<div class="fullwidth-blog-excerpt">' . "\n";
 									$content .= '<h3 class="blog-list-title"><a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'. get_the_title() .'</a></h3>' . "\n";
 									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
+												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
 												</span>' . "\n";
 									$content .= wpautop( str_replace('[...]', '...', get_the_excerpt()) );
-									$content .= '<a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Continue Reading', 'wip').' &rarr;</a>' . "\n";
+									$content .= '<a class="read-more" href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Read More >', 'wip').' </a>' . "\n";
 									$content .= '</div>' . "\n";
 								
 									$content .= '<div class="fullwidth-blog-thumbnail">' . "\n";
@@ -1378,16 +1375,11 @@ Class wip_layout_helper{
 								} else {
 								
 									$content .= '<h3 class="blog-list-title"><a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'. get_the_title() .'</a></h3>' . "\n";
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												</span>' . "\n";
 									$content .= wpautop( str_replace('[...]', '...', get_the_excerpt()) );
-									$content .= '<a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Continue Reading', 'wip').' &rarr;</a>' . "\n";
+									$content .= '<a class="read-more" href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Read More >', 'wip').' </a>' . "\n";
 								
 								}
 							
@@ -1512,15 +1504,10 @@ Class wip_layout_helper{
 									$content .= '<span class="meta-blog-lists">
 												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
 												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ) .'</span>' . "\n";
+												'.__(', On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ) .'</span>' . "\n";
 								} else {
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												</span>' . "\n";
 								}
 								
@@ -1635,16 +1622,11 @@ Class wip_layout_helper{
 								
 									$content .= '<div class="standard-blog-excerpt">' . "\n";
 									$content .= '<h3 class="blog-list-title"><a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'. get_the_title() .'</a></h3>' . "\n";
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												</span>' . "\n";
 									$content .= ( $excerpt ) ? wpautop( str_replace('[...]', '...', get_the_excerpt()) ) : $the_full_content;
-									$content .= '<a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Continue Reading', 'wip').' &rarr;</a>' . "\n";
+									$content .= '<a class="read-more" href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Read More >', 'wip').' </a>' . "\n";
 									$content .= '</div>' . "\n";
 							
 							$content .= '</div>' . "\n";
@@ -1782,15 +1764,10 @@ Class wip_layout_helper{
 									$content .= '<span class="meta-blog-lists">
 												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
 												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ) .'</span>' . "\n";
+												'.__(', On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ) .'</span>' . "\n";
 								} else {
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												</span>' . "\n";
 								}
 								
@@ -1921,10 +1898,8 @@ Class wip_layout_helper{
 					
 					$content .= '<h3 class="blog-list-title"><a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'. get_the_title() .'</a></h3>' . "\n";
 
-					$content .= '<span class="meta-blog-lists">
-								'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-								&ndash;
-								'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ) .'</span>' . "\n";
+					$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'</span>' . "\n";
 				
 				
 
@@ -2011,16 +1986,11 @@ Class wip_layout_helper{
 								
 									$content .= '<div class="fullwidth-blog-excerpt">' . "\n";
 									$content .= '<h3 class="blog-list-title"><a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'. get_the_title() .'</a></h3>' . "\n";
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												</span>' . "\n";
 									$content .= wpautop( str_replace('[...]', '...', get_the_excerpt()) );
-									$content .= '<a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Continue Reading', 'wip').' &rarr;</a>' . "\n";
+									$content .= '<a class="read-more" href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Read More >', 'wip').' </a>' . "\n";
 									$content .= '</div>' . "\n";
 								
 									$content .= '<div class="fullwidth-blog-thumbnail">' . "\n";
@@ -2037,13 +2007,13 @@ Class wip_layout_helper{
 									$content .= '<span class="meta-blog-lists">
 												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
 												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
+												'.__(', On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												&ndash;
 												'.__('In', 'wip').' '.$ct.'
 												'.__('With', 'wip').' '.$write_comments .'
 												</span>' . "\n";
 									$content .= wpautop( str_replace('[...]', '...', get_the_excerpt()) );
-									$content .= '<a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Continue Reading', 'wip').' &rarr;</a>' . "\n";
+									$content .= '<a class="read-more" href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Eead More >', 'wip').' </a>' . "\n";
 								
 								}
 							
@@ -2143,18 +2113,11 @@ Class wip_layout_helper{
 									$content .= '<h3 class="blog-list-title"><a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'. get_the_title() .'</a></h3>' . "\n";
 								
 								if( $column == '4' ){
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ) .'</span>' . "\n";
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'</span>' . "\n";
 								} else {
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												</span>' . "\n";
 								}
 								
@@ -2246,16 +2209,11 @@ Class wip_layout_helper{
 								
 									$content .= '<div class="standard-blog-excerpt">' . "\n";
 									$content .= '<h3 class="blog-list-title"><a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'. get_the_title() .'</a></h3>' . "\n";
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												</span>' . "\n";
 									$content .= wpautop( str_replace('[...]', '...', get_the_excerpt()) );
-									$content .= '<a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Continue Reading', 'wip').' &rarr;</a>' . "\n";
+									$content .= '<a class="read-more" href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'.__('Read More >', 'wip').' </a>' . "\n";
 									$content .= '</div>' . "\n";
 							
 							$content .= '</div>' . "\n";
@@ -2369,18 +2327,11 @@ Class wip_layout_helper{
 									$content .= '<h3 class="blog-list-title"><a href="'. get_permalink($post->ID) .'" title="'. sprintf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ) .'">'. $blogtitle .'</a></h3>' . "\n";
 								
 								if( $column == '4' || $column == '3' ){
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ) .'</span>' . "\n";
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'</span>' . "\n";
 								} else {
-									$content .= '<span class="meta-blog-lists">
-												'.__('By', 'wip').' <a href="'.get_author_posts_url( get_the_author_meta('ID') ).'">'.get_the_author_meta('display_name').'</a>
-												&ndash;
-												'.__('On', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
-												&ndash;
-												'.__('In', 'wip').' '.$ct.'
-												'.__('With', 'wip').' '.$write_comments .'
+									$content .= '<span class="meta-blog-lists">												'.__('<span>Posted in</span>', 'wip').' '.$ct.'
+												'.__(', <span>On</span>', 'wip').' '.sprintf( __('%1$s', 'wip'), get_the_time('F d, Y', $post->ID) ).'
 												</span>' . "\n";
 								}
 								

@@ -266,14 +266,26 @@ table.cart td.actions a.checkout-button, #product_gallery_and_summary .woo_produ
 	line-height: 46px;
 	margin: 5px 0 0;
 	}
-.guarantee .question, .wip_woo_inner_cart .top_cart_text, .wip_woo_cart_drop ul.cart_list li a, .single-blog-entry h1.single-blog-title, .category ul.news_widget_style li a, .category .widget_archive a, .single ul.news_widget_style li a, .single .widget_archive a{
+.guarantee .question, .wip_woo_inner_cart .top_cart_text, .wip_woo_cart_drop ul.cart_list li a, .single-blog-entry h1.single-blog-title, .category ul.news_widget_style li a, .category .widget_archive a, .single ul.news_widget_style li a, .single .widget_archive a, .read-more, .meta-blog-lists a{
 	color:#de1e7d;
 	}
-.guarantee .question{
+.read-more{
+	text-decoration:underline;
+	}
+.guarantee .question, .meta-blog-lists a, span.meta-blog-lists{
 	font-weight:bold;	
 	}
+.category .meta-blog-lists a{
+	margin-right:-3px;
+	}
+span.meta-blog-lists{
+	font-size:12px;
+	}
+span.meta-blog-lists span{
+	font-weight:400;
+	}
 /*Blog Style*/
-.category .sidebarbox, .single .sidebarbox{
+.category .sidebarbox, .single .sidebarbox, .single-blog-entry h1.single-blog-title{
 	background:none;
 	border:none;
 	padding:0;
@@ -298,6 +310,37 @@ table.cart td.actions a.checkout-button, #product_gallery_and_summary .woo_produ
 	font-size:11px;
 	line-height:26px;
 	font-weight:bold;
+	}
+.standard-blog-lists{
+	padding-bottom:15px;
+	margin-bottom:20px;
+	}
+.area_with_sidebar.area_left{
+	border-right: 1px solid #BFBFBF;
+	margin-left: 24px;
+	padding-right: 31px;
+	}
+.area_with_sidebar, .standard-blog-thumbnail a, .standard-blog-lists, .standard-blog-thumbnail img{
+	width:662px;
+	}
+.single-blog-entry h1.single-blog-title, .single-blog-entry .meta-blog-lists{
+	background:	none;
+	}
+.single-blog-entry h1.single-blog-title{
+	padding:0;
+	margin:0;
+	}
+.single-blog-entry .meta-blog-lists{
+	margin-bottom:8px;
+	padding-bottom:0;
+	}
+.single-blog-entry-content p{
+	line-height:17px;
+	color:#5b5a5a;
+	font-size:12px;
+	}
+#blog-related, .breadcrumbs{
+	display:none;
 	}
 /*.meta-blog-lists a[href*="author"]{
 	font-size:12px;

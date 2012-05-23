@@ -45,17 +45,13 @@
 						<h3 class="blog-list-title">
 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ); ?>"><?php the_title(); ?></a>
 						</h3>
-						<span class="meta-blog-lists"><?php print __('By', 'wip'); ?> <?php the_author_posts_link(); ?>
-									&ndash;
-									<?php printf( __('On %1$s', 'wip'), get_the_time('F d, Y', $post->ID) ); ?>
-									&ndash;
-									<?php print __('In', 'wip'); ?> <?php the_category(', '); ?>
-									<?php print __('With', 'wip'); ?> <?php comments_popup_link( __('No comment', 'wip'), __('1 Comment', 'wip'), __('% Comments', 'wip') ); ?>
+						<span class="meta-blog-lists">
+									<?php print __('Posted In', 'wip'); ?> <?php the_category(', '); ?>, <?php printf( __('On %1$s', 'wip'), get_the_time('F d, Y', $post->ID) ); ?>
 									</span>
 						
 						<?php echo wpautop( str_replace('[...]', '...', get_the_excerpt()) ); ?>
 
-						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ); ?>"><?php print __('Continue Reading', 'wip'); ?> &rarr;</a>
+						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permanent Link to %s', 'wip'), the_title_attribute('echo=0') ); ?>"><?php print __('Read More', 'wip'); ?> ></a>
 					</div>
 							
 				</div>

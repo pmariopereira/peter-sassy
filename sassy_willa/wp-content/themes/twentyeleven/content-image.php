@@ -24,7 +24,7 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?>
+			<?php the_content( __( 'Read More >', 'twentyeleven' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
 

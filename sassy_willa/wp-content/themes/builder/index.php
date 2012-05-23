@@ -3,7 +3,7 @@
 <?php if( !_wipfr_homeslider_inactive() ): ?>
 	<!-- SLIDER -->
 	<div id="slider_wraper">
-		<div class="wrap_940">
+		<div class="wrap_980">
 		<?php wip_get_nivo_images(); ?>	
 		</div><!-- .wrap_940 -->
 	</div>

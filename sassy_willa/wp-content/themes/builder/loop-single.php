@@ -20,12 +20,7 @@ while (have_posts()): the_post();
 	<div class="single-blog-entry">
 
 	<h1 class="single-blog-title"><?php the_title(); ?></h1>
-	<span class="meta-blog-lists"><?php print __('By', 'wip'); ?> <?php the_author_posts_link(); ?>
-				&ndash;
-				<?php printf( __('On %1$s', 'wip'), get_the_time('F d, Y', $post->ID) ); ?>
-				&ndash;
-				<?php print __('In', 'wip'); ?> <?php the_category(', '); ?>
-				<?php print __('With', 'wip'); ?> <?php comments_popup_link( __('No comment', 'wip'), __('1 Comment', 'wip'), __('% Comments', 'wip') ); ?>
+	<span class="meta-blog-lists">									<?php print __('Posted In', 'wip'); ?> <?php the_category(', '); ?>, <?php printf( __('On %1$s', 'wip'), get_the_time('F d, Y', $post->ID) ); ?>
 				</span>
 	
 	<?php
