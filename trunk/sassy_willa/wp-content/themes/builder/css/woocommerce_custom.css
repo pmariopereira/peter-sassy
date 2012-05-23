@@ -1083,7 +1083,7 @@ form.woocommerce_ordering{
 	text-align: right;
 	background: url(../images/divider-line-1.png) scroll left bottom repeat-x;
 }
-.wrap_960>form.woocommerce_ordering{
+.wrap_960>form.woocommerce_ordering, .wrap_900>form.woocommerce_ordering{
 	margin-left: 10px;
 	margin-right: 10px;
 }

@@ -487,9 +487,6 @@ ul#main-nav li.haschild>a{
 	background-image: url(../images/loader.gif);
 	background-position: center center;
 	background-repeat: no-repeat;	
-	-box-shadow: 0px 0px 8px rgba( 0, 0, 0, 0.12);
-	-webkit-box-shadow: 0px 0px 8px rgba( 0, 0, 0, 0.12);
-	-moz-box-shadow: 0px 0px 8px rgba( 0, 0, 0, 0.12);
 }
 #slider img{display: none;}
 
@@ -1629,7 +1626,7 @@ table#wp-calendar tfoot tr td#next{
 	margin: 0;
 	padding: 12px 0px;
 }
-.wrap_960>.pagination_wrap{
+.wrap_960>.pagination_wrap, .wrap_900>.pagination_wrap{
 	margin-left: 10px;
 	margin-right: 10px;
 }

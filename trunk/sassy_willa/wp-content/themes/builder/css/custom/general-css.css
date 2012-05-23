@@ -31,13 +31,20 @@ a.button,
 input[type="submit"],
 button[type="submit"],
 table.cart td.actions a.checkout-button{
-	background: #2999e9  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAIAAAEcG3N8AAAAeElEQVQYlZWOSw4CMQxDX6PcC0GvCj1dD0ClNGExHVEYPurKebZlhVyqNAtpPeRu8MbpdK2Ath6ANpuEXKqYI91DLIY6u5fOtwoA2j3GZeNAzTmmRy/lUgHdeJeImE34W/kkL5V0KeNd5rknb+3v+Sov7/E7X9x7AIIHgXXDxpfcAAAAAElFTkSuQmCC") scroll left top repeat-x;
+/*	background: #2999e9  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAIAAAEcG3N8AAAAeElEQVQYlZWOSw4CMQxDX6PcC0GvCj1dD0ClNGExHVEYPurKebZlhVyqNAtpPeRu8MbpdK2Ath6ANpuEXKqYI91DLIY6u5fOtwoA2j3GZeNAzTmmRy/lUgHdeJeImE34W/kkL5V0KeNd5rknb+3v+Sov7/E7X9x7AIIHgXXDxpfcAAAAAElFTkSuQmCC") scroll left top repeat-x;
 	color: #fcfcfc;
 	border: 1px solid #217aba;
 	-box-shadow: inset 0px 1px 0px #69b8f0, 0 1px 2px rgba(0, 0, 0, 0.08);
 	-webkit-box-shadow: inset 0px 1px 0px #69b8f0, 0 1px 2px rgba(0, 0, 0, 0.08);
 	-moz-box-shadow: inset 0px 1px 0px #69b8f0, 0 1px 2px rgba(0, 0, 0, 0.08);
-	text-shadow: 0px -1px 0px #217aba;
+	text-shadow: 0px -1px 0px #217aba;*/
+	background: none repeat scroll 0 0 #DE1E7D;
+border: medium none;
+border-radius: 0 0 0 0;
+color: #FCFCFC;
+text-transform: uppercase;
+font-size:11px;
+font-family:'Open Sans', Arial, Helvetica, sans-serif;
 }
 a.button:hover,
 .sidebarbox a.button:hover,

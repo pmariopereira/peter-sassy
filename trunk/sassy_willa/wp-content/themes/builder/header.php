@@ -61,7 +61,7 @@ endif;
 	<!-- TOP SECTION -->
 	<div id="top">
 		
-		<div class="wrap_940">
+		<div class="wrap_980">
 		
 			<div id="top-inner"<?php _wip_top_inner_logo_class(); ?>>
             	<div class="checkout-side">
@@ -96,7 +96,7 @@ endif;
 	<!-- NAVIGATION -->
 	<div id="site-nav">
 		
-		<div class="wrap_940">
+		<div class="wrap_980">
 		
 			<div id="main-navigation">
 <?php if ( !wip_have_custom_menu('main') ): ?>
