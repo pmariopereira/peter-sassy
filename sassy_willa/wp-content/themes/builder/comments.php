@@ -17,7 +17,7 @@
 
 <?php if ( have_comments() ) : ?>
 			<h3 id="comments-title"><?php
-			printf( _n( 'One Comment', '%1$s Comments', get_comments_number(), 'wip' ), number_format_i18n( get_comments_number() ) );
+			printf( _n( 'One Comment', 'Comments', get_comments_number(), 'wip' ) );
 			?></h3>
 
 			<ol class="commentlist">
@@ -50,9 +50,8 @@
 	
 $commenter = wp_get_current_commenter();
 $fields =  array(
-	'author' => '<p class="comment-form-author"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" aria-required="true" placeholder="Name"/></p>',
-	'email'  => '<p class="comment-form-email"><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-required="true" placeholder="Email" /></p>',
-	'url'    => '<p class="comment-form-url"><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="Website"/></p>',
+	'author' => '<p class="comment-form-author"><label>Name:</label><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" aria-required="true" placeholder="Name"/></p>',
+	'email'  => '<p class="comment-form-email"><label>Email:</label><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-required="true" placeholder="Email" /></p>',
 );
 
 $newArgs = array(	
