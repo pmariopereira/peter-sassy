@@ -33,8 +33,12 @@ else :
 			$label 	= apply_filters('add_to_cart_text', __('Add to cart', 'woocommerce'));
 		break;
 	endswitch;
+?>
+	<a href="<?php echo get_permalink($product->id); ?>" class="button"><?php echo apply_filters('out_of_stock_add_to_cart_text', __('More Details', 'woocommerce')); ?></a>
+<?php
+	/* begin thien custom */	 
+	//printf('<a href="%s" rel="nofollow" data-product_id="%s" class="button add_to_cart_button product_type_%s">%s</a>', $link, $product->id, $product->product_type, $label);
 
-	printf('<a href="%s" rel="nofollow" data-product_id="%s" class="button add_to_cart_button product_type_%s">%s</a>', $link, $product->id, $product->product_type, $label);
-
+	/* end thien custom */
 endif; 
 ?>

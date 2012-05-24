@@ -62,12 +62,23 @@ endif;
 	<div id="top">
 		
 		<div class="wrap_980">
-		
+		<?php 
+			global $woocommerce;
+			
+			$quantity = 0;
+			foreach($woocommerce->cart->cart_contents as $array)
+			{
+				$quantity += intval($array["quantity"]);
+			}
+			
+		?>
 			<div id="top-inner"<?php _wip_top_inner_logo_class(); ?>>
             	<div class="checkout-side">
                 	<div class="top">
                 	<a href="<?php bloginfo('url'); ?>/checkout/" class="checkout">CHECKOUT</a>
-                    <p><span><b>Items:</b></span> <span>12</span> <span>|</span> <span><b>Total:</b></span> <span>$324.00</span></p>
+                    <p><span><b>Items:</b></span> <span><?php echo $quantity; ?></span> <span>|</span> <span><b>Total:</b></span> <span><?php 
+					echo $woocommerce->cart->get_cart_subtotal();
+					?></span></p>
                     </div>
                     <div class="bottom">
                     <p class="phone-number">(02) 6742 41112</p>

@@ -523,3 +523,17 @@ ol.commentlist li .comment_entries{
 	color:#de1e7d;
 	font-family:Arial, Helvetica, sans-serif;
 	}*/
+	
+.product_list_price  .amount {
+	display:none;
+}
+
+.nivo-directionNav a 
+{
+	background-color:red;
+}
+
+.nivo-directionNav
+{
+	display:block;
+}
