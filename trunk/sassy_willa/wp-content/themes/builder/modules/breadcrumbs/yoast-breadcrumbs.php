@@ -25,8 +25,8 @@ if (!function_exists('yoast_breadcrumb_cb')) {
 	$br_opt 						= array();
 	$br_opt['home'] 				= __('Home', 'wip');
 	$br_opt['blog'] 				= __('Blog', 'wip');
-	$br_opt['sep'] 					= '<span class="bread-divider">&raquo;</span>';
-	$br_opt['prefix']				= __('You are here:', 'wip');
+	$br_opt['sep'] 					= '<span class="bread-divider">></span>';
+	$br_opt['prefix']				= __('', 'wip');
 	$br_opt['boldlast'] 			= true;
 	$br_opt['nofollowhome'] 		= false;
 	$br_opt['singleparent'] 		= 0;

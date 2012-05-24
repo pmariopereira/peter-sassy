@@ -502,28 +502,28 @@ function pro_comments($comment, $args, $depth){
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 	<div id="comment-<?php comment_ID(); ?>" class="comment_entries">
-		<div class="comment-author vcard">
+<?php /*?>		<div class="comment-author vcard">
 			<?php echo get_avatar( $comment, 60 ); ?>
 		</div><!-- .comment-author .vcard -->
 		<?php if ( $comment->comment_approved == '0' ) : ?>
 			<div class="comment_waiting"><?php _e( 'Your comment is awaiting moderation.', 'wip' ); ?></em></div>
-		<?php endif; ?>
+		<?php endif; ?><?php */?>
 
-		<div class="comment-meta commentmetadata">
-			<?php
-				printf( ( '%s' ), sprintf( '<strong class="fn">%s</strong>', get_comment_author_link() ) );
-				/* translators: 1: date, 2: time */
-				printf( __( '&#8212; %1$s at %2$s', 'wip' ), get_comment_date(),  get_comment_time() ); 
-			?>
-			
-			<?php edit_comment_link( __( '(Edit)', 'wip' ), ' ' );?>
-		</div><!-- .comment-meta .commentmetadata -->
+		
 
 		<div class="comment-body"><?php comment_text(); ?></div>
-
-		<div class="reply">
+        <div class="comment-meta commentmetadata">
+                    <?php
+                        printf( ( 'Posted by %s' ), sprintf( '<strong class="fn">%s</strong>', get_comment_author_link() ) );
+                        /* translators: 1: date, 2: time */
+                        printf( __( 'on %1$s', 'wip' ), get_comment_date() ); 
+                    ?>
+                    
+                    <?php edit_comment_link( __( '(Edit)', 'wip' ), ' ' );?>
+        </div><!-- .comment-meta .commentmetadata -->
+<?php /*?>		<div class="reply">
 			<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-		</div><!-- .reply -->
+		</div><!-- .reply --><?php */?>
 	</div><!-- #comment-##  -->
 
 	<?php

@@ -72,10 +72,6 @@ function wip_pagenavi( $custom = "", $echo = true, $before = "", $after = "") {
 		if($max_page > 1) {
 			$pages_text = sprintf( __('Page %1$s of %2$s', 'wip'), number_format_i18n($paged), number_format_i18n($max_page) );
 			$wippagenavi .= $befored.'<div class="wip-pagenavi">'."\n";
-
-					if(!empty($pages_text)) {
-						$wippagenavi .= '<div class="pagination_text">'.$pages_text.'</div>';
-					}
 					
 					$wippagenavi .= '<div class="pagination_content">';
 					
@@ -90,7 +86,7 @@ function wip_pagenavi( $custom = "", $echo = true, $before = "", $after = "") {
 							$wippagenavi .= '<a href="'.esc_url(get_pagenum_link($i)).'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
 						}
 					}
-					$wippagenavi .= get_previous_posts_link( addslashes('&laquo;') );
+					$wippagenavi .= get_previous_posts_link( addslashes('PREVIOUS') );
 					for($i = $start_page; $i  <= $end_page; $i++) {						
 						if($i == $paged) {
 							$current_page_text = str_replace("%PAGE_NUMBER%", number_format_i18n($i), addslashes("%PAGE_NUMBER%") );
@@ -100,7 +96,7 @@ function wip_pagenavi( $custom = "", $echo = true, $before = "", $after = "") {
 							$wippagenavi .= '<a href="'.esc_url(get_pagenum_link($i)).'" class="page" title="'.$page_text.'">'.$page_text.'</a>';
 						}
 					}
-					$wippagenavi .= get_next_posts_link( addslashes('&raquo;'), $max_page);
+					$wippagenavi .= get_next_posts_link( addslashes('NEXT'), $max_page);
 					if($larger_page_to_show > 0 && $larger_end_page_start < $max_page) {
 						for($i = $larger_end_page_start; $i <= $larger_end_page_end; $i+=$larger_page_multiple) {
 							$page_text = str_replace("%PAGE_NUMBER%", number_format_i18n($i), addslashes("%PAGE_NUMBER%") );
