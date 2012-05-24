@@ -615,9 +615,22 @@ function _wip_autodetect_parent_layout(){
 
 function _wip_generate_product_title_on_lists(){
 	global $post, $product;
-
+	/* begin thien custom */	
+	$categories = get_the_terms($product->id, 'product_cat');								
+	foreach ( $categories as $category ){																		
+	}							
+	if ( $categories ) {
+		echo '<h3 class="category-title-on-lists">' . "\n";
+		echo '<a href="'.get_term_link($category->slug, 'product_cat').'" title="'. $category->name .'">'.$category->name;		echo '</a>' . "\n"; 
+		echo '</h3>' . "\n";
+	}
+	/* end thien custom */
 	echo '<h3 class="product-title-on-lists">' . "\n";
 	echo '<a href="'.get_permalink($post->ID).'" title="'. the_title_attribute('echo=0') .'">'.get_the_title().'</a>' . "\n"; 
+	echo '</h3>' . "\n";
+	
+	echo '<h3 class="product-price">' . "\n";
+	echo woocommerce_price($product->get_price()) . "\n"; 
 	echo '</h3>' . "\n";
 }
 
