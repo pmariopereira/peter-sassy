@@ -233,23 +233,32 @@ function woocommerce_eway_init() {
             ?>
             <?php if ($this->testmode == 'yes') : ?><p><?php _e('TEST MODE/SANDBOX ENABLED', 'woothemes'); ?></p><?php endif; ?>
             <?php if ($this->description) : ?><p><?php echo $this->description; ?></p><?php endif; ?>
-            <fieldset>
+            
+			<p class='form_checkout'>
             	<p class="form-row form-row-wide eway_card_type_radios">
-					<label><?php echo __("Card type", 'woocommerce') ?>:</label>
+					<label><?php echo __("Credit cart type", 'woocommerce') ?>:</label>
+					<select name ="eway_card_type" class="eway_card_type">
+					
 					<?php foreach ($this->avaiable_card_types as $type => $card) : ?>
-						<label class="card_type"><input type="radio" name="eway_card_type" <?php checked($type, "Visa"); ?> value="<?php echo $type ?>" /><img width="38" src="<?php echo $card["icon"]; ?>" /></label>
+					
+						<option <?php checked($type, "Visa"); ?> value="<?php echo $type ?>"><?php echo $type ?></option>
 					<?php endforeach; ?>
-				</p>
-				
+					</select>
+					<!--
+					<?php //foreach ($this->avaiable_card_types as $type => $card) : ?>
+						<label class="card_type"><input type="radio" name="eway_card_type" <?php //checked($type, "Visa"); ?> value="<?php //echo $type ?>" /><img width="38" src="<?php// echo $card["icon"]; ?>" /></label>
+					<?php //endforeach; ?>
+					-->
+				</p>				
 				<div class="clear"></div>
 				
 				<p class="form-row form-row-first">
-					<label for="eway_card_number"><?php echo __("Card Holder's Name", 'woocommerce') ?> <span class="required">*</span></label>
+					<label for="eway_card_number"><?php echo __("Card Name", 'woocommerce') ?> <span class="required">*</span></label>
                     <input type="text" class="input-text" name="eway_card_holdername" />
 				</p>
 				
 				<p class="form-row form-row-last">
-					<label for="eway_card_number"><?php echo __("Credit Card number", 'woocommerce') ?> <span class="required">*</span></label>
+					<label for="eway_card_number"><?php echo __("Credit number", 'woocommerce') ?> <span class="required">*</span></label>
 					<input type="text" class="input-text" name="eway_card_number" id="eway_card_number" />
 				</p>
 				
@@ -278,12 +287,13 @@ function woocommerce_eway_init() {
                     </select>
                 </p>
                 <p class="form-row form-row-last">
-                    <label for="eway_card_csc"><?php _e("Card security code", 'woocommerce') ?> <span class="required">*</span></label>
+                    <label for="eway_card_csc"><?php _e("CVV Number", 'woocommerce') ?> <span class="required">*</span></label>
                     <input type="text" class="input-text" id="eway_card_csc" name="eway_card_csc" maxlength="4" style="width:4em;" />
                     <span class="help eway_card_csc_description"></span>
                 </p>
                 <div class="clear"></div>
-            </fieldset>
+				</p>
+            
             <script type="text/javascript">    
                                                                                                                                                 			
                 jQuery(".eway_card_type_radios input").click(function(){

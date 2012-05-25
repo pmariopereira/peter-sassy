@@ -759,3 +759,17 @@ jQuery.fn.pH=function(df){ var el = jQuery(this);df = df || el.attr('placeholder
 
 	});
 })(jQuery);
+
+
+( function($){
+	$(function(){
+	
+		$(document).ready(function(){
+			$(".sidebarbox>h3").live('click',function(){
+				var currentItem = $(this);
+				currentItem.next().slideToggle('fast');
+			});
+		});
+
+	});
+})(jQuery);
