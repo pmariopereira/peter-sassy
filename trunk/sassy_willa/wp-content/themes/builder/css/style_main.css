@@ -246,7 +246,6 @@ form#wip-search-form {
 	width: 980px;
 	}
 ul.products li h3.product-title-on-lists{
-	min-height:50px;
 	}
 table.cart td.actions a.checkout-button, #product_gallery_and_summary .woo_product_content .summary button.button.alt{
 	border-radius:0;
@@ -620,10 +619,18 @@ ol.commentlist li .comment_entries{
 	}
 .product_lists_thumbnail{
 	border:1px solid #d1d1d1;
+	background:none repeat scroll 0 0 #FFFFFF;
 	}
 .product_lists_thumbnail a.product_lists_thumbnail_wrap{
 	text-align:center;
 	}
 .product_lists_thumbnail a img{
 	width:auto;
+	}
+.category-title-on-lists {
+	font-size:16px;
+	color:#5f5f5f;
+	font-weight:500;
+	line-height:16px;
+	text-align:center;
 	}
