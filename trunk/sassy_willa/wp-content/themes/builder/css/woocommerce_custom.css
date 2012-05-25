@@ -24,9 +24,6 @@ ul.products li{
 .product_lists_thumbnail{
 	margin: 0px 0px 0px;
 	padding: 0px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
 	border-width: 1px;
 	border-style: solid;
 }
@@ -42,10 +39,8 @@ ul.products li{
 	overflow: hidden;
 	margin: 0px 0px 0px;
 	padding: 4px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius:3px;
 	z-index: 0;
+	background:#fff;
 }
 .product_lists_thumbnail a img{
 	display: inline-block;
