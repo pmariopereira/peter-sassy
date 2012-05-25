@@ -247,8 +247,15 @@ function _wip_single_product_before_gallery(){
 }
 
 function _wip_single_product_before_summary(){
-
+	
 	echo '</div><!-- close .woo_product_gallery -->' . "\n";
+	/*begin thien custom */
+	
+	global $post, $product;
+	
+	echo '<div itemprop="price" id="woo_price">'. $product->get_title() .'</div>' . "\n";
+	echo '<div itemprop="price" id="woo_price">'. $product->get_price_html() .'</div>' . "\n";
+	/*end thien custom */
 	echo '<div class="woo_product_content float_right">' . "\n";
 
 }

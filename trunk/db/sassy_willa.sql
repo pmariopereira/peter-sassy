@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 25, 2012 at 11:35 AM
+-- Generation Time: May 25, 2012 at 09:23 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `sw_commentmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `comment_id` (`comment_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
 
 --
 -- Dumping data for table `sw_commentmeta`
@@ -80,7 +80,21 @@ INSERT INTO `sw_commentmeta` (`meta_id`, `comment_id`, `meta_key`, `meta_value`)
 (9, 14, 'is_customer_note', '0'),
 (10, 15, 'is_customer_note', '0'),
 (11, 16, 'is_customer_note', '0'),
-(12, 17, 'rating', '5');
+(12, 17, 'rating', '5'),
+(13, 18, 'is_customer_note', '0'),
+(14, 19, 'is_customer_note', '0'),
+(15, 20, 'is_customer_note', '0'),
+(16, 21, 'is_customer_note', '0'),
+(17, 22, 'rating', '5'),
+(18, 23, 'is_customer_note', '0'),
+(19, 24, 'is_customer_note', '0'),
+(20, 25, 'is_customer_note', '0'),
+(21, 26, 'is_customer_note', '0'),
+(22, 27, 'is_customer_note', '0'),
+(23, 28, 'is_customer_note', '0'),
+(24, 29, 'is_customer_note', '0'),
+(25, 30, 'is_customer_note', '0'),
+(26, 31, 'is_customer_note', '0');
 
 -- --------------------------------------------------------
 
@@ -110,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `sw_comments` (
   KEY `comment_approved_date_gmt` (`comment_approved`,`comment_date_gmt`),
   KEY `comment_date_gmt` (`comment_date_gmt`),
   KEY `comment_parent` (`comment_parent`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=32 ;
 
 --
 -- Dumping data for table `sw_comments`
@@ -133,7 +147,21 @@ INSERT INTO `sw_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 (14, 107, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-24 19:42:28', '2012-05-24 19:42:28', 'Order item stock reduced successfully.', 0, '1', 'WooCommerce', '', 0, 0),
 (15, 108, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-24 19:44:55', '2012-05-24 19:44:55', 'Awaiting BACS payment Order status changed from pending to on-hold.', 0, '1', 'WooCommerce', '', 0, 0),
 (16, 108, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-24 19:44:56', '2012-05-24 19:44:56', 'Order item stock reduced successfully.', 0, '1', 'WooCommerce', '', 0, 0),
-(17, 21, 'admin', 'nhchung.it@gmail.com', '', '127.0.0.1', '2012-05-25 09:27:27', '2012-05-25 09:27:27', 'hellow world', 0, '1', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20100101 Firefox/12.0', '', 0, 1);
+(17, 21, 'admin', 'nhchung.it@gmail.com', '', '127.0.0.1', '2012-05-25 09:27:27', '2012-05-25 09:27:27', 'hellow world', 0, '1', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20100101 Firefox/12.0', '', 0, 1),
+(18, 113, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 09:41:02', '2012-05-25 09:41:02', 'Awaiting BACS payment Order status changed from pending to on-hold.', 0, '1', 'WooCommerce', '', 0, 0),
+(19, 113, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 09:41:02', '2012-05-25 09:41:02', 'Order item stock reduced successfully.', 0, '1', 'WooCommerce', '', 0, 0),
+(20, 114, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 13:00:28', '2012-05-25 13:00:28', 'Awaiting BACS payment Order status changed from pending to on-hold.', 0, '1', 'WooCommerce', '', 0, 0),
+(21, 114, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 13:00:28', '2012-05-25 13:00:28', 'Order item stock reduced successfully.', 0, '1', 'WooCommerce', '', 0, 0),
+(22, 21, 'admin', 'nhchung.it@gmail.com', '', '127.0.0.1', '2012-05-25 13:55:40', '2012-05-25 13:55:40', 'great', 0, '1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5', '', 0, 1),
+(23, 127, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:09:20', '2012-05-25 14:09:20', 'Order cancelled by customer. Order status changed from pending to cancelled.', 0, '1', 'WooCommerce', '', 0, 0),
+(24, 128, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:09:43', '2012-05-25 14:09:43', 'Awaiting cheque payment Order status changed from pending to on-hold.', 0, '1', 'WooCommerce', '', 0, 0),
+(25, 128, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:09:43', '2012-05-25 14:09:43', 'Item #118 stock reduced from 333 to 331.', 0, '1', 'WooCommerce', '', 0, 0),
+(26, 128, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:09:44', '2012-05-25 14:09:44', 'Order item stock reduced successfully.', 0, '1', 'WooCommerce', '', 0, 0),
+(27, 129, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:10:51', '2012-05-25 14:10:51', 'Awaiting cheque payment Order status changed from pending to on-hold.', 0, '1', 'WooCommerce', '', 0, 0),
+(28, 129, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:10:51', '2012-05-25 14:10:51', 'Order item stock reduced successfully.', 0, '1', 'WooCommerce', '', 0, 0),
+(29, 130, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:11:56', '2012-05-25 14:11:56', 'Awaiting cheque payment Order status changed from pending to on-hold.', 0, '1', 'WooCommerce', '', 0, 0),
+(30, 130, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:11:56', '2012-05-25 14:11:56', 'Item #118 stock reduced from 4 to 3.', 0, '1', 'WooCommerce', '', 0, 0),
+(31, 130, 'WooCommerce', 'woocommerce@127.0.0.1', '', '', '2012-05-25 14:11:57', '2012-05-25 14:11:57', 'Order item stock reduced successfully.', 0, '1', 'WooCommerce', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -290,7 +318,7 @@ CREATE TABLE IF NOT EXISTS `sw_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3667 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4437 ;
 
 --
 -- Dumping data for table `sw_options`
@@ -399,10 +427,10 @@ INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (102, 0, 'widget_recent-comments', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (103, 0, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:8:"Archives";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (104, 0, 'widget_meta', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(105, 0, 'sidebars_widgets', 'a:10:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:7:{i:0;s:16:"product_search-2";i:1;s:19:"woocommerce_login-2";i:2;s:20:"product_categories-2";i:3;s:25:"woocommerce_layered_nav-2";i:4;s:14:"price_filter-2";i:5;s:15:"shopping_cart-2";i:6;s:19:"product_tag_cloud-2";}s:9:"sidebar-2";a:1:{i:0;s:7:"links-6";}s:9:"sidebar-3";a:1:{i:0;s:7:"links-3";}s:9:"sidebar-4";a:1:{i:0;s:7:"links-4";}s:9:"sidebar-5";a:2:{i:0;s:18:"newsletterwidget-2";i:1;s:6:"text-2";}s:9:"sidebar-6";a:2:{i:0;s:20:"popular_posts_blog-2";i:1;s:10:"archives-2";}s:9:"sidebar-7";a:0:{}s:9:"sidebar-8";a:1:{i:0;s:7:"links-7";}s:13:"array_version";i:3;}', 'yes'),
-(106, 0, 'cron', 'a:4:{i:1337938618;a:1:{s:10:"newsletter";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"newsletter";s:4:"args";a:0:{}s:8:"interval";i:300;}}}i:1337952309;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1337952318;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
-(108, 0, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:1:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.3.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.3.2.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.3.2-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.3.2-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.3.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1337909237;s:15:"version_checked";s:5:"3.3.2";}', 'yes'),
-(111, 0, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1337936164;s:7:"checked";a:1:{s:7:"builder";s:3:"2.2";}s:8:"response";a:0:{}}', 'yes'),
+(105, 0, 'sidebars_widgets', 'a:10:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:5:{i:0;s:16:"product_search-2";i:1;s:19:"woocommerce_login-2";i:2;s:20:"product_categories-2";i:3;s:25:"woocommerce_layered_nav-2";i:4;s:14:"price_filter-2";}s:9:"sidebar-2";a:1:{i:0;s:7:"links-6";}s:9:"sidebar-3";a:1:{i:0;s:7:"links-3";}s:9:"sidebar-4";a:1:{i:0;s:7:"links-4";}s:9:"sidebar-5";a:2:{i:0;s:18:"newsletterwidget-2";i:1;s:6:"text-2";}s:9:"sidebar-6";a:2:{i:0;s:20:"popular_posts_blog-2";i:1;s:10:"archives-2";}s:9:"sidebar-7";a:0:{}s:9:"sidebar-8";a:1:{i:0;s:7:"links-7";}s:13:"array_version";i:3;}', 'yes'),
+(106, 0, 'cron', 'a:4:{i:1337956018;a:1:{s:10:"newsletter";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"newsletter";s:4:"args";a:0:{}s:8:"interval";i:300;}}}i:1337995509;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1338038718;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(108, 0, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:1:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.3.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.3.2.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.3.2-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.3.2-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.3.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.2";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1337952344;s:15:"version_checked";s:5:"3.3.2";}', 'yes'),
+(111, 0, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1337954376;s:7:"checked";a:1:{s:7:"builder";s:3:"2.2";}s:8:"response";a:0:{}}', 'yes'),
 (112, 0, '_site_transient_timeout_browser_7b04ceddb926b540e5234f273552022b', '1338211516', 'yes'),
 (113, 0, '_site_transient_browser_7b04ceddb926b540e5234f273552022b', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"19.0.1084.46";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (114, 0, 'dashboard_widget_options', 'a:4:{s:25:"dashboard_recent_comments";a:1:{s:5:"items";i:5;}s:24:"dashboard_incoming_links";a:5:{s:4:"home";s:28:"http://127.0.0.1/sassy_willa";s:4:"link";s:104:"http://blogsearch.google.com/blogsearch?scoring=d&partner=wordpress&q=link:http://127.0.0.1/sassy_willa/";s:3:"url";s:137:"http://blogsearch.google.com/blogsearch_feeds?scoring=d&ie=utf-8&num=10&output=rss&partner=wordpress&q=link:http://127.0.0.1/sassy_willa/";s:5:"items";i:10;s:9:"show_date";b:0;}s:17:"dashboard_primary";a:7:{s:4:"link";s:26:"http://wordpress.org/news/";s:3:"url";s:31:"http://wordpress.org/news/feed/";s:5:"title";s:14:"WordPress Blog";s:5:"items";i:2;s:12:"show_summary";i:1;s:11:"show_author";i:0;s:9:"show_date";i:1;}s:19:"dashboard_secondary";a:7:{s:4:"link";s:28:"http://planet.wordpress.org/";s:3:"url";s:33:"http://planet.wordpress.org/feed/";s:5:"title";s:20:"Other WordPress News";s:5:"items";i:5;s:12:"show_summary";i:0;s:11:"show_author";i:0;s:9:"show_date";i:0;}}', 'yes'),
@@ -410,10 +438,10 @@ INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (140, 0, 'recently_activated', 'a:0:{}', 'yes'),
 (153, 0, 'skip_install_woocommerce_pages', '1', 'yes'),
 (154, 0, 'woocommerce_installed', '0', 'yes'),
-(155, 0, 'woocommerce_default_country', 'GB', 'yes'),
-(156, 0, 'woocommerce_currency', 'GBP', 'yes'),
-(157, 0, 'woocommerce_allowed_countries', 'all', 'yes'),
-(158, 0, 'woocommerce_specific_allowed_countries', 'a:0:{}', 'yes'),
+(155, 0, 'woocommerce_default_country', 'AU:SA', 'yes'),
+(156, 0, 'woocommerce_currency', 'AUD', 'yes'),
+(157, 0, 'woocommerce_allowed_countries', 'specific', 'yes'),
+(158, 0, 'woocommerce_specific_allowed_countries', 'a:1:{i:0;s:2:"AT";}', 'yes'),
 (159, 0, 'woocommerce_informal_localisation_type', 'no', 'yes'),
 (160, 0, 'woocommerce_enable_guest_checkout', 'yes', 'yes'),
 (161, 0, 'woocommerce_enable_order_comments', 'yes', 'yes'),
@@ -472,7 +500,7 @@ INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (214, 0, 'woocommerce_price_thousand_sep', ',', 'yes'),
 (215, 0, 'woocommerce_price_decimal_sep', '.', 'yes'),
 (216, 0, 'woocommerce_price_num_decimals', '2', 'yes'),
-(217, 0, 'woocommerce_price_trim_zeros', 'yes', 'yes'),
+(217, 0, 'woocommerce_price_trim_zeros', 'no', 'yes'),
 (218, 0, 'woocommerce_catalog_image_width', '150', 'yes'),
 (219, 0, 'woocommerce_catalog_image_height', '150', 'yes'),
 (220, 0, 'woocommerce_single_image_width', '300', 'yes'),
@@ -525,11 +553,11 @@ INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (274, 0, 'widget_price_filter', 'a:2:{i:2;a:1:{s:5:"title";s:12:"Price Filter";}s:12:"_multiwidget";i:1;}', 'yes'),
 (275, 0, 'widget_product_categories', 'a:2:{i:2;a:6:{s:5:"title";s:10:"Categories";s:7:"orderby";s:5:"order";s:5:"count";i:0;s:12:"hierarchical";b:0;s:8:"dropdown";i:0;s:18:"show_children_only";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (276, 0, 'widget_product_search', 'a:2:{i:2;a:1:{s:5:"title";s:14:"Product Search";}s:12:"_multiwidget";i:1;}', 'yes'),
-(277, 0, 'widget_product_tag_cloud', 'a:2:{i:2;a:2:{s:5:"title";s:12:"Product Tags";s:8:"taxonomy";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
+(277, 0, 'widget_product_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (278, 0, 'widget_woocommerce_random_products', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (279, 0, 'widget_recently_viewed_products', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (281, 0, 'widget_recent_products', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(282, 0, 'widget_shopping_cart', 'a:2:{i:2;a:2:{s:5:"title";s:25:"WooCommerce Shopping Cart";s:13:"hide_if_empty";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
+(282, 0, 'widget_shopping_cart', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (283, 0, 'widget_top-rated-products', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (285, 0, '_transient_wc_product_type_16', 'simple', 'yes'),
 (286, 0, 'woocommerce_errors', 'a:0:{}', 'yes'),
@@ -721,12 +749,10 @@ INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (3119, 0, '_transient_timeout_wc_ship_6fae11a36427e64d097cb0030a259d41', '1337892279', 'no'),
 (3124, 0, '_transient_timeout_wc_ship_5a47b9f709209ffa1b686d9ccc6a4870', '1337892286', 'no'),
 (3128, 0, '_transient_timeout_wc_ship_4b637cce4c8fc65d7c8aa5f2bb6d28fa', '1337892287', 'no'),
-(3197, 0, '_site_transient_timeout_slider_data', '1338170341', 'yes');
-INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`, `autoload`) VALUES
+(3197, 0, '_site_transient_timeout_slider_data', '1338170341', 'yes'),
 (3198, 0, '_site_transient_slider_data', '<div id="slider" class="wip_nivo">\n<a href="http://127.0.0.1/sassy_willa/index.php">\n<img src="http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/slider.jpg" alt="" title=""/>\n</a>\n<img src="http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/slider11.jpg" alt="" title=""/>\n<img src="http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/slider2.jpg" alt="" title=""/>\n<img src="http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/slider3.jpg" alt="" title=""/>\n</div>\n', 'yes'),
-(3499, 0, '_site_transient_timeout_theme_roots', '1337943363', 'yes'),
-(3500, 0, '_site_transient_theme_roots', 'a:1:{s:7:"builder";s:7:"/themes";}', 'yes'),
-(3502, 0, '_transient_timeout_feed_a98cc270888648bbbc3a2a4b74df3ee4', '1337979369', 'no'),
+(3502, 0, '_transient_timeout_feed_a98cc270888648bbbc3a2a4b74df3ee4', '1337979369', 'no');
+INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`, `autoload`) VALUES
 (3503, 0, '_transient_feed_a98cc270888648bbbc3a2a4b74df3ee4', 'a:4:{s:5:"child";a:1:{s:0:"";a:1:{s:3:"rss";a:1:{i:0;a:6:{s:4:"data";s:4:"\n  \n";s:7:"attribs";a:1:{s:0:"";a:1:{s:7:"version";s:3:"2.0";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:1:{s:7:"channel";a:1:{i:0;a:6:{s:4:"data";s:33:"\n    \n    \n    \n    \n    \n    \n  ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:2:{s:0:"";a:3:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:55:"link:http://127.0.0.1/sassy_willa/ - Google Blog Search";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:92:"http://www.google.com/search?ie=utf-8&q=link:http://127.0.0.1/sassy_willa/&tbm=blg&tbs=sbd:1";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:88:"Your search - <b>link:http://127.0.0.1/sassy_willa/</b> - did not match any documents.  ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://a9.com/-/spec/opensearch/1.1/";a:3:{s:12:"totalResults";a:1:{i:0;a:5:{s:4:"data";s:1:"0";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:10:"startIndex";a:1:{i:0;a:5:{s:4:"data";s:1:"1";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:12:"itemsPerPage";a:1:{i:0;a:5:{s:4:"data";s:2:"10";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}}}}}}s:4:"type";i:128;s:7:"headers";a:9:{s:12:"content-type";s:28:"text/xml; charset=ISO-8859-1";s:4:"date";s:29:"Fri, 25 May 2012 08:56:11 GMT";s:7:"expires";s:2:"-1";s:13:"cache-control";s:18:"private, max-age=0";s:10:"set-cookie";a:2:{i:0;s:143:"PREF=ID=38181bd75e1bc7ea:FF=0:TM=1337936171:LM=1337936171:S=yifqyauUQLXpCuqp; expires=Sun, 25-May-2014 08:56:11 GMT; path=/; domain=.google.com";i:1;s:212:"NID=60=c77c9y17gT7jDDp03lTSNgiRWsOG9debSPqY6MjrWKlfGH4Hutb1EzOZM_LyfbJqhnm02oV-NiUHZD5q6xlzTe7N7vd-b7Luq6DQDBpn3GOdlf0lbbnGAFGXTkZ99NzD; expires=Sat, 24-Nov-2012 08:56:11 GMT; path=/; domain=.google.com; HttpOnly";}s:3:"p3p";s:122:"CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657 for more info."";s:6:"server";s:3:"gws";s:16:"x-xss-protection";s:13:"1; mode=block";s:15:"x-frame-options";s:10:"SAMEORIGIN";}s:5:"build";s:14:"20090627192103";}', 'no'),
 (3504, 0, '_transient_timeout_feed_mod_a98cc270888648bbbc3a2a4b74df3ee4', '1337979369', 'no'),
 (3505, 0, '_transient_feed_mod_a98cc270888648bbbc3a2a4b74df3ee4', '1337936169', 'no'),
@@ -763,12 +789,43 @@ INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`,
 (3534, 0, '_transient_feed_mod_1a5f760f2e2b48827d4974a60857e7c2', '1337936183', 'no'),
 (3535, 0, '_transient_timeout_dash_de3249c4736ad3bd2cd29147c4a0d43e', '1337979383', 'no'),
 (3536, 0, '_transient_dash_de3249c4736ad3bd2cd29147c4a0d43e', '<h4>Most Popular</h4>\n<h5><a href=''http://wordpress.org/extend/plugins/add-link-to-facebook/''>Add Link to Facebook</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=add-link-to-facebook&amp;_wpnonce=ba144792cb&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''Add Link to Facebook''>Install</a>)</span>\n<p>Automatically add links to published posts or pages to your Facebook wall, pages or groups and more</p>\n<h4>Newest Plugins</h4>\n<h5><a href=''http://wordpress.org/extend/plugins/soccer-field/''>Soccer Field</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=soccer-field&amp;_wpnonce=61d4686d15&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''Soccer Field''>Install</a>)</span>\n<p>When called this plugin shows a Soccer Field inside your post.</p>\n<h4>Recently Updated</h4>\n<h5><a href=''http://wordpress.org/extend/plugins/boom-captcha/''>Boom Captcha</a></h5>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=boom-captcha&amp;_wpnonce=af5ccb3df0&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''Boom Captcha''>Install</a>)</span>\n<p>Best CAPTCHA solution, prevent spams, you can customized CAPTCHA challenge text and have people type Captcha it, better Captcha experience.</p>\n', 'no'),
-(3645, 0, '_transient_wc_uf_pid_98445f98e21fece4c092bccf3dc7ac25', 'a:4:{i:0;s:2:"21";i:1;s:2:"20";i:2;s:2:"19";i:3;s:2:"16";}', 'yes');
+(3686, 0, '_transient_timeout_wc_ship_be42156585f90963504226639c0111d1', '1337942451', 'no'),
+(3689, 0, '_transient_timeout_wc_ship_85eeb8298e195c2431515352458a982d', '1337942454', 'no');
 INSERT INTO `sw_options` (`option_id`, `blog_id`, `option_name`, `option_value`, `autoload`) VALUES
-(3646, 0, '_transient_wc_ln_count_5d4735f02a3d9719c1b6b02f63c97d57', 'a:4:{i:0;s:2:"16";i:1;s:2:"19";i:2;s:2:"20";i:3;s:2:"21";}', 'yes'),
-(3662, 0, '_transient_timeout_newsletter', '1337938416', 'no'),
-(3663, 0, '_transient_newsletter', '1', 'no'),
-(3666, 0, 'rewrite_rules', 'a:118:{s:7:"shop/?$";s:27:"index.php?post_type=product";s:37:"shop/feed/(feed|rdf|rss|rss2|atom)/?$";s:44:"index.php?post_type=product&feed=$matches[1]";s:32:"shop/(feed|rdf|rss|rss2|atom)/?$";s:44:"index.php?post_type=product&feed=$matches[1]";s:24:"shop/page/([0-9]{1,})/?$";s:45:"index.php?post_type=product&paged=$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:55:"product-category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_cat=$matches[1]&feed=$matches[2]";s:50:"product-category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_cat=$matches[1]&feed=$matches[2]";s:43:"product-category/(.+?)/page/?([0-9]{1,})/?$";s:51:"index.php?product_cat=$matches[1]&paged=$matches[2]";s:25:"product-category/(.+?)/?$";s:33:"index.php?product_cat=$matches[1]";s:52:"product-tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_tag=$matches[1]&feed=$matches[2]";s:47:"product-tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_tag=$matches[1]&feed=$matches[2]";s:40:"product-tag/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?product_tag=$matches[1]&paged=$matches[2]";s:22:"product-tag/([^/]+)/?$";s:33:"index.php?product_tag=$matches[1]";s:44:"brand/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pa_brand=$matches[1]&feed=$matches[2]";s:39:"brand/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pa_brand=$matches[1]&feed=$matches[2]";s:32:"brand/(.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pa_brand=$matches[1]&paged=$matches[2]";s:14:"brand/(.+?)/?$";s:30:"index.php?pa_brand=$matches[1]";s:32:"shop/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:42:"shop/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:62:"shop/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"shop/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"shop/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:25:"shop/([^/]+)/trackback/?$";s:34:"index.php?product=$matches[1]&tb=1";s:45:"shop/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:46:"index.php?product=$matches[1]&feed=$matches[2]";s:40:"shop/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:46:"index.php?product=$matches[1]&feed=$matches[2]";s:33:"shop/([^/]+)/page/?([0-9]{1,})/?$";s:47:"index.php?product=$matches[1]&paged=$matches[2]";s:40:"shop/([^/]+)/comment-page-([0-9]{1,})/?$";s:47:"index.php?product=$matches[1]&cpage=$matches[2]";s:25:"shop/([^/]+)(/[0-9]+)?/?$";s:46:"index.php?product=$matches[1]&page=$matches[2]";s:21:"shop/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:31:"shop/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:51:"shop/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:46:"shop/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:46:"shop/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:59:"portfolio-category/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:57:"index.php?portfolio-category=$matches[1]&feed=$matches[2]";s:54:"portfolio-category/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:57:"index.php?portfolio-category=$matches[1]&feed=$matches[2]";s:47:"portfolio-category/([^/]+)/page/?([0-9]{1,})/?$";s:58:"index.php?portfolio-category=$matches[1]&paged=$matches[2]";s:29:"portfolio-category/([^/]+)/?$";s:40:"index.php?portfolio-category=$matches[1]";s:42:"portfolio-item/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:52:"portfolio-item/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:72:"portfolio-item/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:67:"portfolio-item/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:67:"portfolio-item/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:35:"portfolio-item/([^/]+)/trackback/?$";s:41:"index.php?portfolio-item=$matches[1]&tb=1";s:55:"portfolio-item/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?portfolio-item=$matches[1]&feed=$matches[2]";s:50:"portfolio-item/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?portfolio-item=$matches[1]&feed=$matches[2]";s:43:"portfolio-item/([^/]+)/page/?([0-9]{1,})/?$";s:54:"index.php?portfolio-item=$matches[1]&paged=$matches[2]";s:50:"portfolio-item/([^/]+)/comment-page-([0-9]{1,})/?$";s:54:"index.php?portfolio-item=$matches[1]&cpage=$matches[2]";s:35:"portfolio-item/([^/]+)(/[0-9]+)?/?$";s:53:"index.php?portfolio-item=$matches[1]&page=$matches[2]";s:31:"portfolio-item/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:41:"portfolio-item/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:61:"portfolio-item/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"portfolio-item/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"portfolio-item/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:29:"comments/page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)(/[0-9]+)?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)(/[0-9]+)?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";}', 'yes');
+(3692, 0, '_transient_timeout_wc_ship_15b49dbcca6585adc6b78b5225a745ed', '1337942455', 'no'),
+(3703, 0, '_site_transient_timeout_browser_ae8f01017dec8e7fa62c19d9b586cd37', '1338543713', 'yes'),
+(3704, 0, '_site_transient_browser_ae8f01017dec8e7fa62c19d9b586cd37', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"19.0.1084.52";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
+(3735, 0, '_transient_timeout_wc_ship_636f6a51bd143590f2cd1155d401d8cd', '1337954379', 'no'),
+(3740, 0, '_transient_timeout_wc_ship_c586962d71d440db41d65fc0e4398a29', '1337954401', 'no'),
+(3743, 0, '_transient_timeout_wc_ship_43afe22352542c04e213c72d4e9472e7', '1337954402', 'no'),
+(3828, 0, 'pa_size_children', 'a:0:{}', 'yes'),
+(3839, 0, '_transient_wc_product_type_118', 'variable', 'yes'),
+(3884, 0, '_transient_timeout_wc_ship_eb1ac20ab4e2992d2cdfb4f6b8102b4f', '1337955234', 'no'),
+(4007, 0, '_site_transient_timeout_theme_roots', '1337959545', 'yes'),
+(4008, 0, '_site_transient_theme_roots', 'a:1:{s:7:"builder";s:7:"/themes";}', 'yes'),
+(4143, 0, '_transient_timeout_wc_ship_52d24ba45ac370746379962bd79d7fc8', '1337957776', 'no'),
+(4146, 0, '_transient_timeout_wc_ship_9ee674f4332be119d8ebc6ba6abf79b9', '1337957776', 'no'),
+(4232, 0, '_transient_timeout_wc_ship_32f657c585236216d6145fa19b282b8f', '1337958444', 'no'),
+(4235, 0, '_transient_timeout_wc_ship_c98f25c940d6775ecd556d7aeacf3c3a', '1337958448', 'no'),
+(4243, 0, '_transient_timeout_wc_ship_400e3f7e15ec242e064c60eb7276fd65', '1337958523', 'no'),
+(4273, 0, '_transient_timeout_wc_ship_7fc29c2b276fe8825313f390ce44b14d', '1337958600', 'no'),
+(4285, 0, '_transient_timeout_wc_ship_88bad8f8de6985b1e26538a9ef6e65b0', '1337958623', 'no'),
+(4290, 0, '_transient_timeout_wc_ship_5e6c517f7325b289e87ffe9aa4ef8e65', '1337958636', 'no'),
+(4310, 0, '_transient_timeout_wc_ship_0b533563a8e51c41b5a4b78b869200ab', '1337958699', 'no'),
+(4343, 0, 'woocommerce_catalog_image_crop', '1', 'yes'),
+(4344, 0, 'woocommerce_single_image_crop', '1', 'yes'),
+(4345, 0, 'woocommerce_thumbnail_image_crop', '1', 'yes'),
+(4370, 0, '_transient_timeout_wc_ship_269e4dc94504060a817b58ac0723b648', '1337958895', 'no'),
+(4375, 0, '_transient_timeout_wc_ship_91d533333a637b05ca79cb9c348760ab', '1337958899', 'no'),
+(4380, 0, '_transient_timeout_wc_ship_4d3fc055d4d048fecf74c9f7537ec2ac', '1337958902', 'no'),
+(4385, 0, '_transient_timeout_wc_ship_5f138d54d115dcb987993f656c64e7ef', '1337958908', 'no'),
+(4389, 0, '_transient_timeout_wc_ship_0d7f494dd4357251b8c568c4ae42b0e3', '1337958911', 'no'),
+(4395, 0, '_transient_timeout_wc_ship_b2db2c7d0708d7670cffb9ee77b04982', '1337958959', 'no'),
+(4423, 0, '_transient_timeout_newsletter', '1337955784', 'no'),
+(4424, 0, '_transient_newsletter', '1', 'no'),
+(4428, 0, 'woocommerce_default_shipping_method', '', 'yes'),
+(4429, 0, 'woocommerce_shipping_method_order', 'a:5:{s:9:"flat_rate";i:0;s:22:"international_delivery";i:1;s:13:"free_shipping";i:2;s:14:"local_delivery";i:3;s:12:"local_pickup";i:4;}', 'yes'),
+(4436, 0, 'rewrite_rules', 'a:122:{s:7:"shop/?$";s:27:"index.php?post_type=product";s:37:"shop/feed/(feed|rdf|rss|rss2|atom)/?$";s:44:"index.php?post_type=product&feed=$matches[1]";s:32:"shop/(feed|rdf|rss|rss2|atom)/?$";s:44:"index.php?post_type=product&feed=$matches[1]";s:24:"shop/page/([0-9]{1,})/?$";s:45:"index.php?post_type=product&paged=$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:55:"product-category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_cat=$matches[1]&feed=$matches[2]";s:50:"product-category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_cat=$matches[1]&feed=$matches[2]";s:43:"product-category/(.+?)/page/?([0-9]{1,})/?$";s:51:"index.php?product_cat=$matches[1]&paged=$matches[2]";s:25:"product-category/(.+?)/?$";s:33:"index.php?product_cat=$matches[1]";s:52:"product-tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_tag=$matches[1]&feed=$matches[2]";s:47:"product-tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?product_tag=$matches[1]&feed=$matches[2]";s:40:"product-tag/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?product_tag=$matches[1]&paged=$matches[2]";s:22:"product-tag/([^/]+)/?$";s:33:"index.php?product_tag=$matches[1]";s:44:"brand/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pa_brand=$matches[1]&feed=$matches[2]";s:39:"brand/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pa_brand=$matches[1]&feed=$matches[2]";s:32:"brand/(.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pa_brand=$matches[1]&paged=$matches[2]";s:14:"brand/(.+?)/?$";s:30:"index.php?pa_brand=$matches[1]";s:43:"size/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:46:"index.php?pa_size=$matches[1]&feed=$matches[2]";s:38:"size/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:46:"index.php?pa_size=$matches[1]&feed=$matches[2]";s:31:"size/(.+?)/page/?([0-9]{1,})/?$";s:47:"index.php?pa_size=$matches[1]&paged=$matches[2]";s:13:"size/(.+?)/?$";s:29:"index.php?pa_size=$matches[1]";s:32:"shop/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:42:"shop/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:62:"shop/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"shop/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:57:"shop/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:25:"shop/([^/]+)/trackback/?$";s:34:"index.php?product=$matches[1]&tb=1";s:45:"shop/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:46:"index.php?product=$matches[1]&feed=$matches[2]";s:40:"shop/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:46:"index.php?product=$matches[1]&feed=$matches[2]";s:33:"shop/([^/]+)/page/?([0-9]{1,})/?$";s:47:"index.php?product=$matches[1]&paged=$matches[2]";s:40:"shop/([^/]+)/comment-page-([0-9]{1,})/?$";s:47:"index.php?product=$matches[1]&cpage=$matches[2]";s:25:"shop/([^/]+)(/[0-9]+)?/?$";s:46:"index.php?product=$matches[1]&page=$matches[2]";s:21:"shop/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:31:"shop/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:51:"shop/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:46:"shop/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:46:"shop/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:59:"portfolio-category/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:57:"index.php?portfolio-category=$matches[1]&feed=$matches[2]";s:54:"portfolio-category/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:57:"index.php?portfolio-category=$matches[1]&feed=$matches[2]";s:47:"portfolio-category/([^/]+)/page/?([0-9]{1,})/?$";s:58:"index.php?portfolio-category=$matches[1]&paged=$matches[2]";s:29:"portfolio-category/([^/]+)/?$";s:40:"index.php?portfolio-category=$matches[1]";s:42:"portfolio-item/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:52:"portfolio-item/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:72:"portfolio-item/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:67:"portfolio-item/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:67:"portfolio-item/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:35:"portfolio-item/([^/]+)/trackback/?$";s:41:"index.php?portfolio-item=$matches[1]&tb=1";s:55:"portfolio-item/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?portfolio-item=$matches[1]&feed=$matches[2]";s:50:"portfolio-item/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?portfolio-item=$matches[1]&feed=$matches[2]";s:43:"portfolio-item/([^/]+)/page/?([0-9]{1,})/?$";s:54:"index.php?portfolio-item=$matches[1]&paged=$matches[2]";s:50:"portfolio-item/([^/]+)/comment-page-([0-9]{1,})/?$";s:54:"index.php?portfolio-item=$matches[1]&cpage=$matches[2]";s:35:"portfolio-item/([^/]+)(/[0-9]+)?/?$";s:53:"index.php?portfolio-item=$matches[1]&page=$matches[2]";s:31:"portfolio-item/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:41:"portfolio-item/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:61:"portfolio-item/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"portfolio-item/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"portfolio-item/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:29:"comments/page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:20:"(.?.+?)(/[0-9]+)?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:20:"([^/]+)(/[0-9]+)?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -798,7 +855,7 @@ CREATE TABLE IF NOT EXISTS `sw_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=546 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=912 ;
 
 --
 -- Dumping data for table `sw_postmeta`
@@ -808,7 +865,7 @@ INSERT INTO `sw_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1, 2, '_wp_page_template', 'default'),
 (2, 16, '_edit_last', '1'),
 (3, 16, '_edit_lock', '1337937818:1'),
-(4, 16, 'total_sales', '9'),
+(4, 16, 'total_sales', '10'),
 (5, 16, '_regular_price', '1000'),
 (6, 16, '_sale_price', ''),
 (7, 16, '_tax_status', 'taxable'),
@@ -843,10 +900,10 @@ INSERT INTO `sw_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (38, 18, '_woocommerce_exclude_image', '0'),
 (39, 16, '_thumbnail_id', '18'),
 (40, 19, '_edit_last', '1'),
-(41, 19, '_edit_lock', '1337937829:1'),
-(42, 19, 'total_sales', '6'),
-(43, 19, '_regular_price', '1000'),
-(44, 19, '_sale_price', ''),
+(41, 19, '_edit_lock', '1337955637:1'),
+(42, 19, 'total_sales', '8'),
+(43, 19, '_regular_price', '333'),
+(44, 19, '_sale_price', '33'),
 (45, 19, '_tax_status', 'taxable'),
 (46, 19, '_tax_class', ''),
 (47, 19, '_visibility', 'visible'),
@@ -862,15 +919,15 @@ INSERT INTO `sw_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (57, 19, '_virtual', 'no'),
 (58, 19, '_sale_price_dates_from', ''),
 (59, 19, '_sale_price_dates_to', ''),
-(60, 19, '_price', '1000'),
+(60, 19, '_price', '33'),
 (61, 19, '_stock', ''),
 (62, 19, '_stock_status', 'instock'),
 (63, 19, '_backorders', 'no'),
 (64, 19, '_manage_stock', 'no'),
-(65, 19, '_min_variation_price', ''),
-(66, 19, '_max_variation_price', ''),
-(67, 19, '_min_variation_regular_price', ''),
-(68, 19, '_max_variation_regular_price', ''),
+(65, 19, '_min_variation_price', '5'),
+(66, 19, '_max_variation_price', '344'),
+(67, 19, '_min_variation_regular_price', '5'),
+(68, 19, '_max_variation_regular_price', '344'),
 (69, 19, '_min_variation_sale_price', ''),
 (70, 19, '_max_variation_sale_price', ''),
 (71, 19, '_default_attributes', 'a:0:{}'),
@@ -1236,7 +1293,338 @@ INSERT INTO `sw_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (542, 111, '_wp_attached_file', '2012/05/3.png'),
 (543, 111, '_woocommerce_exclude_image', '0'),
 (544, 111, '_wp_attachment_metadata', 'a:6:{s:5:"width";s:3:"140";s:6:"height";s:3:"216";s:14:"hwstring_small";s:22:"height=''96'' width=''62''";s:4:"file";s:13:"2012/05/3.png";s:5:"sizes";a:4:{s:9:"thumbnail";a:3:{s:4:"file";s:13:"3-140x150.png";s:5:"width";s:3:"140";s:6:"height";s:3:"150";}s:14:"post-thumbnail";a:3:{s:4:"file";s:11:"3-80x80.png";s:5:"width";s:2:"80";s:6:"height";s:2:"80";}s:14:"shop_thumbnail";a:3:{s:4:"file";s:11:"3-58x90.png";s:5:"width";s:2:"58";s:6:"height";s:2:"90";}s:12:"shop_catalog";a:3:{s:4:"file";s:12:"3-97x150.png";s:5:"width";s:2:"97";s:6:"height";s:3:"150";}}s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}'),
-(545, 19, '_thumbnail_id', '111');
+(545, 19, '_thumbnail_id', '111'),
+(546, 113, '_billing_first_name', 'thien'),
+(547, 113, '_billing_last_name', 'phuc'),
+(548, 113, '_billing_company', 'thienphuc'),
+(549, 113, '_billing_address_1', '184/10 Phan Chu Trinh'),
+(550, 113, '_billing_address_2', ''),
+(551, 113, '_billing_city', 'Thua Thien Hue'),
+(552, 113, '_billing_postcode', ''),
+(553, 113, '_billing_country', 'VN'),
+(554, 113, '_billing_state', ''),
+(555, 113, '_billing_email', 'thienphuc1410@gmail.com'),
+(556, 113, '_billing_phone', '+841227465095'),
+(557, 113, '_shipping_first_name', 'thien'),
+(558, 113, '_shipping_last_name', 'phuc'),
+(559, 113, '_shipping_company', 'thienphuc'),
+(560, 113, '_shipping_address_1', '184/10 Phan Chu Trinh'),
+(561, 113, '_shipping_address_2', ''),
+(562, 113, '_shipping_city', 'Thua Thien Hue'),
+(563, 113, '_shipping_postcode', ''),
+(564, 113, '_shipping_country', 'VN'),
+(565, 113, '_shipping_state', ''),
+(566, 113, '_shipping_method', 'free_shipping'),
+(567, 113, '_payment_method', 'bacs'),
+(568, 113, '_shipping_method_title', 'Free Shipping'),
+(569, 113, '_payment_method_title', 'Direct Bank Transfer'),
+(570, 113, '_order_shipping', '0.00'),
+(571, 113, '_order_discount', '0.00'),
+(572, 113, '_cart_discount', '0.00'),
+(573, 113, '_order_tax', '0.00'),
+(574, 113, '_order_shipping_tax', '0.00'),
+(575, 113, '_order_total', '1000.00'),
+(576, 113, '_order_key', 'order_4fbf53ac03aa2'),
+(577, 113, '_customer_user', '1'),
+(578, 113, '_order_items', 'a:1:{i:0;a:10:{s:2:"id";s:2:"19";s:12:"variation_id";s:0:"";s:4:"name";s:23:"Cascade Wool L/S Jacket";s:3:"qty";s:1:"1";s:9:"item_meta";a:0:{}s:13:"line_subtotal";s:4:"1000";s:17:"line_subtotal_tax";s:1:"0";s:10:"line_total";s:4:"1000";s:8:"line_tax";s:1:"0";s:9:"tax_class";s:0:"";}}'),
+(579, 113, '_order_taxes', 'a:0:{}'),
+(580, 113, '_order_currency', 'GBP'),
+(581, 113, '_prices_include_tax', 'no'),
+(582, 113, '_recorded_sales', 'yes'),
+(583, 114, '_billing_first_name', 'thien'),
+(584, 114, '_billing_last_name', 'phuc'),
+(585, 114, '_billing_company', 'thienphuc'),
+(586, 114, '_billing_address_1', '184/10 Phan Chu Trinh'),
+(587, 114, '_billing_address_2', ''),
+(588, 114, '_billing_city', 'Thua Thien Hue'),
+(589, 114, '_billing_postcode', ''),
+(590, 114, '_billing_country', 'VN'),
+(591, 114, '_billing_state', ''),
+(592, 114, '_billing_email', 'thienphuc1410@gmail.com'),
+(593, 114, '_billing_phone', '+841227465095'),
+(594, 114, '_shipping_first_name', 'thien'),
+(595, 114, '_shipping_last_name', 'phuc'),
+(596, 114, '_shipping_company', 'thienphuc'),
+(597, 114, '_shipping_address_1', '184/10 Phan Chu Trinh'),
+(598, 114, '_shipping_address_2', ''),
+(599, 114, '_shipping_city', 'Thua Thien Hue'),
+(600, 114, '_shipping_postcode', ''),
+(601, 114, '_shipping_country', 'VN'),
+(602, 114, '_shipping_state', ''),
+(603, 114, '_shipping_method', 'free_shipping'),
+(604, 114, '_payment_method', 'bacs'),
+(605, 114, '_shipping_method_title', 'Free Shipping'),
+(606, 114, '_payment_method_title', 'Direct Bank Transfer'),
+(607, 114, '_order_shipping', '0.00'),
+(608, 114, '_order_discount', '0.00'),
+(609, 114, '_cart_discount', '0.00'),
+(610, 114, '_order_tax', '0.00'),
+(611, 114, '_order_shipping_tax', '0.00'),
+(612, 114, '_order_total', '1000.00'),
+(613, 114, '_order_key', 'order_4fbf8269c2fa2'),
+(614, 114, '_customer_user', '1'),
+(615, 114, '_order_items', 'a:1:{i:0;a:10:{s:2:"id";s:2:"19";s:12:"variation_id";s:0:"";s:4:"name";s:23:"Cascade Wool L/S Jacket";s:3:"qty";s:1:"1";s:9:"item_meta";a:0:{}s:13:"line_subtotal";s:4:"1000";s:17:"line_subtotal_tax";s:1:"0";s:10:"line_total";s:4:"1000";s:8:"line_tax";s:1:"0";s:9:"tax_class";s:0:"";}}'),
+(616, 114, '_order_taxes', 'a:0:{}'),
+(617, 114, '_order_currency', 'GBP'),
+(618, 114, '_prices_include_tax', 'no'),
+(619, 114, '_recorded_sales', 'yes'),
+(620, 115, '_sku', 'dsdsdsd'),
+(621, 115, '_price', '344'),
+(622, 115, '_sale_price', ''),
+(623, 115, '_weight', '222'),
+(624, 115, '_length', ''),
+(625, 115, '_width', ''),
+(626, 115, '_height', ''),
+(627, 115, '_stock', '4'),
+(628, 115, '_thumbnail_id', ''),
+(629, 115, '_virtual', 'no'),
+(630, 115, '_downloadable', 'no'),
+(631, 115, '_download_limit', ''),
+(632, 115, '_file_path', ''),
+(633, 116, '_sku', '434343434'),
+(634, 116, '_price', '5'),
+(635, 116, '_sale_price', ''),
+(636, 116, '_weight', ''),
+(637, 116, '_length', ''),
+(638, 116, '_width', ''),
+(639, 116, '_height', ''),
+(640, 116, '_stock', '4'),
+(641, 116, '_thumbnail_id', ''),
+(642, 116, '_virtual', 'no'),
+(643, 116, '_downloadable', 'no'),
+(644, 116, '_download_limit', ''),
+(645, 116, '_file_path', ''),
+(646, 118, '_edit_last', '1'),
+(647, 118, '_edit_lock', '1337955638:1'),
+(648, 118, 'total_sales', '3'),
+(649, 118, '_regular_price', ''),
+(650, 118, '_sale_price', ''),
+(651, 118, '_tax_status', 'taxable'),
+(652, 118, '_tax_class', ''),
+(653, 118, '_visibility', 'visible'),
+(654, 118, '_purchase_note', ''),
+(655, 118, '_featured', 'no'),
+(656, 118, '_weight', '100'),
+(657, 118, '_length', '10'),
+(658, 118, '_width', '10'),
+(659, 118, '_height', '10'),
+(660, 118, '_sku', 'demo'),
+(661, 118, '_product_attributes', 'a:1:{s:7:"pa_size";a:6:{s:4:"name";s:7:"pa_size";s:5:"value";s:0:"";s:8:"position";s:1:"1";s:10:"is_visible";s:1:"1";s:12:"is_variation";s:1:"1";s:11:"is_taxonomy";s:1:"1";}}'),
+(662, 118, '_downloadable', 'no'),
+(663, 118, '_virtual', 'no'),
+(664, 118, '_sale_price_dates_from', ''),
+(665, 118, '_sale_price_dates_to', ''),
+(666, 118, '_price', '1'),
+(667, 118, '_stock', ''),
+(668, 118, '_stock_status', 'instock'),
+(669, 118, '_backorders', 'no'),
+(670, 118, '_manage_stock', 'no'),
+(671, 118, '_min_variation_price', '1'),
+(672, 118, '_max_variation_price', '233'),
+(673, 118, '_min_variation_regular_price', '1'),
+(674, 118, '_max_variation_regular_price', '233'),
+(675, 118, '_min_variation_sale_price', '1'),
+(676, 118, '_max_variation_sale_price', '33'),
+(677, 118, '_default_attributes', 'a:1:{s:7:"pa_size";s:6:"normal";}'),
+(678, 119, '_sku', ''),
+(679, 119, '_price', '233'),
+(680, 119, '_sale_price', '33'),
+(681, 119, '_weight', '33'),
+(682, 119, '_length', ''),
+(683, 119, '_width', '3'),
+(684, 119, '_height', '3'),
+(685, 119, '_stock', '331'),
+(686, 119, '_thumbnail_id', '124'),
+(687, 119, '_virtual', 'no'),
+(688, 119, '_downloadable', 'no'),
+(689, 119, '_download_limit', ''),
+(690, 119, '_file_path', ''),
+(693, 120, '_sku', ''),
+(694, 120, '_price', '4'),
+(695, 120, '_sale_price', '4'),
+(696, 120, '_weight', '4'),
+(697, 120, '_length', ''),
+(698, 120, '_width', ''),
+(699, 120, '_height', ''),
+(700, 120, '_stock', '3'),
+(701, 120, '_thumbnail_id', '125'),
+(702, 120, '_virtual', 'no'),
+(703, 120, '_downloadable', 'no'),
+(704, 120, '_download_limit', ''),
+(705, 120, '_file_path', ''),
+(707, 121, '_sku', ''),
+(708, 121, '_price', '1'),
+(709, 121, '_sale_price', '1'),
+(710, 121, '_weight', '1'),
+(711, 121, '_length', '1'),
+(712, 121, '_width', ''),
+(713, 121, '_height', ''),
+(714, 121, '_stock', '1'),
+(715, 121, '_thumbnail_id', ''),
+(716, 121, '_virtual', 'no'),
+(717, 121, '_downloadable', 'no'),
+(718, 121, '_download_limit', ''),
+(719, 121, '_file_path', ''),
+(738, 123, '_wp_attached_file', '2012/05/product_img1.png'),
+(739, 123, '_woocommerce_exclude_image', '0'),
+(740, 123, '_wp_attachment_metadata', 'a:6:{s:5:"width";s:3:"161";s:6:"height";s:3:"215";s:14:"hwstring_small";s:22:"height=''96'' width=''71''";s:4:"file";s:24:"2012/05/product_img1.png";s:5:"sizes";a:4:{s:9:"thumbnail";a:3:{s:4:"file";s:24:"product_img1-150x150.png";s:5:"width";s:3:"150";s:6:"height";s:3:"150";}s:14:"post-thumbnail";a:3:{s:4:"file";s:22:"product_img1-80x80.png";s:5:"width";s:2:"80";s:6:"height";s:2:"80";}s:14:"shop_thumbnail";a:3:{s:4:"file";s:22:"product_img1-67x90.png";s:5:"width";s:2:"67";s:6:"height";s:2:"90";}s:12:"shop_catalog";a:3:{s:4:"file";s:24:"product_img1-112x150.png";s:5:"width";s:3:"112";s:6:"height";s:3:"150";}}s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}'),
+(741, 118, '_thumbnail_id', '123'),
+(748, 124, '_wp_attached_file', '2012/05/1-120x1201.png'),
+(750, 124, '_wp_attachment_metadata', 'a:6:{s:5:"width";s:3:"120";s:6:"height";s:3:"120";s:14:"hwstring_small";s:22:"height=''96'' width=''96''";s:4:"file";s:22:"2012/05/1-120x1201.png";s:5:"sizes";a:2:{s:14:"post-thumbnail";a:3:{s:4:"file";s:20:"1-120x1201-80x80.png";s:5:"width";s:2:"80";s:6:"height";s:2:"80";}s:14:"shop_thumbnail";a:3:{s:4:"file";s:20:"1-120x1201-90x90.png";s:5:"width";s:2:"90";s:6:"height";s:2:"90";}}s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}'),
+(751, 124, '_woocommerce_exclude_image', '0'),
+(752, 125, '_wp_attached_file', '2012/05/3-80x801.png'),
+(754, 125, '_wp_attachment_metadata', 'a:5:{s:5:"width";s:2:"80";s:6:"height";s:2:"80";s:14:"hwstring_small";s:22:"height=''80'' width=''80''";s:4:"file";s:20:"2012/05/3-80x801.png";s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}'),
+(755, 125, '_woocommerce_exclude_image', '0'),
+(762, 119, 'attribute_pa_size', 'lager'),
+(763, 120, 'attribute_pa_size', 'normal'),
+(764, 121, 'attribute_pa_size', 'small'),
+(765, 127, '_billing_first_name', 'thien'),
+(766, 127, '_billing_last_name', 'phuc'),
+(767, 127, '_billing_company', 'thienphuc'),
+(768, 127, '_billing_address_1', '184/10 Phan Chu Trinh'),
+(769, 127, '_billing_address_2', 'dwewewewewe'),
+(770, 127, '_billing_city', 'Thua Thien Hue'),
+(771, 127, '_billing_postcode', '5000'),
+(772, 127, '_billing_country', 'AU'),
+(773, 127, '_billing_state', 'ACT'),
+(774, 127, '_billing_email', 'thienphuc1410@gmail.com'),
+(775, 127, '_billing_phone', '+841227465095'),
+(776, 127, '_shipping_first_name', 'thien'),
+(777, 127, '_shipping_last_name', 'phuc'),
+(778, 127, '_shipping_company', 'thienphuc'),
+(779, 127, '_shipping_address_1', '184/10 Phan Chu Trinh'),
+(780, 127, '_shipping_address_2', 'dwewewewewe'),
+(781, 127, '_shipping_city', 'Thua Thien Hue'),
+(782, 127, '_shipping_postcode', '5000'),
+(783, 127, '_shipping_country', 'AU'),
+(784, 127, '_shipping_state', 'ACT'),
+(785, 127, '_shipping_method', 'free_shipping'),
+(786, 127, '_payment_method', 'paypal'),
+(787, 127, '_shipping_method_title', 'Free Shipping'),
+(788, 127, '_payment_method_title', 'PayPal'),
+(789, 127, '_order_shipping', '0.00'),
+(790, 127, '_order_discount', '0.00'),
+(791, 127, '_cart_discount', '0.00'),
+(792, 127, '_order_tax', '0.00'),
+(793, 127, '_order_shipping_tax', '0.00'),
+(794, 127, '_order_total', '66.00'),
+(795, 127, '_order_key', 'order_4fbf927838bf7'),
+(796, 127, '_customer_user', '1'),
+(797, 127, '_order_items', 'a:1:{i:0;a:10:{s:2:"id";s:3:"118";s:12:"variation_id";s:3:"119";s:4:"name";s:9:"Demo Size";s:3:"qty";s:1:"2";s:9:"item_meta";a:1:{i:0;a:2:{s:9:"meta_name";s:7:"pa_size";s:10:"meta_value";s:5:"lager";}}s:13:"line_subtotal";s:2:"66";s:17:"line_subtotal_tax";s:1:"0";s:10:"line_total";s:2:"66";s:8:"line_tax";s:1:"0";s:9:"tax_class";s:0:"";}}'),
+(798, 127, '_order_taxes', 'a:0:{}'),
+(799, 127, '_order_currency', 'GBP'),
+(800, 127, '_prices_include_tax', 'no'),
+(801, 128, '_billing_first_name', 'thien'),
+(802, 128, '_billing_last_name', 'phuc'),
+(803, 128, '_billing_company', 'thienphuc'),
+(804, 128, '_billing_address_1', '184/10 Phan Chu Trinh'),
+(805, 128, '_billing_address_2', 'dwewewewewe'),
+(806, 128, '_billing_city', 'Thua Thien Hue'),
+(807, 128, '_billing_postcode', '5000'),
+(808, 128, '_billing_country', 'AU'),
+(809, 128, '_billing_state', 'ACT'),
+(810, 128, '_billing_email', 'thienphuc1410@gmail.com'),
+(811, 128, '_billing_phone', '+841227465095'),
+(812, 128, '_shipping_first_name', 'thien'),
+(813, 128, '_shipping_last_name', 'phuc'),
+(814, 128, '_shipping_company', 'thienphuc'),
+(815, 128, '_shipping_address_1', '184/10 Phan Chu Trinh'),
+(816, 128, '_shipping_address_2', 'dwewewewewe'),
+(817, 128, '_shipping_city', 'Thua Thien Hue'),
+(818, 128, '_shipping_postcode', '5000'),
+(819, 128, '_shipping_country', 'AU'),
+(820, 128, '_shipping_state', 'ACT'),
+(821, 128, '_shipping_method', 'free_shipping'),
+(822, 128, '_payment_method', 'cheque'),
+(823, 128, '_shipping_method_title', 'Free Shipping'),
+(824, 128, '_payment_method_title', 'Cheque Payment'),
+(825, 128, '_order_shipping', '0.00'),
+(826, 128, '_order_discount', '0.00'),
+(827, 128, '_cart_discount', '0.00'),
+(828, 128, '_order_tax', '0.00'),
+(829, 128, '_order_shipping_tax', '0.00'),
+(830, 128, '_order_total', '66.00'),
+(831, 128, '_order_key', 'order_4fbf92a53c9b2'),
+(832, 128, '_customer_user', '1'),
+(833, 128, '_order_items', 'a:1:{i:0;a:10:{s:2:"id";s:3:"118";s:12:"variation_id";s:3:"119";s:4:"name";s:9:"Demo Size";s:3:"qty";s:1:"2";s:9:"item_meta";a:1:{i:0;a:2:{s:9:"meta_name";s:7:"pa_size";s:10:"meta_value";s:5:"lager";}}s:13:"line_subtotal";s:2:"66";s:17:"line_subtotal_tax";s:1:"0";s:10:"line_total";s:2:"66";s:8:"line_tax";s:1:"0";s:9:"tax_class";s:0:"";}}'),
+(834, 128, '_order_taxes', 'a:0:{}'),
+(835, 128, '_order_currency', 'GBP'),
+(836, 128, '_prices_include_tax', 'no'),
+(837, 128, '_recorded_sales', 'yes'),
+(838, 129, '_billing_first_name', 'thien'),
+(839, 129, '_billing_last_name', 'phuc'),
+(840, 129, '_billing_company', 'thienphuc'),
+(841, 129, '_billing_address_1', '184/10 Phan Chu Trinh'),
+(842, 129, '_billing_address_2', 'ERNABELLA'),
+(843, 129, '_billing_city', 'Thua Thien Hue'),
+(844, 129, '_billing_postcode', '0872'),
+(845, 129, '_billing_country', 'AU'),
+(846, 129, '_billing_state', 'SA'),
+(847, 129, '_billing_email', 'thienphuc1410@gmail.com'),
+(848, 129, '_billing_phone', '+841227465095'),
+(849, 129, '_shipping_first_name', 'thien'),
+(850, 129, '_shipping_last_name', 'phuc'),
+(851, 129, '_shipping_company', 'thienphuc'),
+(852, 129, '_shipping_address_1', '184/10 Phan Chu Trinh'),
+(853, 129, '_shipping_address_2', 'ERNABELLA'),
+(854, 129, '_shipping_city', 'Thua Thien Hue'),
+(855, 129, '_shipping_postcode', '0872'),
+(856, 129, '_shipping_country', 'AU'),
+(857, 129, '_shipping_state', 'SA'),
+(858, 129, '_shipping_method', 'free_shipping'),
+(859, 129, '_payment_method', 'cheque'),
+(860, 129, '_shipping_method_title', 'Free Shipping'),
+(861, 129, '_payment_method_title', 'Cheque Payment'),
+(862, 129, '_order_shipping', '0.00'),
+(863, 129, '_order_discount', '0.00'),
+(864, 129, '_cart_discount', '0.00'),
+(865, 129, '_order_tax', '0.00'),
+(866, 129, '_order_shipping_tax', '0.00'),
+(867, 129, '_order_total', '1000.00'),
+(868, 129, '_order_key', 'order_4fbf92e8f1708'),
+(869, 129, '_customer_user', '1'),
+(870, 129, '_order_items', 'a:1:{i:0;a:10:{s:2:"id";s:2:"16";s:12:"variation_id";s:0:"";s:4:"name";s:23:"Cascade Wool L/S Jacket";s:3:"qty";s:1:"1";s:9:"item_meta";a:0:{}s:13:"line_subtotal";s:4:"1000";s:17:"line_subtotal_tax";s:1:"0";s:10:"line_total";s:4:"1000";s:8:"line_tax";s:1:"0";s:9:"tax_class";s:0:"";}}'),
+(871, 129, '_order_taxes', 'a:0:{}'),
+(872, 129, '_order_currency', 'GBP'),
+(873, 129, '_prices_include_tax', 'no'),
+(874, 129, '_recorded_sales', 'yes'),
+(875, 130, '_billing_first_name', 'thien'),
+(876, 130, '_billing_last_name', 'phuc'),
+(877, 130, '_billing_company', 'thienphuc'),
+(878, 130, '_billing_address_1', '184/10 Phan Chu Trinh'),
+(879, 130, '_billing_address_2', 'ERNABELLA'),
+(880, 130, '_billing_city', 'Thua Thien Hue'),
+(881, 130, '_billing_postcode', '0872'),
+(882, 130, '_billing_country', 'AU'),
+(883, 130, '_billing_state', 'SA'),
+(884, 130, '_billing_email', 'thienphuc1410@gmail.com'),
+(885, 130, '_billing_phone', '+841227465095'),
+(886, 130, '_shipping_first_name', 'thien'),
+(887, 130, '_shipping_last_name', 'phuc'),
+(888, 130, '_shipping_company', 'thienphuc'),
+(889, 130, '_shipping_address_1', '184/10 Phan Chu Trinh'),
+(890, 130, '_shipping_address_2', 'ERNABELLA'),
+(891, 130, '_shipping_city', 'Thua Thien Hue'),
+(892, 130, '_shipping_postcode', '0872'),
+(893, 130, '_shipping_country', 'AU'),
+(894, 130, '_shipping_state', 'SA'),
+(895, 130, '_shipping_method', 'free_shipping'),
+(896, 130, '_payment_method', 'cheque'),
+(897, 130, '_shipping_method_title', 'Free Shipping'),
+(898, 130, '_payment_method_title', 'Cheque Payment'),
+(899, 130, '_order_shipping', '0.00'),
+(900, 130, '_order_discount', '0.00'),
+(901, 130, '_cart_discount', '0.00'),
+(902, 130, '_order_tax', '0.00'),
+(903, 130, '_order_shipping_tax', '0.00'),
+(904, 130, '_order_total', '4.00'),
+(905, 130, '_order_key', 'order_4fbf932a11f87'),
+(906, 130, '_customer_user', '1'),
+(907, 130, '_order_items', 'a:1:{i:0;a:10:{s:2:"id";s:3:"118";s:12:"variation_id";s:3:"120";s:4:"name";s:9:"Demo Size";s:3:"qty";s:1:"1";s:9:"item_meta";a:1:{i:0;a:2:{s:9:"meta_name";s:7:"pa_size";s:10:"meta_value";s:6:"normal";}}s:13:"line_subtotal";s:1:"4";s:17:"line_subtotal_tax";s:1:"0";s:10:"line_total";s:1:"4";s:8:"line_tax";s:1:"0";s:9:"tax_class";s:0:"";}}'),
+(908, 130, '_order_taxes', 'a:0:{}'),
+(909, 130, '_order_currency', 'GBP'),
+(910, 130, '_prices_include_tax', 'no'),
+(911, 130, '_recorded_sales', 'yes');
 
 -- --------------------------------------------------------
 
@@ -1273,7 +1661,7 @@ CREATE TABLE IF NOT EXISTS `sw_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=113 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=131 ;
 
 --
 -- Dumping data for table `sw_posts`
@@ -1298,9 +1686,9 @@ INSERT INTO `sw_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (16, 1, '2012-05-21 13:47:48', '2012-05-21 13:47:48', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\r\n\r\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Cascade Wool L/S Jacket', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'publish', 'open', 'open', '', 'product-demo', '', '', '2012-05-25 09:13:39', '2012-05-25 09:13:39', '', 0, 'http://127.0.0.1/sassy_willa/?post_type=product&#038;p=16', 0, 'product', '', 0),
 (17, 1, '2012-05-21 15:08:29', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2012-05-21 15:08:29', '0000-00-00 00:00:00', '', 0, 'http://127.0.0.1/sassy_willa/?post_type=product&p=17', 0, 'product', '', 0),
 (18, 1, '2012-05-21 15:09:26', '2012-05-21 15:09:26', '', 'product_img', '', 'inherit', 'open', 'open', '', 'product_img', '', '', '2012-05-21 15:09:26', '2012-05-21 15:09:26', '', 16, 'http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/product_img.png', 0, 'attachment', 'image/png', 0),
-(19, 1, '2012-05-21 15:36:30', '2012-05-21 15:36:30', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\r\n\r\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Cascade Wool L/S Jacket', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'publish', 'open', 'open', '', 'product-demo-copy', '', '', '2012-05-25 09:13:33', '2012-05-25 09:13:33', '', 0, 'http://127.0.0.1/sassy_willa/?product=product-demo-copy', 0, 'product', '', 0),
+(19, 1, '2012-05-21 15:36:30', '2012-05-21 15:36:30', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\r\n\r\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Cascade Wool L/S Jacket', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'publish', 'open', 'open', '', 'product-demo-copy', '', '', '2012-05-25 13:14:32', '2012-05-25 13:14:32', '', 0, 'http://127.0.0.1/sassy_willa/?product=product-demo-copy', 0, 'product', '', 0),
 (20, 1, '2012-05-21 15:36:45', '2012-05-21 15:36:45', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\r\n\r\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Cascade Wool L/S Jacket', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'publish', 'open', 'open', '', 'product-demo-copy-copy', '', '', '2012-05-25 09:13:25', '2012-05-25 09:13:25', '', 0, 'http://127.0.0.1/sassy_willa/?product=product-demo-copy-copy', 0, 'product', '', 1),
-(21, 1, '2012-05-21 15:36:55', '2012-05-21 15:36:55', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\r\n\r\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Cascade Wool L/S Jacket', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'publish', 'open', 'open', '', 'product-demo-copy-copy-copy', '', '', '2012-05-25 08:56:47', '2012-05-25 08:56:47', '', 0, 'http://127.0.0.1/sassy_willa/?product=product-demo-copy-copy-copy', 0, 'product', '', 1),
+(21, 1, '2012-05-21 15:36:55', '2012-05-21 15:36:55', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\r\n\r\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Cascade Wool L/S Jacket', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'publish', 'open', 'open', '', 'product-demo-copy-copy-copy', '', '', '2012-05-25 08:56:47', '2012-05-25 08:56:47', '', 0, 'http://127.0.0.1/sassy_willa/?product=product-demo-copy-copy-copy', 0, 'product', '', 2),
 (22, 1, '2012-05-21 15:47:51', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2012-05-21 15:47:51', '0000-00-00 00:00:00', '', 0, 'http://127.0.0.1/sassy_willa/?page_id=22', 0, 'page', '', 0),
 (23, 1, '2012-05-21 16:01:59', '2012-05-21 16:01:59', ' ', '', '', 'publish', 'open', 'open', '', '23', '', '', '2012-05-24 08:50:28', '2012-05-24 08:50:28', '', 0, 'http://127.0.0.1/sassy_willa/?p=23', 2, 'nav_menu_item', '', 0),
 (24, 1, '2012-05-21 16:16:06', '2012-05-21 16:16:06', '[contactform]', 'Contact', '', 'publish', 'open', 'open', '', 'contact', '', '', '2012-05-21 16:16:06', '2012-05-21 16:16:06', '', 0, 'http://127.0.0.1/sassy_willa/?page_id=24', 0, 'page', '', 0),
@@ -1393,7 +1781,24 @@ INSERT INTO `sw_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (110, 1, '2012-05-25 04:41:52', '2012-05-25 04:41:52', '', '2', '', 'inherit', 'open', 'open', '', '2', '', '', '2012-05-25 04:41:52', '2012-05-25 04:41:52', '', 21, 'http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/2.png', 0, 'attachment', 'image/png', 0),
 (111, 1, '2012-05-25 04:43:41', '2012-05-25 04:43:41', '', '3', '', 'inherit', 'open', 'open', '', '3', '', '', '2012-05-25 04:43:41', '2012-05-25 04:43:41', '', 19, 'http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/3.png', 0, 'attachment', 'image/png', 0);
 INSERT INTO `sw_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
-(112, 1, '2012-05-25 04:45:41', '2012-05-25 04:45:41', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\n\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Cascade Wool L/S Jacket', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'inherit', 'open', 'open', '', '21-autosave', '', '', '2012-05-25 04:45:41', '2012-05-25 04:45:41', '', 21, 'http://127.0.0.1/sassy_willa/21-autosave/', 0, 'revision', '', 0);
+(112, 1, '2012-05-25 04:45:41', '2012-05-25 04:45:41', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\n\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Cascade Wool L/S Jacket', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'inherit', 'open', 'open', '', '21-autosave', '', '', '2012-05-25 04:45:41', '2012-05-25 04:45:41', '', 21, 'http://127.0.0.1/sassy_willa/21-autosave/', 0, 'revision', '', 0),
+(113, 1, '2012-05-25 09:40:58', '2012-05-25 09:40:58', '', 'Order &ndash; May 25, 2012 @ 09:40 AM', '', 'publish', 'open', 'closed', 'order_4fbf53aae134f', 'order-may-25-2012-0940-am', '', '', '2012-05-25 09:40:58', '2012-05-25 09:40:58', '', 0, 'http://127.0.0.1/sassy_willa/?shop_order=order-may-25-2012-0940-am', 0, 'shop_order', '', 2),
+(114, 1, '2012-05-25 13:00:24', '2012-05-25 13:00:24', '', 'Order &ndash; May 25, 2012 @ 01:00 PM', '', 'publish', 'open', 'closed', 'order_4fbf82687b654', 'order-may-25-2012-0100-pm', '', '', '2012-05-25 13:00:24', '2012-05-25 13:00:24', '', 0, 'http://127.0.0.1/sassy_willa/?shop_order=order-may-25-2012-0100-pm', 0, 'shop_order', '', 2),
+(115, 1, '2012-05-25 13:02:19', '2012-05-25 13:02:19', '', 'Variation #115 of Cascade Wool L/S Jacket', '', 'publish', 'open', 'open', '', 'product-19-variation', '', '', '2012-05-25 13:02:19', '2012-05-25 13:02:19', '', 19, 'http://127.0.0.1/sassy_willa/?product_variation=product-19-variation', 0, 'product_variation', '', 0),
+(116, 1, '2012-05-25 13:02:34', '2012-05-25 13:02:34', '', 'Variation #116 of Cascade Wool L/S Jacket', '', 'publish', 'open', 'open', '', 'product-19-variation-2', '', '', '2012-05-25 13:02:34', '2012-05-25 13:02:34', '', 19, 'http://127.0.0.1/sassy_willa/?product_variation=product-19-variation-2', 1, 'product_variation', '', 0),
+(117, 1, '2012-05-25 13:08:16', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2012-05-25 13:08:16', '0000-00-00 00:00:00', '', 0, 'http://127.0.0.1/sassy_willa/?post_type=product&p=117', 0, 'product', '', 0),
+(118, 1, '2012-05-25 13:10:45', '2012-05-25 13:10:45', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna. Praesent sit amet ligula id orci venenatis auctor. Phasellus porttitor, metus non tincidunt dapibus, orci pede pretium neque, sit amet adipiscing ipsum lectus et libero. Aenean bibendum. Curabitur mattis quam id urna. Vivamus dui. Donec nonummy lacinia lorem. Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. Quisque risus erat, posuere at, tristique non, lacinia quis, eros.\r\n\r\nCurabitur non elit. Pellentesque iaculis, nisl non aliquet adipiscing, purus urna aliquet orci, sed sodales pede neque at massa. Pellentesque laoreet, enim eget varius mollis, sapien erat suscipit metus, sit amet iaculis nulla sapien id felis. Aliquam erat volutpat. Nam congue nulla a ligula. Morbi tempor hendrerit erat. Curabitur augue. Vestibulum nulla est, commodo et, fringilla quis, bibendum eget, ipsum. Suspendisse pulvinar iaculis ante. Mauris dignissim ante quis nisi. Aliquam ante mi, aliquam et, pellentesque ac, dapibus et, enim. In vulputate justo vel magna. Phasellus imperdiet justo. Proin odio orci, dapibus id, porta a, pellentesque id, erat. Aliquam erat volutpat. Mauris nonummy varius libero. Sed dolor ipsum, tempor non, aliquet et, pulvinar quis, dui. Pellentesque mauris diam, lobortis id, varius varius, facilisis at, nulla.', 'Demo Size', 'Cras pede. Nullam id velit sit amet turpis tincidunt sagittis. Nunc malesuada. Nunc consequat scelerisque odio.', 'publish', 'open', 'open', '', 'demo-size', '', '', '2012-05-25 13:20:45', '2012-05-25 13:20:45', '', 0, 'http://127.0.0.1/sassy_willa/?post_type=product&#038;p=118', 0, 'product', '', 0),
+(119, 1, '2012-05-25 13:11:00', '2012-05-25 13:11:00', '', 'Variation #119 of Demo Size', '', 'publish', 'open', 'open', '', 'product-118-variation', '', '', '2012-05-25 13:11:00', '2012-05-25 13:11:00', '', 118, 'http://127.0.0.1/sassy_willa/?product_variation=product-118-variation', 0, 'product_variation', '', 0),
+(120, 1, '2012-05-25 13:12:16', '2012-05-25 13:12:16', '', 'Variation #120 of Demo Size', '', 'publish', 'open', 'open', '', 'product-118-variation-2', '', '', '2012-05-25 13:12:16', '2012-05-25 13:12:16', '', 118, 'http://127.0.0.1/sassy_willa/?product_variation=product-118-variation-2', 1, 'product_variation', '', 0),
+(121, 1, '2012-05-25 13:12:29', '2012-05-25 13:12:29', '', 'Variation #121 of Demo Size', '', 'publish', 'open', 'open', '', 'product-118-variation-3', '', '', '2012-05-25 13:12:29', '2012-05-25 13:12:29', '', 118, 'http://127.0.0.1/sassy_willa/?product_variation=product-118-variation-3', 2, 'product_variation', '', 0),
+(123, 1, '2012-05-25 13:15:17', '2012-05-25 13:15:17', '', 'product_img', '', 'inherit', 'open', 'open', '', 'product_img-2', '', '', '2012-05-25 13:15:17', '2012-05-25 13:15:17', '', 118, 'http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/product_img1.png', 0, 'attachment', 'image/png', 0),
+(124, 1, '2012-05-25 13:17:28', '2012-05-25 13:17:28', '', '1-120x120', '', 'inherit', 'open', 'open', '', '1-120x120', '', '', '2012-05-25 13:17:28', '2012-05-25 13:17:28', '', 119, 'http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/1-120x1201.png', 0, 'attachment', 'image/png', 0),
+(125, 1, '2012-05-25 13:17:43', '2012-05-25 13:17:43', '', '3-80x80', '', 'inherit', 'open', 'open', '', '3-80x80', '', '', '2012-05-25 13:17:43', '2012-05-25 13:17:43', '', 120, 'http://127.0.0.1/sassy_willa/wp-content/uploads/2012/05/3-80x801.png', 0, 'attachment', 'image/png', 0),
+(126, 1, '2012-05-25 13:19:11', '2012-05-25 13:19:11', '', 'Demo Size', '', 'inherit', 'open', 'open', '', '118-autosave', '', '', '2012-05-25 13:19:11', '2012-05-25 13:19:11', '', 118, 'http://127.0.0.1/sassy_willa/118-autosave/', 0, 'revision', '', 0),
+(127, 1, '2012-05-25 14:08:54', '2012-05-25 14:08:54', '', 'Order &ndash; May 25, 2012 @ 02:08 PM', '', 'publish', 'open', 'closed', 'order_4fbf9276d4e01', 'order-may-25-2012-0208-pm', '', '', '2012-05-25 14:08:54', '2012-05-25 14:08:54', '', 0, 'http://127.0.0.1/sassy_willa/?shop_order=order-may-25-2012-0208-pm', 0, 'shop_order', '', 1),
+(128, 1, '2012-05-25 14:09:40', '2012-05-25 14:09:40', '', 'Order &ndash; May 25, 2012 @ 02:09 PM', '', 'publish', 'open', 'closed', 'order_4fbf92a407d82', 'order-may-25-2012-0209-pm', '', '', '2012-05-25 14:09:40', '2012-05-25 14:09:40', '', 0, 'http://127.0.0.1/sassy_willa/?shop_order=order-may-25-2012-0209-pm', 0, 'shop_order', '', 3),
+(129, 1, '2012-05-25 14:10:47', '2012-05-25 14:10:47', '', 'Order &ndash; May 25, 2012 @ 02:10 PM', '', 'publish', 'open', 'closed', 'order_4fbf92e7dd1bf', 'order-may-25-2012-0210-pm', '', '', '2012-05-25 14:10:47', '2012-05-25 14:10:47', '', 0, 'http://127.0.0.1/sassy_willa/?shop_order=order-may-25-2012-0210-pm', 0, 'shop_order', '', 2),
+(130, 1, '2012-05-25 14:11:52', '2012-05-25 14:11:52', '', 'Order &ndash; May 25, 2012 @ 02:11 PM', '', 'publish', 'open', 'closed', 'order_4fbf9328c6aa5', 'order-may-25-2012-0211-pm', '', '', '2012-05-25 14:11:52', '2012-05-25 14:11:52', '', 0, 'http://127.0.0.1/sassy_willa/?shop_order=order-may-25-2012-0211-pm', 0, 'shop_order', '', 3);
 
 -- --------------------------------------------------------
 
@@ -1409,7 +1814,7 @@ CREATE TABLE IF NOT EXISTS `sw_terms` (
   PRIMARY KEY (`term_id`),
   UNIQUE KEY `slug` (`slug`),
   KEY `name` (`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;
 
 --
 -- Dumping data for table `sw_terms`
@@ -1449,7 +1854,10 @@ INSERT INTO `sw_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (31, 'Shop By', 'shop-by-shoes', 0),
 (32, 'Sale', 'sale-shoes', 0),
 (33, 'main_menu', 'main_menu', 0),
-(34, 'Women', 'women', 0);
+(34, 'Women', 'women', 0),
+(35, 'Small', 'small', 0),
+(36, 'Larger', 'lager', 0),
+(37, 'Normal', 'normal', 0);
 
 -- --------------------------------------------------------
 
@@ -1511,7 +1919,17 @@ INSERT INTO `sw_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (92, 9, 0),
 (106, 9, 0),
 (107, 9, 0),
-(108, 9, 0);
+(108, 9, 0),
+(113, 9, 0),
+(114, 9, 0),
+(118, 5, 0),
+(118, 36, 0),
+(118, 37, 0),
+(118, 38, 0),
+(127, 13, 0),
+(128, 9, 0),
+(129, 9, 0),
+(130, 9, 0);
 
 -- --------------------------------------------------------
 
@@ -1529,7 +1947,7 @@ CREATE TABLE IF NOT EXISTS `sw_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=39 ;
 
 --
 -- Dumping data for table `sw_term_taxonomy`
@@ -1540,15 +1958,15 @@ INSERT INTO `sw_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (2, 2, 'link_category', '', 0, 7),
 (3, 3, 'product_type', '', 0, 4),
 (4, 4, 'product_type', '', 0, 0),
-(5, 5, 'product_type', '', 0, 0),
+(5, 5, 'product_type', '', 0, 1),
 (6, 6, 'product_type', '', 0, 0),
 (7, 7, 'shop_order_status', '', 0, 0),
 (8, 8, 'shop_order_status', '', 0, 0),
-(9, 9, 'shop_order_status', '', 0, 5),
+(9, 9, 'shop_order_status', '', 0, 10),
 (10, 10, 'shop_order_status', '', 0, 0),
 (11, 11, 'shop_order_status', '', 0, 0),
 (12, 12, 'shop_order_status', '', 0, 0),
-(13, 13, 'shop_order_status', '', 0, 0),
+(13, 13, 'shop_order_status', '', 0, 1),
 (14, 14, 'pa_brand', '', 0, 0),
 (15, 15, 'pa_brand', '', 0, 4),
 (16, 16, 'pa_brand', '', 0, 0),
@@ -1570,7 +1988,10 @@ INSERT INTO `sw_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (32, 32, 'product_cat', '', 28, 0),
 (33, 33, 'nav_menu', '', 0, 5),
 (34, 34, 'category', '', 0, 4),
-(35, 18, 'link_category', 'WOMENS', 0, 0);
+(35, 18, 'link_category', 'WOMENS', 0, 0),
+(36, 35, 'pa_size', '', 0, 1),
+(37, 36, 'pa_size', '', 0, 1),
+(38, 37, 'pa_size', '', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -1586,7 +2007,7 @@ CREATE TABLE IF NOT EXISTS `sw_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=41 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=46 ;
 
 --
 -- Dumping data for table `sw_usermeta`
@@ -1622,12 +2043,15 @@ INSERT INTO `sw_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (28, 1, 'billing_company', 'thienphuc'),
 (29, 1, 'billing_address_1', '184/10 Phan Chu Trinh'),
 (30, 1, 'billing_city', 'Thua Thien Hue'),
-(31, 1, 'billing_country', 'VN'),
+(31, 1, 'billing_country', 'AU'),
 (32, 1, 'billing_email', 'thienphuc1410@gmail.com'),
 (33, 1, 'billing_phone', '+841227465095'),
 (36, 1, 'closedpostboxes_page', 'a:0:{}'),
 (37, 1, 'metaboxhidden_page', 'a:6:{i:0;s:10:"postcustom";i:1;s:16:"commentstatusdiv";i:2;s:11:"commentsdiv";i:3;s:7:"slugdiv";i:4;s:9:"authordiv";i:5;s:12:"revisionsdiv";}'),
-(40, 1, '_woocommerce_persistent_cart', 'a:1:{s:4:"cart";a:1:{s:32:"1f0e3dad99908345f7439f8ffabdffc4";a:8:{s:10:"product_id";s:2:"19";s:12:"variation_id";s:0:"";s:9:"variation";s:0:"";s:8:"quantity";s:1:"1";s:10:"line_total";s:4:"1000";s:8:"line_tax";s:1:"0";s:13:"line_subtotal";s:4:"1000";s:17:"line_subtotal_tax";s:1:"0";}}}');
+(40, 1, 'billing_address_2', 'ERNABELLA'),
+(41, 1, 'billing_postcode', '0872'),
+(42, 1, 'billing_state', 'SA'),
+(45, 1, '_woocommerce_persistent_cart', 'a:1:{s:4:"cart";a:1:{s:32:"1f0e3dad99908345f7439f8ffabdffc4";a:8:{s:10:"product_id";s:2:"19";s:12:"variation_id";s:0:"";s:9:"variation";s:0:"";s:8:"quantity";s:1:"1";s:10:"line_total";s:2:"33";s:8:"line_tax";s:1:"0";s:13:"line_subtotal";s:2:"33";s:17:"line_subtotal_tax";s:1:"0";}}}');
 
 -- --------------------------------------------------------
 
@@ -1670,14 +2094,15 @@ CREATE TABLE IF NOT EXISTS `sw_woocommerce_attribute_taxonomies` (
   `attribute_label` longtext,
   `attribute_type` varchar(200) NOT NULL,
   PRIMARY KEY (`attribute_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `sw_woocommerce_attribute_taxonomies`
 --
 
 INSERT INTO `sw_woocommerce_attribute_taxonomies` (`attribute_id`, `attribute_name`, `attribute_label`, `attribute_type`) VALUES
-(1, 'brand', 'Brand', 'select');
+(1, 'brand', 'Brand', 'select'),
+(2, 'size', 'Size', 'select');
 
 -- --------------------------------------------------------
 
@@ -1710,7 +2135,7 @@ CREATE TABLE IF NOT EXISTS `sw_woocommerce_termmeta` (
   `meta_key` varchar(255) DEFAULT NULL,
   `meta_value` longtext,
   PRIMARY KEY (`meta_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=39 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=42 ;
 
 --
 -- Dumping data for table `sw_woocommerce_termmeta`
@@ -1754,7 +2179,10 @@ INSERT INTO `sw_woocommerce_termmeta` (`meta_id`, `woocommerce_term_id`, `meta_k
 (35, 33, 'order', '1'),
 (36, 34, 'order', '1'),
 (37, 1, 'order', '2'),
-(38, 2, 'order', '2');
+(38, 2, 'order', '2'),
+(39, 35, 'order_pa_size', '3'),
+(40, 36, 'order_pa_size', '2'),
+(41, 37, 'order_pa_size', '1');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
