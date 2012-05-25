@@ -81,7 +81,7 @@ class WooCommerce_Widget_Login extends WP_Widget {
 			global $login_errors;
 	
 			if ( is_wp_error($login_errors) && $login_errors->get_error_code() ) foreach ($login_errors->get_error_messages() as $error) :
-				echo '<div class="woocommerce_error">' . $error . "</div>\n";
+					echo '<div class="woocommerce_error">' . $error . "</div>\n";				
 				break;
 			endforeach;					
 			
@@ -136,8 +136,15 @@ class WooCommerce_Widget_Login extends WP_Widget {
 						
 						if (result.success==1) {
 							window.location = result.redirect;
-						} else {
-							jQuery(thisform).prepend('<div class=\"woocommerce_error\">' + result.error + '</div>');
+						} else {							
+							if(result.error == undefined)
+							{
+								jQuery(thisform).prepend('<div class=\"woocommerce_error\">' + 'ERROR: Login not successful' + '</div>');
+							}
+							else
+							{
+								jQuery(thisform).prepend('<div class=\"woocommerce_error\">' + result.error + '</div>');
+							}
 							jQuery(thisform).unblock();
 						}
 					});

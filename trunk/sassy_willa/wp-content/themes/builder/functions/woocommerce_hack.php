@@ -249,14 +249,15 @@ function _wip_single_product_before_gallery(){
 function _wip_single_product_before_summary(){
 	
 	echo '</div><!-- close .woo_product_gallery -->' . "\n";
+	
+	echo '<div class="woo_product_content float_right">' . "\n";
 	/*begin thien custom */
 	
 	global $post, $product;
 	
-	echo '<div itemprop="price" id="woo_price">'. $product->get_title() .'</div>' . "\n";
-	echo '<div itemprop="price" id="woo_price">'. $product->get_price_html() .'</div>' . "\n";
+	echo '<div itemprop="name" id="woo_product_name">'. $product->get_title() .'</div>' . "\n";
+	echo '<div itemprop="price" id="woo_product_price">'. $product->get_price_html() .'</div>' . "\n";
 	/*end thien custom */
-	echo '<div class="woo_product_content float_right">' . "\n";
 
 }
 
@@ -624,12 +625,16 @@ function _wip_generate_product_title_on_lists(){
 	global $post, $product;
 	/* begin thien custom */	
 	$categories = get_the_terms($product->id, 'product_cat');								
-	foreach ( $categories as $category ){																		
-	}							
-	if ( $categories ) {
-		echo '<h3 class="category-title-on-lists">' . "\n";
-		echo '<a href="'.get_term_link($category->slug, 'product_cat').'" title="'. $category->name .'">'.$category->name;		echo '</a>' . "\n"; 
-		echo '</h3>' . "\n";
+	if($categories)
+	{
+		foreach ( $categories as $category ){																		
+		
+		}							
+		if ( $categories ) {
+			echo '<h3 class="category-title-on-lists">' . "\n";
+			echo '<a href="'.get_term_link($category->slug, 'product_cat').'" title="'. $category->name .'">'.$category->name;		echo '</a>' . "\n"; 
+			echo '</h3>' . "\n";
+		}
 	}
 	/* end thien custom */
 	echo '<h3 class="product-title-on-lists">' . "\n";

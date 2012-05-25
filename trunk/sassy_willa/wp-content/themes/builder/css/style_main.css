@@ -723,3 +723,94 @@ form.woocommerce_ordering{
 .related  ul.products li h3.product-title-on-lists{
 	font-size:12px;
 	}
+#comments>p
+{
+	padding-left:20px;
+}
+
+.woo_product_gallery>#woo_price_ribbon
+{
+	display:none;
+}
+
+.sidebarbox h3.sidebar-title
+{
+	background: url("../images/icon_menu_left.png") no-repeat scroll left center transparent;
+    color: #817F7F;
+    font-size: 15px;
+    font-weight: bold;
+    margin: -15px -15px 0 -2px;
+    padding-left: 24px;
+	cursor: pointer;
+}
+
+.sidebarbox
+{
+	border:none;
+	margin:0 0 0;
+}
+
+#woo_product_name{
+	color: #DE1E7D;
+	font-size: 30px;
+	padding-left: 24px;
+	position: absolute;
+	left: -25px;
+}
+
+#woo_product_price
+{
+	float: right;
+	position: relative;
+	height: 60px;
+	width: 20px;
+	margin-right: 85px;
+	margin-bottom: 22px;
+}
+
+#woo_product_price del {
+	position: absolute;
+	top: 0px;
+}
+
+#woo_product_price del span{
+	color: #878787;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+#woo_product_price ins
+{
+	position: absolute;
+	bottom: 0px;
+}
+#woo_product_price ins  span{
+	color: 
+	#DE1E7D;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+
+.woo_product_content  .summary
+{
+	clear:right;
+}
+
+#order_review .form-row {
+    clear: both;
+    float: right;
+    margin-bottom: 24px;
+    width: 400px;
+}
+
+#order_review .form-row  .eway_card_type, #order_review .form-row  .input-text{
+    width: 250px;
+}
+
+#order_review .form-row  > label{
+	float:left;
+	width:100px;
+	display:block;
+	text-align: left;
+}
