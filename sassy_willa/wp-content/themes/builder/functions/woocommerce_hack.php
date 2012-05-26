@@ -1161,13 +1161,186 @@ function wipclonefunction_woocommerce_products($atts){
 	return ob_get_clean();
 }
 
+
+function wipclonefunction_woocommerce_newest_arrial_products( $atts ) {
+	
+	global $woocommerce_loop, $sidebar_layout, $fullwidth_layout;
+	
+	extract(shortcode_atts(array(
+		'per_page' 	=> '12',
+		'columns' 	=> '4',
+		'orderby' => 'date',
+		'order' => 'desc'
+	), $atts));
+	
+	$woocommerce_loop['columns'] = $woocommerce_loop['wip_cols'] = $columns;
+	$woocommerce_loop['parent_layout'] = ( $fullwidth_layout ) ? 'fullwidth' : 'content-sidebar';
+	
+	$args = array(
+		'post_type'	=> 'product',
+		'post_status' => 'publish',
+		'ignore_sticky_posts'	=> 1,
+		'posts_per_page' => $per_page,
+		'orderby' => $orderby,
+		'order' => $order,
+		'meta_query' => array(
+			array(
+				'key' => '_visibility',
+				'value' => array('catalog', 'visible'),
+				'compare' => 'IN'
+			),
+			array(
+				'key' => '_featured',
+				'value' => 'yes'
+			)
+		)
+	);
+	query_posts($args);
+	ob_start();
+	woocommerce_get_template_part( 'loop', 'shop' );
+	wp_reset_query();
+	
+	return ob_get_clean();
+}
+
+function wipclonefunction_woocommerce_most_popular_products( $atts ) {
+	
+	global $woocommerce_loop, $sidebar_layout, $fullwidth_layout;
+	
+	extract(shortcode_atts(array(
+		'per_page' 	=> '12',
+		'columns' 	=> '4',
+		'orderby' => 'date',
+		'order' => 'desc'
+	), $atts));
+	
+	$woocommerce_loop['columns'] = $woocommerce_loop['wip_cols'] = $columns;
+	$woocommerce_loop['parent_layout'] = ( $fullwidth_layout ) ? 'fullwidth' : 'content-sidebar';
+	
+	$args = array(
+    		'posts_per_page' => $per_page, 
+    		'post_status' 	 => 'publish', 
+    		'post_type' 	 => 'product',
+    		'meta_key' 		 => 'total_sales',
+    		'orderby' 		 => 'meta_value',
+    		'no_found_rows'  => 1,
+    	);
+		
+	
+	query_posts($args);
+	ob_start();
+	woocommerce_get_template_part( 'loop', 'shop' );
+	wp_reset_query();
+	
+	return ob_get_clean();
+}
+
+function wipclonefunction_woocommerce_willas_choice_products( $atts ) {
+	
+	global $woocommerce_loop, $sidebar_layout, $fullwidth_layout;
+	
+	extract(shortcode_atts(array(
+		'per_page' 	=> '12',
+		'columns' 	=> '4',
+		'orderby' => 'date',
+		'order' => 'desc'
+	), $atts));
+	
+	$woocommerce_loop['columns'] = $woocommerce_loop['wip_cols'] = $columns;
+	$woocommerce_loop['parent_layout'] = ( $fullwidth_layout ) ? 'fullwidth' : 'content-sidebar';
+	
+	$args = array(
+		'post_type'	=> 'product',
+		'post_status' => 'publish',
+		'ignore_sticky_posts'	=> 1,
+		'posts_per_page' => $per_page,
+		'orderby' => $orderby,
+		'order' => $order,
+		'meta_query' => array(
+			array(
+				'key' => '_visibility',
+				'value' => array('catalog', 'visible'),
+				'compare' => 'IN'
+			),		
+		),
+		
+	);
+	
+	global $wpdb;
+		
+	$args['where'] .= " AND $wpdb->commentmeta.meta_key = 'rating' ";
+		
+	$args['join'] = "
+			LEFT JOIN $wpdb->comments ON($wpdb->posts.ID = $wpdb->comments.comment_post_ID)
+			LEFT JOIN $wpdb->commentmeta ON($wpdb->comments.comment_ID = $wpdb->commentmeta.comment_id)
+		";
+	
+	$args['orderby'] = "$wpdb->commentmeta.meta_value DESC";
+		
+	$args['groupby'] = "$wpdb->posts.ID";
+		
+	query_posts($args);
+	ob_start();
+	woocommerce_get_template_part( 'loop', 'shop' );
+	wp_reset_query();
+	
+	return ob_get_clean();
+}
+
+
+function wipclonefunction_woocommerce_on_sale_products( $atts ) {
+	
+	global $woocommerce_loop, $sidebar_layout, $fullwidth_layout;
+	
+	extract(shortcode_atts(array(
+		'per_page' 	=> '12',
+		'columns' 	=> '4',
+		'orderby' => 'date',
+		'order' => 'desc'
+	), $atts));
+	
+	$woocommerce_loop['columns'] = $woocommerce_loop['wip_cols'] = $columns;
+	$woocommerce_loop['parent_layout'] = ( $fullwidth_layout ) ? 'fullwidth' : 'content-sidebar';
+	
+	$args = array(
+		'post_type'	=> 'product',
+		'post_status' => 'publish',
+		'ignore_sticky_posts'	=> 1,
+		'posts_per_page' => $per_page,
+		'orderby' => $orderby,
+		'order' => $order,
+		'meta_query' => array(
+			array(
+				'key' => '_visibility',
+				'value' => array('catalog', 'visible'),
+				'compare' => 'IN'
+			),
+			array(
+				'key' => '_sale_price',
+		        'value' 	=> 0,
+				'compare' 	=> '>',
+				'type'		=> 'NUMERIC'
+			)
+		)
+	);
+	query_posts($args);
+	ob_start();
+	woocommerce_get_template_part( 'loop', 'shop' );
+	wp_reset_query();
+	
+	return ob_get_clean();
+}
+
 /**
  * <!-- END CLONE -->
  */
 
 
 
-
+add_shortcode('wip_product_newest_arrial', 'wipclonefunction_woocommerce_newest_arrial_products');
+add_shortcode('wip_product_most_popular', 'wipclonefunction_woocommerce_most_popular_products');
+add_shortcode('wip_product_willas_choice', 'wipclonefunction_woocommerce_willas_choice_products');
+add_shortcode('wip_product_on_sale', 'wipclonefunction_woocommerce_on_sale_products');
 add_shortcode('wip_product_category', 'wipclonefunction_woocommerce_product_category');
 add_shortcode('wip_recent_products', 'wipclonefunction_woocommerce_recent_products');
 add_shortcode('wip_featured_products', 'wipclonefunction_woocommerce_featured_products');

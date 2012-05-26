@@ -235,6 +235,9 @@ function woocommerce_eway_init() {
             <?php if ($this->description) : ?><p><?php echo $this->description; ?></p><?php endif; ?>
             
 			<p class='form_checkout'>
+				<p class="form-row">
+					<span class="title_payment">PAYMENT METHOD</span>
+				</p>			
             	<p class="form-row form-row-wide eway_card_type_radios">
                 	
 					<label><?php echo __("Credit Cart Type", 'woocommerce') ?>:</label>
