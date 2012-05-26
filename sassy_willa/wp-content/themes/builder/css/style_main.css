@@ -814,3 +814,6 @@ form.woocommerce_ordering{
 	display:block;
 	text-align: left;
 }
+#order_review .form-row-first .woocommerce-select{
+	width:128px;
+}
