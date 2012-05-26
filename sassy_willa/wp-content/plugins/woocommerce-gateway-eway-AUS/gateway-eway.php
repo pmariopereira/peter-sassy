@@ -236,7 +236,8 @@ function woocommerce_eway_init() {
             
 			<p class='form_checkout'>
             	<p class="form-row form-row-wide eway_card_type_radios">
-					<label><?php echo __("Credit cart type", 'woocommerce') ?>:</label>
+                	
+					<label><?php echo __("Credit Cart Type", 'woocommerce') ?>:</label>
 					<select name ="eway_card_type" class="eway_card_type">
 					
 					<?php foreach ($this->avaiable_card_types as $type => $card) : ?>

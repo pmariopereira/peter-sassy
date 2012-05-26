@@ -271,7 +271,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			
 			<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 			
-			<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="<?php echo apply_filters('woocommerce_order_button_text', __('Place order', 'woocommerce')); ?>" />
+			<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="<?php echo apply_filters('woocommerce_order_button_text', __('authorise payment and confirm order', 'woocommerce')); ?>" />
 			
 			<?php if (woocommerce_get_page_id('terms')>0) : ?>
 			<p class="form-row terms">
