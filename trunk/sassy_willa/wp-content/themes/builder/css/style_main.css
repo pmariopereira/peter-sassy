@@ -752,6 +752,13 @@ form.woocommerce_ordering {
 	margin-right: 85px;
 	margin-bottom: 22px;
 }
+#woo_product_price span.amount
+{
+	color: #878787;
+	font-size: 28px;
+	font-weight: normal;
+}
+
 #woo_product_price del {
 	position: absolute;
 	top: 0px;
@@ -835,3 +842,13 @@ form.woocommerce_ordering {
 	padding: 0;
 	width: 348px;
 	}
+	
+.title_payment
+{
+	text-align: left;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #DE1E7D;
+}
