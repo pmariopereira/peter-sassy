@@ -523,7 +523,8 @@ jQuery.fn.pH=function(df){ var el = jQuery(this);df = df || el.attr('placeholder
 			if( wLogin.length ){
 				$('#process-1').append('<div class="navigation"><a class="button nav-previous woo_step" href="#" rel="0">&larr; '+clicker.eq('0').find('.checkout_process_label').text()+'</a><a class="button nav-next woo_step" href="#" rel="2">'+clicker.eq('2').find('.checkout_process_label').text()+' &rarr;</a></div>');
 			} else {
-				$('#process-1').append('<div class="navigation"><a class="button nav-next woo_step" href="#" rel="2">'+clicker.eq('2').find('.checkout_process_label').text()+' &rarr;</a></div>');
+				//$('#process-1').append('<div class="navigation"><a class="button nav-next woo_step" href="#" rel="4">'+clicker.eq('2').find('.checkout_process_label').text()+' &rarr;</a></div>');
+				$('#process-1').append('<div class="navigation"><a class="button nav-next woo_step" id="step4" href="#" rel="4"> PROCEED TO PURCHASE </a></div>');
 			}
 			$('#process-2').append('<div class="navigation"><a class="button nav-previous woo_step" href="#" rel="1">&larr; '+clicker.eq('1').find('.checkout_process_label').text()+'</a><a class="button nav-next woo_step" href="#" rel="3">'+clicker.eq('3').find('.checkout_process_label').text()+' &rarr;</a></div>');
 			
@@ -598,16 +599,16 @@ jQuery.fn.pH=function(df){ var el = jQuery(this);df = df || el.attr('placeholder
 			if( $('#process-0').length ){
 				$('#process-0').show();
 				$('#checkout_tab_process').find('li:first').addClass('viewed');
-				processBar.stop().animate({width : '20%'}, {duration:1000,easing:'easeOutSine'});
+				processBar.stop().animate({width : '50%'}, {duration:1000,easing:'easeOutSine'});
 			} else {
 				$('#process-1').show();
 				if( $('#checkout_tab_process').find('li.tolog').length ){
 					$('#checkout_tab_process').find('li:eq(1)').addClass('viewed');
 					processBar.stop().animate({width : '40%'}, {duration:1000,easing:'easeOutSine'});
 				} else {
-					 $('#checkout_tab_process').find('li').css({width : '25%'});
+					 $('#checkout_tab_process').find('li').css({width : '50%'});
 					$('#checkout_tab_process').find('li:first').addClass('viewed');
-					processBar.stop().animate({width : '25%'}, {duration:1000,easing:'easeOutSine'});
+					processBar.stop().animate({width : '50%'}, {duration:1000,easing:'easeOutSine'});
 				}
 			}
 			
@@ -781,7 +782,11 @@ jQuery.fn.pH=function(df){ var el = jQuery(this);df = df || el.attr('placeholder
 					}
 				});
 			});
-		});
+			
+			$(".navigation #step4").live('click',function(){
+				$("#checkout_tab_process li:eq(1) a").click();
+			});			
+		});		
 
 	});
 })(jQuery);
