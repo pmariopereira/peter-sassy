@@ -205,8 +205,10 @@ add_action( 'woocommerce_before_single_product_summary', '_wip_single_product_be
 add_action( 'woocommerce_before_single_product_summary', '_wip_single_product_before_summary', 25);
 add_action( 'woocommerce_after_single_product_summary', '_wip_single_product_before_tabs', 5);
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 25);
-add_action( 'woocommerce_product_tabs', '_wip_product_gallery_tab', 15 );
-add_action( 'woocommerce_product_tab_panels', '_wip_product_gallery_panel', 15 );
+/*begin thien custom */
+//add_action( 'woocommerce_product_tabs', '_wip_product_gallery_tab', 15 );
+//add_action( 'woocommerce_product_tab_panels', '_wip_product_gallery_panel', 15 );
+/* end thien custom */
 add_action( 'woocommerce_before_add_to_cart_button', '_wip_simple_product_button_wrap_start', 10);
 add_action( 'woocommerce_after_add_to_cart_button', '_wip_simple_product_button_wrap_end', 10);
 
@@ -370,8 +372,8 @@ function _wip_checkout_tab_process(){
 	}
 
 	echo '<li class="process_active"><a href="#customer_details" data="process-1"><span class="checkout_process_label">' . __('Billing Address', 'wip') . '</span></a></li>' . "\n";
-	echo '<li class="process_active"><a href="#shiptobilling" data="process-2"><span class="checkout_process_label">'. __('Shipping Address', 'wip') .'</span></a></li>' . "\n";
-	echo '<li class="process_active"><a href="#payment" data="process-3"><span class="checkout_process_label">'. __('Payment Method', 'wip') .'</span></a></li>' . "\n";
+	//echo '<li class="process_active"><a href="#shiptobilling" data="process-2"><span class="checkout_process_label">'. __('Shipping Address', 'wip') .'</span></a></li>' . "\n";
+	//echo '<li class="process_active"><a href="#payment" data="process-3"><span class="checkout_process_label">'. __('Payment Method', 'wip') .'</span></a></li>' . "\n";
 	echo '<li class="process_active"><a href="#order_review" data="process-4"><span class="checkout_process_label">'. __('Order Review', 'wip') .'</span></a></li>' . "\n";
 
 	echo '</ul>' . "\n";
@@ -541,6 +543,12 @@ function _wip_dynamically_call_product_thumbnail(){
 								:
 								get_template_directory_uri() . '/images/no-preview.jpg';
 				break;
+			case '1':
+					$colImage = ( has_post_thumbnail() && wip_get_attached_file($post->ID) ) ? 
+								wip_print_autoresize( wip_get_attached_file($post->ID), get_thumbOri($post->ID, 'full'), 450, 450 )
+								:
+								get_template_directory_uri() . '/images/no-preview.jpg';
+				break;
 		}
 	} else {
 		switch( $col ){
@@ -569,9 +577,16 @@ function _wip_dynamically_call_product_thumbnail(){
 								:
 								get_template_directory_uri() . '/images/no-preview.jpg';
 				break;
+			case '1':
+					$colImage = ( has_post_thumbnail() && wip_get_attached_file($post->ID) ) ? 
+								wip_print_autoresize( wip_get_attached_file($post->ID), get_thumbOri($post->ID, 'full'), 450, 450 )
+								:
+								get_template_directory_uri() . '/images/no-preview.jpg';
+				break;
 		}
 	}
-
+	
+	
 	$woo_product = &new woocommerce_product( $post->ID );
 
 	echo '<div class="product_lists_thumbnail">' . "\n";

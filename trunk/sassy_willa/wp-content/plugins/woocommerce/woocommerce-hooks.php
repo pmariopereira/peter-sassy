@@ -71,14 +71,23 @@ if ( !is_admin() || defined('DOING_AJAX') ) {
 	add_action( 'woocommerce_pagination', 'woocommerce_pagination', 10 );
 	add_action( 'woocommerce_pagination', 'woocommerce_catalog_ordering', 20 );
 	
+	/*begin thien custom */
 	/* Product page tabs */
-	add_action( 'woocommerce_product_tabs', 'woocommerce_product_description_tab', 10 );
-	add_action( 'woocommerce_product_tabs', 'woocommerce_product_attributes_tab', 20 );
-	add_action( 'woocommerce_product_tabs', 'woocommerce_product_reviews_tab', 30 );
+	//add_action( 'woocommerce_product_tabs', 'woocommerce_product_description_tab', 10 );
+	//add_action( 'woocommerce_product_tabs', 'woocommerce_product_attributes_tab', 20 );
+	//add_action( 'woocommerce_product_tabs', 'woocommerce_product_reviews_tab', 30 );
 	
-	add_action( 'woocommerce_product_tab_panels', 'woocommerce_product_description_panel', 10 );
-	add_action( 'woocommerce_product_tab_panels', 'woocommerce_product_attributes_panel', 20 );
-	add_action( 'woocommerce_product_tab_panels', 'woocommerce_product_reviews_panel', 30 );
+	//add_action( 'woocommerce_product_tab_panels', 'woocommerce_product_description_panel', 10 );
+	//add_action( 'woocommerce_product_tab_panels', 'woocommerce_product_attributes_panel', 20 );
+	//add_action( 'woocommerce_product_tab_panels', 'woocommerce_product_reviews_panel', 30 );
+	/* add tab */
+	 add_action( 'woocommerce_product_tabs', 'woocommerce_product_size_fit_tab', 30 );
+	 add_action( 'woocommerce_product_tab_panels', 'woocommerce_product_size_fit_panel', 30 );
+	 
+	 add_action( 'woocommerce_product_tabs', 'woocommerce_product_shipping_details_tab', 30 );
+	 add_action( 'woocommerce_product_tab_panels', 'woocommerce_product_shipping_details_panel', 30 );
+	 
+	/* end thien custom */
 	
 	/* Checkout */
 	add_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );

@@ -882,3 +882,12 @@ form.woocommerce_ordering {
 .sidebarbox{
 	background:#fff;
 	}
+.wip-product-single-page div.related
+{
+	display:none;
+}
+
+.wip-product-single-page .woo_product_content .summary .cart .quantity
+{
+	display:none;
+}
