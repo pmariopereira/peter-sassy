@@ -599,18 +599,19 @@ ol.commentlist li .comment_entries {
 .home .col_four {
 	margin:0;
 }
-.home .products .col_four.first {
+.home .col_four.first {
 	margin-left:0;
 }
-.home .products .col_four.last {
+.home .col_four.last {
 	margin-right:0px;
 }
-.home .products .col_four {
+.home .col_four {
 	margin:0 8px;
 	width:233px;
 }
 .home .product_wraper {
 	margin-top:14px;
+	display:none;
 }
 .product_lists_thumbnail {
 	border:1px solid #d1d1d1;
@@ -852,3 +853,32 @@ form.woocommerce_ordering {
 	margin-bottom: 10px;
 	color: #DE1E7D;
 }
+.home #main-inner-site .wrap_960 .col_wraper {
+	margin: 14px -8px 0;
+	}
+.home #main-inner-site .wrap_960 .col_wraper .fullwidth-auto-column-1 li {
+  margin-left: 0;
+  width: 100%;
+}
+.home #main-inner-site .wrap_960 .col_wraper .section_title {
+  background-image: url("../images/title.png");
+  background-repeat: repeat-x;
+  border: medium none;
+  color: #FFFFFF;
+  font-family: 'Open Sans',arial;
+  font-size: 18px;
+  font-weight: 300;
+  height: 52px;
+  line-height: 52px;
+  margin: 0 0 -1px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  z-index: 999;
+}
+.sidebar_block.area_left{
+	margin-left:18px;
+	}
+.sidebarbox{
+	background:#fff;
+	}
