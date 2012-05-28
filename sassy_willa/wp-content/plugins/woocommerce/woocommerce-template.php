@@ -418,6 +418,19 @@ if ( ! function_exists( 'woocommerce_product_reviews_tab' ) ) {
 	}
 }
 
+if ( ! function_exists( 'woocommerce_product_size_fit_tab' ) ) {
+	function woocommerce_product_size_fit_tab() {
+		woocommerce_get_template( 'single-product/tabs/tab-size-fit.php' );
+	}
+}
+
+
+if ( ! function_exists( 'woocommerce_product_shipping_details_tab' ) ) {
+	function woocommerce_product_shipping_details_tab() {
+		woocommerce_get_template( 'single-product/tabs/tab-shipping-details.php' );
+	}
+}
+
 /**
  * Product page tab panels
  **/
@@ -434,6 +447,18 @@ if ( ! function_exists( 'woocommerce_product_attributes_panel' ) ) {
 if ( ! function_exists( 'woocommerce_product_reviews_panel' ) ) {
 	function woocommerce_product_reviews_panel() {
 		woocommerce_get_template( 'single-product/tabs/reviews.php' );
+	}
+}
+
+if ( ! function_exists( 'woocommerce_product_size_fit_panel' ) ) {
+	function woocommerce_product_size_fit_panel() {
+		woocommerce_get_template( 'single-product/tabs/size-fit.php' );
+	}
+}
+
+if ( ! function_exists( 'woocommerce_product_shipping_details_panel' ) ) {
+	function woocommerce_product_shipping_details_panel() {
+		woocommerce_get_template( 'single-product/tabs/shipping-details.php' );
 	}
 }
 

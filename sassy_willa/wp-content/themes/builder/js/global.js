@@ -767,7 +767,19 @@ jQuery.fn.pH=function(df){ var el = jQuery(this);df = df || el.attr('placeholder
 		$(document).ready(function(){
 			$(".sidebarbox>h3").live('click',function(){
 				var currentItem = $(this);
-				currentItem.next().slideToggle('fast');
+				currentItem.next().slideToggle('fast', function() {
+					var temp = jQuery(this).is(':hidden');					
+					if(temp == true)
+					{
+						jQuery(this).parent("div.sidebarbox").removeClass("drop_down");
+						jQuery(this).parent("div.sidebarbox").addClass("arrow_down");
+					}
+					else
+					{						
+						jQuery(this).parent("div.sidebarbox").removeClass("arrow_down");
+						jQuery(this).parent("div.sidebarbox").addClass("drop_down");
+					}
+				});
 			});
 		});
 
