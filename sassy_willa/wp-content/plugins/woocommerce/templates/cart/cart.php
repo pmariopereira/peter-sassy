@@ -113,7 +113,7 @@ global $woocommerce;
 				<?php } ?>
 
 				<?php $woocommerce->nonce_field('cart') ?>
-				<input type="submit" class="button" name="update_cart" value="<?php _e('Update Cart', 'woocommerce'); ?>" /> <a href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>" class="checkout-button button alt"><?php _e('Proceed to Checkout &rarr;', 'woocommerce'); ?></a>
+				<input type="submit" class="button" name="update_cart" value="<?php _e('Update Cart', 'woocommerce'); ?>" /> <a href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>" class="checkout-button button alt"><?php _e('Proceed to Purchase', 'woocommerce'); ?></a>
 				<?php do_action('woocommerce_proceed_to_checkout'); ?>
 			</td>
 		</tr>
