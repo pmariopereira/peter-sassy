@@ -1031,3 +1031,7 @@ div.product .woocommerce_tabs .entry-content h2, .wip-product-single-page .produ
 	margin: 0;
 	padding: 0;
 	}
+#checkout_tab_process .process_active
+{
+	width:50% !important;
+}

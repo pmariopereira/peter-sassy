@@ -849,7 +849,7 @@ class WC_Countries {
 			$this->locale = array_intersect_key( $this->locale, $this->get_allowed_countries() );
 			
 			$this->locale['default'] = apply_filters('woocommerce_get_country_locale_default', array(
-				'address_2'	=> array(
+				/*'address_2'	=> array(
 					'required' 	=> false
 				),
 				'postcode'	=> array(
@@ -860,13 +860,14 @@ class WC_Countries {
 				'city'	=> array(
 					'label'			=> __('Town/City', 'woocommerce'),
 					'placeholder'	=> __('Town/City', 'woocommerce'),
-					'required' 		=> true
+					'required' 		=> true,					
 				),
 				'state'		=> array(
 					'label' 		=> __('State/County', 'woocommerce'),
 					'placeholder' 	=> __('State/County', 'woocommerce'),
 					'required' 		=> true
-				)
+				)*/
+				
 			));
 			
 			// Filter default AND shop base locales to allow overides via a single function. These will be used when changing countries on the checkout
@@ -890,53 +891,39 @@ class WC_Countries {
 				'label' 		=> __('First Name', 'woocommerce'), 
 				'placeholder' 	=> _x('First Name', 'placeholder', 'woocommerce'), 
 				'required' 		=> true, 
-				'class'			=> array('form-row-first'),
+				'class'			=> array('form-row-first')				
+				),				
+			'address_1' 	=> array( 
+				'label' 		=> __('Address', 'woocommerce'), 
+				'placeholder' 	=> _x('Address', 'placeholder', 'woocommerce'), 
+				'required' 		=> true, 
+				'class' 		=> array('form-row-last'),
+				'clear'			=> true
 				),
 			'last_name' => array( 
 				'label' 		=> __('Last Name', 'woocommerce'), 
 				'placeholder' 	=> _x('Last Name', 'placeholder', 'woocommerce'), 
 				'required' 		=> true, 
-				'class' 		=> array('form-row-last'),
-				'clear'			=> true
-				),
-			'company' 	=> array( 
-				'label' 		=> __('Company Name', 'woocommerce'), 
-				'placeholder' 	=> _x('Company (optional)', 'placeholder', 'woocommerce'), 
-				'clear'			=> true
-				),
-			'address_1' 	=> array( 
-				'label' 		=> __('Address', 'woocommerce'), 
-				'placeholder' 	=> _x('Address', 'placeholder', 'woocommerce'), 
-				'required' 		=> true, 
-				'class' 		=> array('form-row-first'),
-				),
-			'address_2' => array( 
-				'label' 		=> __('Address 2', 'woocommerce'), 
-				'placeholder' 	=> _x('Address 2 (optional)', 'placeholder', 'woocommerce'), 
-				'class' 		=> array('form-row-last'), 
-				'label_class' 	=> array('hidden'),
-				'clear'			=> true
+				'class' 		=> array('form-row-first')				
 				),
 			'city' 		=> array( 
 				'label' 		=> __('Town/City', 'woocommerce'), 
 				'placeholder' 	=> _x('Town/City', 'placeholder', 'woocommerce'), 
 				'required' 		=> true, 
-				'class' 		=> array('form-row-first'),
-				),
-			'postcode' 	=> array( 
-				'label' 		=> __('Postcode/Zip', 'woocommerce'), 
-				'placeholder' 	=> _x('Postcode/Zip', 'placeholder', 'woocommerce'), 
-				'required' 		=> true, 
-				'class'			=> array('form-row-last', 'update_totals_on_change'),
+				'class' 		=> array('form-row-last'),
 				'clear'			=> true
 				),
-			'country' 	=> array( 
-				'type'			=> 'country', 
-				'label' 		=> __('Country', 'woocommerce'), 
-				'placeholder' 	=> _x('Country', 'placeholder', 'woocommerce'), 
+			/*'company' 	=> array( 
+				'label' 		=> __('Company Name', 'woocommerce'), 
+				'placeholder' 	=> _x('Company (optional)', 'placeholder', 'woocommerce'), 
+				'class' 		=> array('form-row-first')		
+			),*/
+			'billing_phone' => array(
+				'label' 		=> __('Phone', 'woocommerce'), 
+				'placeholder' 	=> _x('Phone', 'placeholder', 'woocommerce'), 
 				'required' 		=> true, 
-				'class' 		=> array('form-row-first', 'update_totals_on_change', 'country_select'),
-				),
+				'class' 		=> array('form-row-first')	
+			),
 			'state' 	=> array( 
 				'type'			=> 'state', 
 				'label' 		=> __('State/County', 'woocommerce'), 
@@ -944,10 +931,42 @@ class WC_Countries {
 				'required' 		=> true, 
 				'class' 		=> array('form-row-last', 'update_totals_on_change'),
 				'clear'			=> true
+				),
+			'billing_email' => array(
+				'label' 		=> __('Email Address', 'woocommerce'), 
+				'placeholder' 	=> _x('Email Address', 'placeholder', 'woocommerce'), 
+				'required' 		=> true, 
+				'class' 		=> array('form-row-first')
+			),
+			
+			'postcode' 	=> array( 
+				'label' 		=> __('Postcode/Zip', 'woocommerce'), 
+				'placeholder' 	=> _x('Postcode/Zip', 'placeholder', 'woocommerce'), 
+				'required' 		=> true, 
+				'class'			=> array('form-row-last', 'update_totals_on_change'),
+				'clear'			=> true
+				),
+			
+			'country' 	=> array( 
+				'type'			=> 'country', 
+				'label' 		=> __('Country', 'woocommerce'), 
+				'placeholder' 	=> _x('Country', 'placeholder', 'woocommerce'), 
+				'required' 		=> true, 
+				'class' 		=> array('form-row-last', 'update_totals_on_change', 'country_select'),
+				'clear'			=> true
 				)
+			/*'address_2' => array( 
+				'label' 		=> __('Address 2', 'woocommerce'), 
+				'placeholder' 	=> _x('Address 2 (optional)', 'placeholder', 'woocommerce'), 
+				'class' 		=> array('form-row-last'), 
+				'label_class' 	=> array('hidden'),
+				'clear'			=> true
+				)*/
+			
+			
 		);
 
-		if (isset($locale[$country])) :
+		/*if (isset($locale[$country])) :
 			
 			$fields = woocommerce_array_overlay( $fields, $locale[$country] );
 			
@@ -957,6 +976,7 @@ class WC_Countries {
 			endif;
 			
 		endif;
+		*/
 		
 		// Prepend field keys
 		$address_fields = array();
@@ -967,7 +987,8 @@ class WC_Countries {
 		
 		// Billing/Shipping Specific
 		if ($type=='billing_') :
-
+			
+			/*
 			$address_fields['billing_email'] = array(
 				'label' 		=> __('Email Address', 'woocommerce'), 
 				'placeholder' 	=> _x('Email Address', 'placeholder', 'woocommerce'), 
@@ -978,11 +999,13 @@ class WC_Countries {
 				'label' 		=> __('Phone', 'woocommerce'), 
 				'placeholder' 	=> _x('Phone', 'placeholder', 'woocommerce'), 
 				'required' 		=> true, 
-				'class' 		=> array('form-row-last'),
+				'class' 		=> array('form-row-first'),
 				'clear'			=> true
 			);
+			*/
 			
 			$address_fields = apply_filters('woocommerce_billing_fields', $address_fields);
+			
 		else :
 			$address_fields = apply_filters('woocommerce_shipping_fields', $address_fields);
 		endif;
