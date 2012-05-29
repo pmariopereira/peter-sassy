@@ -1042,6 +1042,8 @@ a img.aligncenter {
 	font-weight: 300 !important;
 	color: #5f5f5f !important;
 	font-family: 'Open Sans', arial;
+	margin-bottom: 25px;
+	margin-top: 10px;
 }
 .checkout_breadcrumbs strong {
 	color: #DE1E7D !important;
