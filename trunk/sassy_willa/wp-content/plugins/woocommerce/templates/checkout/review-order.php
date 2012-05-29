@@ -6,8 +6,7 @@
 global $woocommerce;
 $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 ?>
-<div id="order_review">	
-	<h3 class="display_none">Shopping Bag/ Checkout / <span class="title">Payment</span></h3>	
+<div id="order_review">
 	<table class="shop_table">
 		<thead>
 			<tr>

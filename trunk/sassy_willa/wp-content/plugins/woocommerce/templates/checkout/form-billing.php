@@ -9,9 +9,7 @@ global $woocommerce;
 	
 	<h3><?php _e('Billing &amp; Shipping', 'woocommerce'); ?></h3>
 	
-<?php else : ?>
-
-	<h3>Shopping Bag/ Checkout / <span class="title">Delivery Details</span></h3>
+<?php else : ?>	
 	<p class="form-row form-row-first title"><?php _e('MY DETAILS', 'woocommerce'); ?></p>
 	<p class="form-row form-row-last title"><?php _e('DELIVERY DETAILS', 'woocommerce'); ?></p>
 	
@@ -53,3 +51,8 @@ global $woocommerce;
 	<?php do_action( 'woocommerce_after_checkout_registration_form', $checkout ); ?>
 					
 <?php endif; ?>
+
+<script>
+	var temp = '<div class="checkout_breadcrumbs">Shopping Bag/ Checkout / <strong>Delivery Details</strong></div>';
+	jQuery(".breadcrumbs").html(temp);
+</script>
