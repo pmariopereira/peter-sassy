@@ -53,6 +53,6 @@ global $woocommerce;
 <?php endif; ?>
 
 <script>
-	var temp = '<div class="checkout_breadcrumbs">Shopping Bag/ Checkout / <strong>Delivery Details</strong></div>';
-	jQuery(".breadcrumbs").html(temp);
+	var temp = 'Shopping Bag/ Checkout / <strong>Delivery Details</strong>';
+	jQuery(".breadcrumbs").removeClass('breadcrumbs').addClass('checkout_breadcrumbs').html(temp)
 </script>

@@ -132,5 +132,6 @@ global $woocommerce;
 	
 </div>
 <script>	
-	jQuery(".breadcrumbs").removeClass('breadcrumbs').addClass('checkout_breadcrumbs');
+	var temp = 'Shopping Bag / <strong>Order Summary</strong>';
+	jQuery(".breadcrumbs").removeClass('breadcrumbs').addClass('checkout_breadcrumbs').html(temp)
 </script>
