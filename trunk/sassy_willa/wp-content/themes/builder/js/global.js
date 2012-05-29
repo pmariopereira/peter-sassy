@@ -785,8 +785,25 @@ jQuery.fn.pH=function(df){ var el = jQuery(this);df = df || el.attr('placeholder
 			
 			$(".navigation #step4").live('click',function(){
 				$("#checkout_tab_process li:eq(1) a").click();
+				
+				$("#delivery_address").css("display","block");
+				$("#order_review h3").css("display","block");				
+				var billing_address_1 = $("#customer_details #billing_address_1").val();
+				var billing_city = $("#customer_details #billing_city").val();
+				
+				var delivery_address = '<h3>Delivery Address</h3><span>'+billing_address_1+'</span><br/><span>'+billing_city+'</span>';				
+				$("#delivery_address").html(delivery_address);
+			});		
+			$("#checkout_tab_process li:eq(1) a").click(function(){
+				$("#delivery_address").css("display","block");
+				$("#order_review h3").css("display","block");				
+				var billing_address_1 = $("#customer_details #billing_address_1").val();
+				var billing_city = $("#customer_details #billing_city").val();
+				
+				var delivery_address = '<h3>Delivery Address</h3><span>'+billing_address_1+'</span><br/><span>'+billing_city+'</span>';				
+				$("#delivery_address").html(delivery_address);
 			});			
 		});		
-
+	
 	});
 })(jQuery);

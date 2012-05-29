@@ -11,8 +11,10 @@ global $woocommerce;
 	
 <?php else : ?>
 
-	<h3><?php _e('Billing Address', 'woocommerce'); ?></h3>
-
+	<h3>Shopping Bag/ Checkout / <span class="title">Delivery Details</span></h3>
+	<p class="form-row form-row-first title"><?php _e('MY DETAILS', 'woocommerce'); ?></p>
+	<p class="form-row form-row-last title"><?php _e('DELIVERY DETAILS', 'woocommerce'); ?></p>
+	
 <?php endif; ?>
 
 <?php do_action('woocommerce_before_checkout_billing_form', $checkout); ?>
@@ -22,7 +24,6 @@ global $woocommerce;
 	<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>	
 	
 <?php endforeach; ?>
-
 <?php do_action('woocommerce_after_checkout_billing_form', $checkout); ?>
 
 <?php if (!is_user_logged_in() && get_option('woocommerce_enable_signup_and_login_from_checkout')=="yes") : ?>
