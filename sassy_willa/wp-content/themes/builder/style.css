@@ -1019,3 +1019,44 @@ a img.aligncenter {
 .selectBox-inline.selectBox-disabled .selectBox-options A {
 	background-color: transparent !important;
 }
+#content_tag{
+	background: #fff;
+}
+.items{
+	width: 240px;
+	float: left;
+	margin-right: 5px;	
+}
+.sub_items{
+	color: #292129;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.items h3 a{	
+	color: #DC1578;
+}
+.items h3{	
+    border-bottom: 1px solid;
+    width: 50%;
+}
+#heading_tag{
+	text-align: center;
+}
+.title{
+	color: #de1e7d;	
+	font-size:14px;
+	font-family: arial
+}
+.shop_table_2{
+	width: 635px !important;
+	float: left;
+}
+#delivery_address{
+	display: none;    
+}
+.display_none{
+	display: none;
+}

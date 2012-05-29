@@ -4,11 +4,10 @@
  */
  
 global $woocommerce;
-
 $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 ?>
-<div id="order_review">
-	
+<div id="order_review">	
+	<h3 class="display_none">Shopping Bag/ Checkout / <span class="title">Payment</span></h3>	
 	<table class="shop_table">
 		<thead>
 			<tr>
@@ -20,8 +19,12 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 		<tfoot>
 		
 			<tr class="cart-subtotal">
-				<th colspan="2"><strong><?php _e('Cart Subtotal', 'woocommerce'); ?></strong></th>
+				<td rowspan="3">
+					<div id="delivery_address"></div>
+				</td>
+				<th><strong><?php _e('Cart Subtotal', 'woocommerce'); ?></strong></th>
 				<td><?php echo $woocommerce->cart->get_cart_subtotal(); ?></td>
+				
 			</tr>
 			
 			<?php if ($woocommerce->cart->get_discounts_before_tax()) : ?>
@@ -37,8 +40,8 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			
 			<?php do_action('woocommerce_review_order_before_shipping'); ?>
 			
-			<tr class="shipping">
-				<th colspan="2"><?php _e('Shipping', 'woocommerce'); ?></th>
+			<tr class="shipping">				
+				<th><?php _e('Shipping', 'woocommerce'); ?></th>
 				<td>
 				<?php
 					// If at least one shipping method is available
@@ -189,8 +192,8 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			
 			<?php do_action('woocommerce_before_order_total'); ?>
 			
-			<tr class="total">
-				<th colspan="2"><strong><?php _e('Order Total', 'woocommerce'); ?></strong></th>
+			<tr class="total">				
+				<th><strong><?php _e('Order Total', 'woocommerce'); ?></strong></th>
 				<td><strong><?php echo $woocommerce->cart->get_total(); ?></strong></td>
 			</tr>
 			
