@@ -1722,7 +1722,7 @@ table.shop_table th.product-total,
 }
 .woocommerce-checkout table.shop_table th.product-quantity,
 .woocommerce-account table.order_details th.product-quantity{
-	width: 80px;
+	width: 100px;
 }
 
 table.cart td.product-quantity input.minus,
