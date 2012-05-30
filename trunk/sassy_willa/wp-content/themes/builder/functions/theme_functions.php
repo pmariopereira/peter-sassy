@@ -229,7 +229,8 @@ function _wip_show_top_search_form(){
 ?>
 <div id="search-form-top">
 	<form method="get" id="wip-search-form" action="<?php echo home_url(); ?>/">
-		<input id="wip-searchbox" type="text" value="<?php print __('Search site', 'wip'); ?>"  name="s" placeholder="<?php print __('Search site', 'wip'); ?>" />
+		<input id="wip-searchbox" type="text" value="<?php print __('Search site', 'wip'); ?>"  name="s" placeholder="<?php print __('Search site', 'wip'); ?>" style="float: left;height: 23px;line-height: 23px;" />
+        <input type="submit" value="Subscribe now!" style="background: none repeat scroll 0 0 transparent;float: left;height: 33px;padding: 0;text-indent: -9999px;width: 70px;">
 	</form>
 </div><!-- #search-form-top -->
 <?php

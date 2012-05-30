@@ -928,7 +928,7 @@ class WC_Countries {
 				'type'			=> 'state', 
 				'label' 		=> __('State/County', 'woocommerce'), 
 				'placeholder' 	=> _x('State/County', 'placeholder', 'woocommerce'), 
-				'required' 		=> true, 
+				
 				'class' 		=> array('form-row-last', 'update_totals_on_change'),
 				'clear'			=> true
 				),
