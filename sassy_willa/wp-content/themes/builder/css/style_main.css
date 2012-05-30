@@ -432,7 +432,7 @@ ol.commentlist li .comment_entries {
 	width:207px;
 }
 /*Pagination*/
-.pagination_content a.nav_link {
+.pagination_content a {
 	background:#a3a3a3;
 	font-family:'Open Sans';
 	font-weight:300;
@@ -453,8 +453,11 @@ ol.commentlist li .comment_entries {
 	text-decoration: underline;
 }
 .pagination_content span {
-	color:#959595;
-	text-decoration:none;
+	color: #959595;
+	font-size: 13px;
+	line-height: 29px;
+	text-decoration: none;
+	font-family:'Open Sans', arial;
 }
 .pagination_content a[title="1"] {
 	padding-left:9px;
@@ -1165,7 +1168,7 @@ div.product .single_variation_wrap .single_variation{
 	text-shadow:none;	
 	margin-bottom:40px;
 	}
-div.related.products, div.upsells.products, .search-no-results .sidebar_block.area_right, .no_gallery{
+div.related.products, div.upsells.products, .search-no-results .sidebar_block.area_right, .no_gallery,.error404 .breadcrumbs{
 	display:none;
 	}
 .search-no-results .area_with_sidebar.area_left{
